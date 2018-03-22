@@ -1,0 +1,2 @@
+class ReactPortalController < ApplicationController
+end

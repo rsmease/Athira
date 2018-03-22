@@ -23,7 +23,7 @@ plugins = plugins.concat(
 
 module.exports = {
     context: __dirname,
-    entry: './frontend/root.jsx',
+    entry: './react/root.jsx',
     output: {
         path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
         filename: 'bundle.js'
