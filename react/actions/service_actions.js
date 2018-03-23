@@ -13,8 +13,8 @@ const receiveAllServices = (services) => ({
     services
 });
 
-export const fetchService = (id) => (dispatch) => ServicesAJAX.fetchService(id)
-    .then(fetchedService => dispatch(receiveService(fetchedService)));
+export const getService = (id) => (dispatch) => ServicesAJAX.getService(id)
+    .then(service => dispatch(receiveService(service)));
 
-export const fetchAllServices = () => (dispatch) => ServicesAJAX.fetchAllServices()
-    .then(fetchedServices => dispatch(receiveAllServices(fetchedServices)));
+export const getAllServices = () => (dispatch) => ServicesAJAX.getAllServices()
+    .then(services => dispatch(receiveAllServices(services)));

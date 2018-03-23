@@ -13,8 +13,8 @@ const receiveAllReviews = (reviews) => ({
     reviews
 });
 
-export const fetchReview = (id) => (dispatch) => ReviewsAJAX.fetchReview(id)
-    .then(fetchedReview => dispatch(receiveReview(fetchedReview)));
+export const getReview = (id) => (dispatch) => ReviewsAJAX.getReview(id)
+    .then(review => dispatch(receiveReview(review)));
 
-export const fetchAllReviews = () => (dispatch) => ReviewsAJAX.fetchAllReviews()
-    .then(fetchedReviews => dispatch(receiveAllReviews(fetchedReviews)));
+export const getAllReviews = () => (dispatch) => ReviewsAJAX.getAllReviews()
+    .then(reviews => dispatch(receiveAllReviews(reviews)));
