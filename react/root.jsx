@@ -8,11 +8,15 @@ import createStore from './store/store';
 
 //components
 import Header from './components/header';
+import Footer from './components/footer';
 
 const rootComponent = ({ store }) => (
     <Provider store={store}>
         <HashRouter>
-            <Route path="/" component={Header} />
+            <React.Fragment>
+                <Route component={Header} />
+                <Route component={Footer} />
+            </React.Fragment >
         </HashRouter>
     </Provider>
 )

@@ -28,3 +28,9 @@ header {
 .header__navigation-link--contact {
     grid-area: contact;
 }
+
+@media (min-width: 760px) {
+    header {
+        background-color: blue;
+    }
+}
