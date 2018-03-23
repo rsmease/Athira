@@ -1,4 +1,4 @@
-class ReviewsController < ApplicationController
+class Admin::ReviewsController < ApplicationController
     def index
         @reviews = Review.all
         render 'admin/reviews/index'
@@ -41,3 +41,4 @@ class ReviewsController < ApplicationController
         params.require(:review).permit(:title, :body, :reviewer_name, :reviewer_location, :reviewer_description, :other_image_url)
     end
 end
+

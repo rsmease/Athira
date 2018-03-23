@@ -1,4 +1,4 @@
-class ServicesController < ApplicationController
+class Admin::ServicesController < ApplicationController
     def index
         @services = Service.all
         render 'admin/services/index'
