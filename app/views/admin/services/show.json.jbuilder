@@ -1,0 +1,1 @@
+json.partial! 'admin/services/service', service: @service
