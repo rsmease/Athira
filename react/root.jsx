@@ -9,12 +9,16 @@ import createStore from './store/store';
 //components
 import Header from './components/header';
 import Footer from './components/footer';
+import Home from './home';
 
 const rootComponent = ({ store }) => (
     <Provider store={store}>
         <HashRouter>
             <React.Fragment>
                 <Route component={Header} />
+                <Switch>
+                    <Route path="/" component={Home} />
+                </Switch>
                 <Route component={Footer} />
             </React.Fragment >
         </HashRouter>
