@@ -12,7 +12,7 @@ class Header extends React.Component {
                 <section className="header__logo--container">
                     <Link to="/" className="header__navigation-link">Athira</Link>
                 </section>
-                <section>
+                <section className="header__navigation-link--container">
                     <Link to="/about" className="header__navigation-link">About</Link>
                     <Link to="/services" className="haeder__navigation-link">Services</Link>
                     <Link to="/contact" className="haeder__navigation-link">Contact</Link>
