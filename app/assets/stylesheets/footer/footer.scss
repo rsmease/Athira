@@ -1,0 +1,16 @@
+footer,
+.footer__legal,
+.footer__social {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 760px) {
+    footer,
+    .footer__legal,
+    .footer__social {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}

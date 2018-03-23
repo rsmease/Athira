@@ -2,35 +2,21 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "logo" "navigation";
-}
-
-.header__logo--container {
-    grid-area: logo;
 }
 
 .header__navigation-link--container {
-    grid-area: navigation;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "about" "services" "contact";
-}
-
-.header__navigation-link--about {
-    grid-area: about;
-}
-
-.header__navigation-link--services {
-    grid-area: services;
-}
-
-.header__navigation-link--contact {
-    grid-area: contact;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 @media (min-width: 760px) {
     header {
-        background-color: blue;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .header__navigation-link--container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }
