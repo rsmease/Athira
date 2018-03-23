@@ -1,17 +1,30 @@
 header {
     display: grid;
-    grid-template-columns: [row1] 1fr;
-    grid-template-rows: [col1] 1fr [col2] 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "logo" "navigation";
-    border: 1px solid black;
 }
 
 .header__logo--container {
     grid-area: logo;
-    border: 1px solid blue;
 }
 
 .header__navigation-link--container {
     grid-area: navigation;
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "about" "services" "contact";
+}
+
+.header__navigation-link--about {
+    grid-area: about;
+}
+
+.header__navigation-link--services {
+    grid-area: services;
+}
+
+.header__navigation-link--contact {
+    grid-area: contact;
 }
