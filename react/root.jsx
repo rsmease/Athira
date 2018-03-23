@@ -9,24 +9,25 @@ import createStore from './store/store';
 //components
 import Header from './components/header';
 import Footer from './components/footer';
-import Home from './home';
+import Home from './components/home/home_container';
 
-const rootComponent = ({ store }) => (
+const Root = ({ store }) => (
     <Provider store={store}>
         <HashRouter>
             <React.Fragment>
                 <Route component={Header} />
                 <Switch>
-                    <Route path="/" component={Home} />
+                    <Route exact path="/" component={Home} />
                 </Switch>
                 <Route component={Footer} />
-            </React.Fragment >
+            </React.Fragment>
         </HashRouter>
     </Provider>
 )
 
 document.addEventListener('DOMContentLoaded', () => {
     const store = createStore();
+    console.log(store);
     const root = document.getElementById('root');
-    ReactDOM.render(rootComponent(store), root);
+    ReactDOM.render(<Root store={store} />, root);
 });

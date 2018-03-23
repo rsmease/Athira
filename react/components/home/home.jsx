@@ -8,20 +8,29 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-        this.props.requestAllReviews();
-        this.props.requestAllServices();
+        console.log(this.props);
+        this.props.getAllReviews();
+        this.props.getAllServices();
     }
 
     renderServices() {
-        if (this.props.services.length) {
-            return (
-                <React.Fragment></React.Fragment>
-            );
-        } else {
+        if (this.props.services && this.props.services.length) {
             return (
                 <React.Fragment>
                     {this.props.services.map(service => (
                         <h1>{service.name}</h1>
+                    ))}
+                </React.Fragment>
+            )
+        }
+    }
+
+    renderReviews() {
+        if (this.props.reviews && this.props.reviews.length) {
+            return (
+                <React.Fragment>
+                    {this.props.reviews.map(review => (
+                        <h1>{review.title}</h1>
                     ))}
                 </React.Fragment>
             )
@@ -37,6 +46,7 @@ class Home extends React.Component {
                     {this.renderServices()}
                 </section>
                 <section className="home__reviews--container">
+                    {this.renderReviews()}
                 </section>
                 <section className="home__contact--container">
                 </section>

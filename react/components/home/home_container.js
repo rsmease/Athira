@@ -13,9 +13,9 @@ const mapStateToProps = (state, ownProps) => ({
     reviews: _.values(state.reviews)
 });
 
-const mapDispatchToProps = (state, ownProps) => ({
-    requestAllServices: () => dispatch(ServiceActions.requestAllServices()),
-    requestAllReviews: () => dispatch(ReviewActions.requestAllReviews())
+const mapDispatchToProps = (dispatch, ownProps) => ({
+    getAllServices: () => dispatch(ServiceActions.getAllServices()),
+    getAllReviews: () => dispatch(ReviewActions.getAllReviews())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
