@@ -1,13 +1,29 @@
+@import '../utils/colors.scss';
+@import '../utils/layout.scss';
+@import '../utils/fonts.scss';
 header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    height: 80px;
+    background-color: $primary-dark;
+}
+
+.header__logo--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: start;
 }
 
 .header__navigation-link--container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.header__navigation-link {
+    color: $white;
 }
 
 @media (min-width: 760px) {
@@ -16,7 +32,21 @@ header {
         grid-template-columns: 1fr 1fr;
     }
     .header__navigation-link--container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto;
         grid-template-rows: 1fr;
+        justify-content: end;
+        margin-right: $gutter;
+    }
+    .header__navigation-link {
+        margin-top: $gutter;
+        margin-left: $gutter;
+        margin-bottom: $gutter / 2;
+        justify-self: center;
+        align-self: end;
+    }
+    .header__logo {
+        justify-self: start;
+        text-transform: uppercase;
+        font-size: $baseline * 2;
     }
 }

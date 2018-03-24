@@ -10,12 +10,12 @@ class Header extends React.Component {
         return (
             <header>
                 <section className="header__logo--container">
-                    <Link to="/" className="header__navigation-link">Athira</Link>
+                    <Link to="/" className="header__navigation-link header__logo">Athira</Link>
                 </section>
                 <section className="header__navigation-link--container">
-                    <Link to="/about" className="header__navigation-link--about">About</Link>
-                    <Link to="/services" className="haeder__navigation-link--services">Services</Link>
-                    <Link to="/contact" className="haeder__navigation-link--contact">Contact</Link>
+                    <Link to="/about" className="header__navigation-link">About</Link>
+                    <Link to="/services" className="header__navigation-link">Services</Link>
+                    <Link to="/contact" className="header__navigation-link">Contact</Link>
                 </section>
             </header>
         );

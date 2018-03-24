@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Typicon from 'react-icons/lib/ti';
 
+import HeroImage from './hero';
+
 class Home extends React.Component {
     constructor() {
         super();
@@ -41,6 +43,7 @@ class Home extends React.Component {
         return (
             <React.Fragment>
                 <section className="home__hero--container">
+                    <HeroImage />
                 </section >
                 <section className="home__services--container">
                     {this.renderServices()}

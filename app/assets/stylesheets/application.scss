@@ -15,9 +15,16 @@
  */
 
 @import 'utils/reset';
+@import 'utils/colors';
+@import 'utils/layout';
 @import 'header/header';
 @import 'footer/footer';
+@import 'home/hero';
 #root {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
