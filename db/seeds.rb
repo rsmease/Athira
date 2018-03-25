@@ -10,45 +10,45 @@ Service.destroy_all
 Review.destroy_all
 
 service1 = Service.create!(
-    name: 'Lorem Ipsum',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+    name: 'Service',
+    description: 'Service Description'
 )
 
 service2 = Service.create!(
-    name: 'Curabitur Faucibus',
-    description: 'Sed enim mauris, egestas non iaculis vel, lobortis eu odio'
+    name: 'Service',
+    description: 'Service Description'
 )
 
 service3 = Service.create!(
-    name: 'Donec Fermentum',
-    description: 'Suspendisse potenti, nunc posuere fermentum augue quis bibendum'
+    name: 'Service',
+    description: 'Service Description'
 )
 
 service4 = Service.create!(
-    name: 'Vivamus Enim',
-    description: 'Cras et dignissim dolor, non malesuada neque'
+    name: 'Service',
+    description: 'Service Description'
 )
 
 review1 = Review.create!(
-    reviewer_name: 'Marius',
-    reviewer_description: 'Sr. Director of Giving',
-    reviewer_location: 'Suspendisse Potenti, LLC',
-    title: 'Lorem Ipsum',
-    body: 'Nullam congue metus quis varius commodo. Praesent fringilla turpis sem, ut pretium massa elementum vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+    reviewer_name: 'Reviewer',
+    reviewer_description: 'Sr. Director of Operations',
+    reviewer_location: 'Company, LLC',
+    title: 'Review',
+    body: 'Review description, review description review description review description! Review description review description. Review description review description review description.'
 )
 
 review2 = Review.create!(
-    reviewer_name: 'Domitia',
-    reviewer_description: 'CEO',
-    reviewer_location: 'Cras Hendrerit, Inc',
-    title: 'Eros Nisi',
-    body: 'Nullam congue metus quis varius commodo. Praesent fringilla turpis sem, ut pretium massa elementum vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+    reviewer_name: 'Reviewer',
+    reviewer_description: 'Sr. Director of Operations',
+    reviewer_location: 'Company, LLC',
+    title: 'Review',
+    body: 'Review description, review description review description review description! Review description review description. Review description review description review description.'
 )
 
 review3 = Review.create!(
-    reviewer_name: 'Felicia',
-    reviewer_description: 'Entrepreneur',
-    reviewer_location: 'Hac Habitasse, GmbH',
-    title: 'Eros Nisi',
-    body: 'Nullam congue metus quis varius commodo. Praesent fringilla turpis sem, ut pretium massa elementum vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+    reviewer_name: 'Reviewer',
+    reviewer_description: 'Sr. Director of Operations',
+    reviewer_location: 'Company, LLC',
+    title: 'Review',
+    body: 'Review description, review description review description review description! Review description review description. Review description review description review description.'
 )

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Typicon from 'react-icons/lib/ti';
 
-import HeroImage from './hero';
+import ServiceIndexItem from './service_index_item';
 
 class Home extends React.Component {
     constructor() {
@@ -10,7 +10,6 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
         this.props.getAllReviews();
         this.props.getAllServices();
     }
@@ -20,7 +19,7 @@ class Home extends React.Component {
             return (
                 <React.Fragment>
                     {this.props.services.map(service => (
-                        <h1>{service.name}</h1>
+                        <ServiceIndexItem service={service} />
                     ))}
                 </React.Fragment>
             )
@@ -43,10 +42,17 @@ class Home extends React.Component {
         return (
             <React.Fragment>
                 <section className="home__hero--container">
-                    <HeroImage />
+                    <div className="home__hero--opacity">
+                        <h1 className="home__hero--text">Call to Action</h1>
+                    </div>
                 </section >
                 <section className="home__services--container">
-                    {this.renderServices()}
+                    <div className="home__services--summary-container">
+                        <h1 className="home__services--summary-text">We perform these services for you when you work with our company. We believe these services help you for these reasons.</h1>
+                    </div>
+                    <div className="home__services--items-container">
+                        {this.renderServices()}
+                    </div>
                 </section>
                 <section className="home__reviews--container">
                     {this.renderReviews()}
