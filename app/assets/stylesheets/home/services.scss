@@ -8,7 +8,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    background-image: $primary-gradient-1;
 }
 
 .home__services--summary-container {
@@ -37,6 +36,29 @@
     display: grid;
     width: 80vw;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 1fr;
     grid-column-gap: $gutter;
+}
+
+.home__services--item-container {
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    grid-template-rows: 100px 40px auto;
+}
+
+.home__services--item-icon {
+    color: $white;
+    font-size: $baseline * 2;
+    padding: 20px;
+    border-radius: 50%;
+    border: 3px solid $white;
+}
+
+.home__services--item-name {
+    color: $white;
+    font-size: $baseline * 1.5;
+}
+
+.home__services--item-description {
+    color: $white;
 }

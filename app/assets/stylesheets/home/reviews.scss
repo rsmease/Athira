@@ -1,0 +1,52 @@
+@import '../utils/layout.scss';
+@import '../utils/colors.scss';
+@import '../utils/fonts.scss';
+.home__reviews--container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: auto auto auto;
+}
+
+.home__reviews--item-container--left,
+.home__reviews--item-container--right {
+    display: grid;
+    box-sizing: border-box;
+    width: 100vw;
+    padding-top: $gutter * 3;
+    padding-bottom: $gutter * 3;
+    grid-template-rows: 50px 25px 25px;
+    align-items: end;
+}
+
+.home__reviews--item-container--left {
+    padding-left: $gutter * 6;
+    justify-items: start;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    color: $white;
+}
+
+.home__reviews--item-container--right {
+    padding-right: $gutter * 6;
+    justify-items: end;
+    background-color: rgba($color: #FFFFFF, $alpha: 0.3)
+}
+
+.home__reviews--item-container--left>.home__reviews--body,
+.home__reviews--container,
+.home__reviews--name {
+    text-align: left;
+}
+
+.home__reviews--item-container--right>.home__reviews--body {
+    text-align: right;
+}
+
+.home__reviews--body {
+    width: 50vw;
+}
+
+.home__reviews--description,
+.home__reviews--name {
+    font-style: oblique;
+}

@@ -19,3 +19,11 @@
     align-self: center;
     margin-left: $gutter;
 }
+
+.home__main--container {
+    display: grid;
+    background-image: $primary-gradient-2;
+    width: 100vw;
+    height: 300vh;
+    grid-template-rows: 1fr 1fr 1fr;
+}
