@@ -11,38 +11,36 @@
 .home__reviews--item-container--left,
 .home__reviews--item-container--right {
     display: grid;
-    box-sizing: border-box;
-    width: 100vw;
-    padding-top: $gutter * 3;
-    padding-bottom: $gutter * 3;
-    align-items: end;
+    align-items: center;
 }
 
 .home__reviews--item-container--left {
-    padding-left: $gutter * 6;
-    justify-items: start;
     background-color: rgba($color: #000000, $alpha: 0.3);
     color: $white;
 }
 
 .home__reviews--item-container--right {
-    padding-right: $gutter * 6;
+    background-color: rgba($color: #FFFFFF, $alpha: 0.3);
     justify-items: end;
-    background-color: rgba($color: #FFFFFF, $alpha: 0.3)
 }
 
 .home__reviews--item-container--left>.home__reviews--body,
-.home__reviews--container,
-.home__reviews--name {
+.home__reviews--item-container--left>.home__reviews--name,
+.home__reviews--item-container--left>.home__reviews--description {
     text-align: left;
+    margin-left: $gutter * 2;
 }
 
-.home__reviews--item-container--right>.home__reviews--body {
+.home__reviews--item-container--right>.home__reviews--body,
+.home__reviews--item-container--right>.home__reviews--name,
+.home__reviews--item-container--right>.home__reviews--description {
     text-align: right;
+    margin-right: $gutter * 2;
 }
 
 .home__reviews--body {
-    width: 50vw;
+    width: 70vw;
+    text-align: justify;
 }
 
 .home__reviews--description,

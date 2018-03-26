@@ -3,8 +3,8 @@
 @import '../utils/fonts.scss';
 header {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     width: 100vw;
     height: 80px;
     background-color: $primary-dark;
@@ -12,19 +12,31 @@ header {
 
 .header__logo--container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto auto auto;
     grid-template-rows: 1fr;
     justify-items: start;
+    align-items: end;
+    margin-left: $gutter / 2;
+    margin-bottom: $gutter / 2;
 }
 
 .header__navigation-link--container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+    align-items: end;
+    margin-right: $gutter / 2;
+    margin-bottom: $gutter / 2;
 }
 
 .header__navigation-link {
     color: $white;
+}
+
+.header__logo {
+    justify-self: start;
+    text-transform: uppercase;
+    font-size: $baseline * 2;
 }
 
 @media (min-width: 760px) {
