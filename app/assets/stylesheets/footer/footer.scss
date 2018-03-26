@@ -1,29 +1,40 @@
 @import '../utils/colors.scss';
 @import '../utils/layout.scss';
 @import '../utils/fonts.scss';
-footer,
-.footer__legal,
-.footer__social {
+footer {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
     height: 80px;
     background-color: $gray;
+}
+
+.footer__legal {
+    display: grid;
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 1fr;
     color: $white;
+    margin-left: $gutter;
+}
+
+.footer__social {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0px 50px 50px;
+    color: $white;
+    margin-right: $gutter;
 }
 
 .footer__social>a,
 .footer__legal>a,
 .footer__legal>p {
     color: $white;
-    align-self: center;
-    margin-left: $gutter;
-    margin-right: $gutter;
+    align-self: start;
+    margin-top: $gutter / 2;
 }
 
 .footer__social>a {
     font-size: $baseline * 3;
-    justify-self: end;
 }
 
 @media (min-width: 760px) {
@@ -38,7 +49,11 @@ footer,
     .footer__social {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 50px 50px;
-        margin: 0px;
         align-items: end;
+    }
+    .footer__legal>a,
+    .footer__legal>p {
+        align-self: center;
+        margin-top: 0;
     }
 }
