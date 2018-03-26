@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Typicons from 'react-icons/lib/ti';
-
+//add for commit
 class Footer extends React.Component {
     constructor() {
         super();
