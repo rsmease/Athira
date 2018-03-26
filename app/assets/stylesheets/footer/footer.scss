@@ -1,16 +1,44 @@
+@import '../utils/colors.scss';
+@import '../utils/layout.scss';
+@import '../utils/fonts.scss';
 footer,
 .footer__legal,
 .footer__social {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
+    height: 80px;
+    background-color: $gray;
+    color: $white;
+}
+
+.footer__social>a,
+.footer__legal>a,
+.footer__legal>p {
+    color: $white;
+    align-self: center;
+    margin-left: $gutter;
+    margin-right: $gutter;
+}
+
+.footer__social>a {
+    font-size: $baseline * 3;
+    justify-self: end;
 }
 
 @media (min-width: 760px) {
-    footer,
-    .footer__legal,
+    footer {
+        grid-template-rows: 1fr;
+        grid-template-columns: 70% 1fr;
+    }
+    .footer__legal {
+        grid-template-rows: 1fr;
+        grid-template-columns: 200px 200px;
+    }
     .footer__social {
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 50px 50px;
+        margin: 0px;
+        align-items: end;
     }
 }

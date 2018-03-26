@@ -1,0 +1,32 @@
+@import '../utils/colors.scss';
+@import '../utils/fonts.scss';
+@import '../utils/layout.scss';
+.home__main--container {
+    display: grid;
+    background-image: $primary-gradient-2;
+    width: 100vw;
+    grid-template-rows: 100vh 100vh 100vh;
+}
+
+.home__contact--container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home__contact--text {
+    color: $white;
+    font-size: $baseline * 5;
+    margin-bottom: $gutter / 2;
+    align-self: end;
+    justify-self: center;
+}
+
+.home__contact--email {
+    color: $white;
+    text-transform: uppercase;
+    font-size: $baseline * 1.5;
+    margin-top: $gutter / 2;
+    align-self: start;
+    justify-self: center;
+}

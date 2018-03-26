@@ -19,7 +19,10 @@
 @import 'utils/layout';
 @import 'header/header';
 @import 'footer/footer';
+@import 'home/home';
 @import 'home/hero';
+@import 'home/reviews';
+@import 'home/services';
 #root {
     display: grid;
     grid-template-columns: 1fr;

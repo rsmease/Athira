@@ -61,6 +61,8 @@ class Home extends React.Component {
                         {this.renderReviews()}
                     </section>
                     <section className="home__contact--container">
+                        <h1 className="home__contact--text">Let's Talk</h1>
+                        <h2 className="home__contact--email">hello@athira.com</h2>
                     </section>
                 </section>
             </React.Fragment>
