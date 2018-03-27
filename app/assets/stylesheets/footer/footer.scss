@@ -20,7 +20,7 @@ footer {
 .footer__social {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 0px 50px 50px;
+    grid-template-columns: 1fr fit-content(100%) fit-content(100%);
     color: $white;
     margin-right: $gutter;
 }
