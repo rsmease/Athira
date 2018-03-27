@@ -12,6 +12,7 @@
 .home__reviews--item-container--right {
     display: grid;
     align-items: center;
+    grid-template-rows: 1fr fit-content(100%) fit-content(100%) fit-content(100%) 1fr;
 }
 
 .home__reviews--item-container--left {
@@ -46,4 +47,8 @@
 .home__reviews--description,
 .home__reviews--name {
     font-style: oblique;
+}
+
+.home__reviews--name {
+    margin-top: $gutter
 }
