@@ -6,7 +6,7 @@
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 40% 1fr;
+    grid-template-rows: fit-content(100%) 1fr;
     justify-items: center;
 }
 
@@ -15,11 +15,12 @@
     width: 80vw;
     align-items: center;
     justify-items: center;
+    padding: $gutter * 2 0;
 }
 
 .home__services--summary-text {
     font-style: oblique;
-    font-size: $baseline * 2;
+    font-size: $baseline * 1.5;
     text-align: center;
     color: $white;
 }
@@ -62,6 +63,7 @@
 
 .home__services--item-description {
     color: $white;
+    text-align: center;
 }
 
 @media (min-width: 760px) {
@@ -70,5 +72,8 @@
     }
     .home__services--items-container {
         grid-template-columns: auto auto auto auto;
+    }
+    .home__services--summary-text {
+        font-size: $baseline * 2;
     }
 }
