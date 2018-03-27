@@ -24,20 +24,18 @@
     "lib": "lib",
     "test": "test"
   },
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.1.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rails s | webpack --watch",
     "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rsmease/rails_react_starter_kit.git"
+    "url": "git+https://github.com/rsmease/athira.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rsmease/rails_react_starter_kit/issues"
-  },
-  "homepage": "https://github.com/rsmease/rails_react_starter_kit#readme"
+  "license": "ISC"
 }
