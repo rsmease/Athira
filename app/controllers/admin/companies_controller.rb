@@ -30,9 +30,9 @@ class Admin::CompaniesController < ApplicationController
     def destroy
         @company = Company.find(params[:id])
         if @company.destroy
-            render plain: "company '#{params[:name]}' has been deleted"
+            render plain: "Company '#{params[:name]}' has been deleted"
         else
-            render plain: "company '#{params[:name]}' does not exist in the database"
+            render plain: "Company '#{params[:name]}' does not exist in the database"
         end
     end
 

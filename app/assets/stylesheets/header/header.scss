@@ -6,14 +6,12 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 100vw;
-    height: 80px;
+    height: 65px;
     background-color: $primary-dark;
 }
 
 .header__logo--container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr;
     justify-items: start;
     align-items: end;
     margin-left: $gutter / 2;
@@ -30,36 +28,29 @@ header {
 }
 
 .header__navigation-link {
-    color: $white;
+    color: $secondary-light;
+    margin-left: $gutter / 2;
 }
 
 .header__logo {
-    justify-self: start;
     text-transform: uppercase;
     font-size: $baseline * 2;
+    color: $secondary-light;
 }
 
 @media (min-width: 760px) {
-    header {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
     .header__navigation-link--container {
         grid-template-columns: auto auto auto;
         grid-template-rows: 1fr;
         justify-content: end;
         margin-right: $gutter;
     }
-    .header__navigation-link {
-        margin-top: $gutter;
+    .header__logo--container {
         margin-left: $gutter;
-        margin-bottom: $gutter / 2;
-        justify-self: center;
-        align-self: end;
     }
-    .header__logo {
+    .header__navigation-link {
         justify-self: start;
-        text-transform: uppercase;
-        font-size: $baseline * 2;
+        align-self: end;
+        margin-left: $gutter / 2;
     }
 }

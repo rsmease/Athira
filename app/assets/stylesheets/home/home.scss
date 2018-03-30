@@ -3,9 +3,8 @@
 @import '../utils/layout.scss';
 .home__main--container {
     display: grid;
-    background-image: $primary-gradient-2;
+    background-image: $white;
     width: 100vw;
-    grid-template-rows: 100vh 100vh 100vh;
 }
 
 .home__contact--container {

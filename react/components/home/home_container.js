@@ -7,15 +7,18 @@ import Home from './home';
 
 import * as ReviewActions from '../../actions/review_actions';
 import * as ServiceActions from '../../actions/service_actions';
+import * as CompanyActions from '../../actions/company_actions';
 
 const mapStateToProps = (state, ownProps) => ({
     services: _.values(state.services),
-    reviews: _.values(state.reviews)
+    reviews: _.values(state.reviews),
+    company: _.values(state.companies)[0]
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
     getAllServices: () => dispatch(ServiceActions.getAllServices()),
-    getAllReviews: () => dispatch(ReviewActions.getAllReviews())
+    getAllReviews: () => dispatch(ReviewActions.getAllReviews()),
+    getAllCompanies: () => dispatch(CompanyActions.getAllCompanies())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
