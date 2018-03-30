@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   namespace :admin, defaults: {format: JSON } do
     resources :services
     resources :reviews
+    resources :companies
+    resources :leaders
   end
 end
