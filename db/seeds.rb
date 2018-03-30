@@ -8,6 +8,7 @@
 
 Service.destroy_all
 Review.destroy_all
+Company.destroy_all
 
 service1 = Service.create!(
     name: 'Service',
@@ -51,4 +52,18 @@ review3 = Review.create!(
     reviewer_location: 'Company, LLC',
     title: 'Review',
     body: 'Review description, review description review description review description! Review description review description. Review description review description review description.'
+)
+
+company1 = Company.create!(
+    name: 'Athira',
+    headline: 'Light The Fire, Grow Your Dream',
+    short_description: 'Athira helps companies scale by selecting infrastructure, developing social media plans and defining a brand and values.',
+    long_description: 'Founded in 2016, Athira is a different kind of company. We are focused on developing solutions for non-profit clients seeking to scale their organization to meet new, larger goals that was previously possible. We are dedicated to helping young and aspiring by creating and implementing business support solutions. We believe in listening to our clients and helping to build a joint strategy for growth and anchoring that strategy by training new and existing staff. Backed by hard-won experience with numerous high profile clients, you can trust Athira to kindle new life into your organization.'
+)
+
+leader1 = Leader.create!(
+    name: 'M Ria Shah',
+    title: 'Owner',
+    description: 'Ria is a global financial and operations professional with 18 yars of experience in international non-profit, the digital market place, higher education, auditing and consulting, specializing in the early growth phase of emerging comanies.',
+    headshot_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Blank_woman_placeholder.svg/630px-Blank_woman_placeholder.svg.png'
 )
