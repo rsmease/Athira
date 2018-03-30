@@ -6,6 +6,7 @@
     height: 290px;
     width: 100vw;
     grid-template-columns: 10vw 1fr 1fr 1fr 10vw;
+    grid-column-gap: $gutter;
     background-color: $primary-light;
     color: $primary-dark;
 }

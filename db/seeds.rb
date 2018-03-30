@@ -32,27 +32,27 @@ service4 = Service.create!(
 )
 
 review1 = Review.create!(
-    reviewer_name: 'Reviewer',
+    reviewer_name: 'Scott Prost',
     reviewer_description: 'Sr. Director of Operations',
     reviewer_location: 'Company, LLC',
     title: 'Review',
-    body: 'Review description, review description review description review description! Review description review description. Review description review description review description.'
+    body: 'Athira did wonders for our company. Our company culture has been focused and driven towards our new goals.'
 )
 
 review2 = Review.create!(
-    reviewer_name: 'Reviewer',
+    reviewer_name: 'Maria Lorenza',
     reviewer_description: 'Sr. Director of Operations',
     reviewer_location: 'Company, LLC',
     title: 'Review',
-    body: 'Review description, review description review description review description! Review description review description. Review description review description review description.'
+    body: 'I have nothing but wonderful things to say about my time working with Ria.'
 )
 
 review3 = Review.create!(
-    reviewer_name: 'Reviewer',
+    reviewer_name: 'Wen Gao Li',
     reviewer_description: 'Sr. Director of Operations',
     reviewer_location: 'Company, LLC',
     title: 'Review',
-    body: 'Review description, review description review description review description! Review description review description. Review description review description review description.'
+    body: 'After a year of working with Athira, I have saved hundreds of thousands of dollars in scaling costs for services that I would have otherwise spent on pricey consultants.'
 )
 
 company1 = Company.create!(
