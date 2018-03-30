@@ -3,9 +3,11 @@
 @import '../utils/fonts.scss';
 .home__reviews--container {
     display: grid;
-    height: 100vh;
+    height: 290px;
     width: 100vw;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 10vw 1fr 1fr 1fr 10vw;
+    background-color: $primary-light;
+    color: $primary-dark;
 }
 
 .home__reviews--item-container--left,
@@ -15,40 +17,14 @@
     grid-template-rows: 1fr fit-content(100%) fit-content(100%) fit-content(100%) 1fr;
 }
 
-.home__reviews--item-container--left {
-    background-color: rgba($color: #000000, $alpha: 0.3);
-    color: $white;
-}
-
-.home__reviews--item-container--right {
-    background-color: rgba($color: #FFFFFF, $alpha: 0.3);
-    justify-items: end;
-}
-
-.home__reviews--item-container--left>.home__reviews--body,
-.home__reviews--item-container--left>.home__reviews--name,
-.home__reviews--item-container--left>.home__reviews--description {
-    text-align: left;
-    margin-left: $gutter * 2;
-}
-
-.home__reviews--item-container--right>.home__reviews--body,
-.home__reviews--item-container--right>.home__reviews--name,
-.home__reviews--item-container--right>.home__reviews--description {
-    text-align: right;
-    margin-right: $gutter * 2;
-}
-
 .home__reviews--body {
-    width: 70vw;
-    text-align: justify;
-}
-
-.home__reviews--description,
-.home__reviews--name {
-    font-style: oblique;
+    text-align: center;
+    font-size: $medium;
 }
 
 .home__reviews--name {
-    margin-top: $gutter
+    text-align: center;
+    margin-top: $gutter / 2;
+    text-transform: uppercase;
+    font-size: $subheader;
 }

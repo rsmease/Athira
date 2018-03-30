@@ -74,7 +74,9 @@ class Home extends React.Component {
                         </div>
                     </section>
                     <section className="home__reviews--container">
+                        <div></div>
                         {this.renderReviews()}
+                        <div></div>
                     </section>
                     <section className="home__contact--container">
                         <h1 className="home__contact--text">Let's Talk</h1>

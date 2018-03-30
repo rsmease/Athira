@@ -57,12 +57,13 @@
 }
 
 .home__services--item-name {
-    color: $primary-dark;
+    color: $dark-gray;
     font-size: $subheader;
+    text-transform: uppercase;
 }
 
 .home__services--item-description {
-    color: $primary-dark;
+    color: $light-gray;
     text-align: center;
 }
 
@@ -81,11 +82,7 @@
     .home__services--item-icon {
         font-size: $baseline * 16;
     }
-    .home__services--item-container {
-        grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
-    }
-    .home__services--item-name,
     .home__services--item-description {
-        margin-top: $gutter;
+        margin-top: $gutter / 2;
     }
 }
