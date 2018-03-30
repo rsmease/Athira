@@ -12,23 +12,23 @@ Company.destroy_all
 Leader.destroy_all
 
 service1 = Service.create!(
-    name: 'Service',
-    description: 'Service Description'
+    name: 'Define Values',
+    description: 'We define the values for your company'
 )
 
 service2 = Service.create!(
-    name: 'Service',
-    description: 'Service Description'
+    name: 'Find Tools',
+    description: 'We work to identify tools that will save you time and money'
 )
 
 service3 = Service.create!(
-    name: 'Service',
-    description: 'Service Description'
+    name: 'Draw A Roadmap',
+    description: 'Together, we work with you to build your plan for the next year—or five!'
 )
 
 service4 = Service.create!(
-    name: 'Service',
-    description: 'Service Description'
+    name: 'Build A Community',
+    description: 'We leverage social media to find you a community of supporters'
 )
 
 review1 = Review.create!(

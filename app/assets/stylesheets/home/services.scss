@@ -65,11 +65,13 @@
 .home__services--item-description {
     color: $light-gray;
     text-align: center;
+    width: 80%;
 }
 
 @media (min-width: 760px) {
     .home__services--items-container {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     .home__services--summary-text {
         font-size: $baseline * 2;
