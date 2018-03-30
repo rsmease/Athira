@@ -9,6 +9,7 @@
 Service.destroy_all
 Review.destroy_all
 Company.destroy_all
+Leader.destroy_all
 
 service1 = Service.create!(
     name: 'Service',
@@ -58,7 +59,8 @@ company1 = Company.create!(
     name: 'Athira',
     headline: 'Light The Fire, Grow Your Dream',
     short_description: 'Athira helps companies scale by selecting infrastructure, developing social media plans and defining a brand and values.',
-    long_description: 'Founded in 2016, Athira is a different kind of company. We are focused on developing solutions for non-profit clients seeking to scale their organization to meet new, larger goals that was previously possible. We are dedicated to helping young and aspiring by creating and implementing business support solutions. We believe in listening to our clients and helping to build a joint strategy for growth and anchoring that strategy by training new and existing staff. Backed by hard-won experience with numerous high profile clients, you can trust Athira to kindle new life into your organization.'
+    long_description: 'Founded in 2016, Athira is a different kind of company. We are focused on developing solutions for non-profit clients seeking to scale their organization to meet new, larger goals that was previously possible. We are dedicated to helping young and aspiring by creating and implementing business support solutions. We believe in listening to our clients and helping to build a joint strategy for growth and anchoring that strategy by training new and existing staff. Backed by hard-won experience with numerous high profile clients, you can trust Athira to kindle new life into your organization.',
+    splash_image_url: 'https://images.unsplash.com/photo-1473041117018-269bc8c130de?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cad94ead49f0eefefec9b33067633fb8&auto=format&fit=crop&w=1908&q=80'
 )
 
 leader1 = Leader.create!(
