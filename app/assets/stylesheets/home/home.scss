@@ -10,22 +10,36 @@
 .home__contact--container {
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 400px;
+    grid-template-rows: repeat(2, fit-content(100%));
+    align-content: center;
+}
+
+.home__contact--methods {
+    display: grid;
+    grid-template-rows: repeat(4, fit-content(100%));
+    justify-items: center;
+    justify-content: center;
+    grid-row-gap: $gutter / 2;
 }
 
 .home__contact--text {
-    color: $white;
-    font-size: $baseline * 5;
+    color: $primary-dark;
+    font-size: $header;
     margin-bottom: $gutter / 2;
     align-self: end;
     justify-self: center;
 }
 
-.home__contact--email {
-    color: $white;
+.home__contact--methods-icon {
+    font-size: $subheader;
+    color: $primary-light;
+}
+
+.home__contact--email,
+.home__contact--phone {
+    color: $dark-gray;
     text-transform: uppercase;
     font-size: $baseline * 1.5;
-    margin-top: $gutter / 2;
-    align-self: start;
     justify-self: center;
 }

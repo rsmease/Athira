@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import * as Typicon from 'react-icons/lib/ti';
+import * as Material from 'react-icons/lib/md';
 
 import ServiceIndexItem from './service_index_item';
 import ReviewIndexItem from './review_index_item';
@@ -79,8 +79,13 @@ class Home extends React.Component {
                         <div></div>
                     </section>
                     <section className="home__contact--container">
-                        <h1 className="home__contact--text">Let's Talk</h1>
-                        <h2 className="home__contact--email">hello@athira.com</h2>
+                        <h1 className="home__contact--text">Say Hello!</h1>
+                        <div className="home__contact--methods">
+                            <Material.MdEmail className="home__contact--methods-icon" />
+                            <h2 className="home__contact--email">hello@athira.com</h2>
+                            <Material.MdPhoneIphone className="home__contact--methods-icon" />
+                            <h2 className="home__contact--phone">(415) 638-1940</h2>
+                        </div>
                     </section>
                 </section>
             </React.Fragment>
