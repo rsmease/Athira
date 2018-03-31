@@ -4,9 +4,9 @@
 .home__services--container {
     display: grid;
     width: 100vw;
-    height: 800px;
+    height: 1000px;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 500px;
+    grid-template-rows: 300px auto;
     justify-items: center;
 }
 
@@ -37,10 +37,10 @@
 .home__services--items-container {
     display: grid;
     width: 80vw;
-    grid-template-rows: auto auto;
+    grid-template-rows: fit-content(100%) fit-content(100%);
     grid-template-columns: auto auto;
     grid-column-gap: $gutter;
-    grid-row-gap: $gutter;
+    grid-row-gap: $gutter / 2;
     align-self: center;
 }
 
@@ -48,7 +48,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-rows: 50% fit-content(100%) fit-content(100%);
+    grid-template-rows: fit-content(100%) 50px 100px;
 }
 
 .home__services--item-icon {
@@ -58,14 +58,20 @@
 
 .home__services--item-name {
     color: $dark-gray;
-    font-size: $subheader;
+    font-size: $medium;
+    text-align: center;
     text-transform: uppercase;
+    align-self: start;
+    margin-top: $gutter / 2;
 }
 
 .home__services--item-description {
     color: $light-gray;
     text-align: center;
+    font-size: $baseline;
     width: 80%;
+    align-self: start;
+    margin-top: $gutter/2;
 }
 
 @media (min-width: 760px) {
