@@ -75,6 +75,9 @@
 }
 
 @media (min-width: 760px) {
+    .home__services--container {
+        height: 900px;
+    }
     .home__services--items-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;

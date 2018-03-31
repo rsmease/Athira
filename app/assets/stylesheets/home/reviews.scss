@@ -3,10 +3,9 @@
 @import '../utils/fonts.scss';
 .home__reviews--container {
     display: grid;
-    height: 290px;
     width: 100vw;
-    grid-template-columns: 10vw 1fr 1fr 1fr 10vw;
-    grid-column-gap: $gutter;
+    grid-template-rows: 0 1fr 1fr 1fr 0;
+    grid-row-gap: $gutter;
     background-color: $primary-light;
     color: $primary-dark;
 }
@@ -20,12 +19,28 @@
 
 .home__reviews--body {
     text-align: center;
-    font-size: $medium;
+    margin: 0 $gutter;
+    justify-self: center;
+    font-size: $baseline;
 }
 
 .home__reviews--name {
     text-align: center;
     margin-top: $gutter / 2;
     text-transform: uppercase;
-    font-size: $subheader;
+    font-size: $large;
+}
+
+@media (min-width: 760px) {
+    .home__reviews--container {
+        height: 290px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0 1fr 1fr 1fr 0;
+    }
+    .home__reviews--body {
+        font-size: $large;
+    }
+    .home__reviews--name {
+        font-size: $subheader;
+    }
 }
