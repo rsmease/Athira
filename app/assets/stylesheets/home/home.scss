@@ -43,3 +43,13 @@
     font-size: $baseline * 1.5;
     justify-self: center;
 }
+
+@media (min-width: 760px) {
+    .home__contact--methods {
+        grid-template-columns: repeat(4, fit-content(100%));
+        grid-template-rows: none;
+    }
+    .home__contact--methods-icon {
+        margin: 0 $gutter/2;
+    }
+}

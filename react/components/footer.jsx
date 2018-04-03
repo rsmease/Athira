@@ -5,13 +5,20 @@ import * as Typicons from 'react-icons/lib/ti';
 class Footer extends React.Component {
     constructor() {
         super();
+        this.state = {
+            currentYear: undefined
+        }
+    }
+
+    componentDidMount() {
+        this.setState({ currentYear: new Date() });
     }
 
     render() {
         return (
             <footer>
                 <section className="footer__legal">
-                    <p>'hello@athira.com'</p>
+                    <p>{`© ${this.state.currentYear ? this.state.currentYear.getFullYear() : ""} Athira, LLC`}</p>
                     <Link to='/terms'>Terms of Service</Link>
                 </section>
                 <section className="footer__social">
