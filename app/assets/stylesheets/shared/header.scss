@@ -1,7 +1,7 @@
 @import '../utils/*';
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 1fr;
     width: 100vw;
     height: $gutter-65;
@@ -17,7 +17,7 @@ header {
 
 .header__navigation-link--container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, fit-content(100%));
     grid-template-rows: 1fr;
     align-items: end;
     margin-right: $gutter-30 / 2;
@@ -25,21 +25,19 @@ header {
 }
 
 .header__navigation-link {
-    color: $secondary-light;
+    color: $secondary-dark;
     margin-left: $gutter-30 / 2;
 }
 
 .header__logo {
     margin-top: 3px;
-    height: 40px;
+    height: 30px;
 }
 
 @media (min-width: 760px) {
     .header__navigation-link--container {
-        grid-template-columns: auto auto auto;
-        grid-template-rows: 1fr;
-        justify-content: end;
         margin-right: $gutter-30;
+        justify-content: end;
     }
     .header__logo--container {
         margin-left: $gutter-30;
