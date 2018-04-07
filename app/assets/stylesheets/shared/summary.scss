@@ -8,6 +8,12 @@
     align-self: center;
 }
 
+.summary__container--with-title {
+    @extend .summary__container;
+    grid-template-rows: repeat(2, fit-content(100%));
+    justify-items: center;
+}
+
 .summary__header-3 {
     text-align: center;
     color: $primary-dark;
@@ -17,6 +23,7 @@
     text-align: center;
     color: $primary-dark;
     text-transform: uppercase;
+    margin-bottom: $gutter-30;
 }
 
 .summary__container::after {
@@ -25,6 +32,7 @@
     border-bottom: 1px solid $primary-dark;
     width: 50vw;
     display: block;
+    margin-top: $gutter-30;
 }
 
 @media (min-width: 760px) {
