@@ -2,15 +2,9 @@
 .home__services--container {
     display: grid;
     width: 100vw;
-    height: 1000px;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px auto;
+    grid-template-rows: fit-content(100%) auto;
     justify-items: center;
-}
-
-.about__mixed--container {
-    @extend .home__services--container;
-    grid-template-rows: 600px auto;
 }
 
 .home__services--items-container {
