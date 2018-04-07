@@ -1,45 +1,35 @@
 @import '../utils/*';
-.home__services--container {
+.services-index__container--home {
     display: grid;
-    width: 100vw;
-    grid-template-columns: 1fr;
-    grid-template-rows: fit-content(100%) auto;
-    justify-items: center;
-}
-
-.home__services--items-container {
-    display: grid;
-    width: 80vw;
+    margin: 0 $gutter-30 $gutter-30 $gutter-30;
     grid-template-rows: fit-content(100%) fit-content(100%);
     grid-template-columns: auto auto;
     grid-column-gap: $gutter-30;
-    grid-row-gap: $gutter-30 / 2;
-    align-self: center;
+    grid-row-gap: $gutter-30;
 }
 
-.home__services--item-container {
+.services-index-item__container--home {
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-rows: fit-content(100%) 50px 100px;
+    grid-template-rows: fit-content(100%) auto 100px;
 }
 
-.home__services--item-icon {
+.services-index-item__icon--home {
     color: $primary-dark;
     font-size: $baseline * 8;
 }
 
-.home__services--item-name {
-    color: $dark-gray;
-    font-size: $medium;
+.services-index-item__header-2--home {
+    color: $primary-dark;
     text-align: center;
     text-transform: uppercase;
-    align-self: start;
-    margin-top: $gutter-30 / 2;
+    margin-top: $gutter-30;
+    align-self: center;
 }
 
-.home__services--item-description {
-    color: $light-gray;
+.services-index-item__header-3--home {
+    color: $secondary-dark;
     text-align: center;
     font-size: $baseline;
     width: 80%;
@@ -51,14 +41,14 @@
     .home__services--container {
         height: 900px;
     }
-    .home__services--items-container {
+    .services-index__container--home {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
-    .home__services--item-icon {
+    .services-index-item__icon--home {
         font-size: $baseline * 16;
     }
-    .home__services--item-description {
+    .services-index-item__header-3--home {
         margin-top: $gutter-30 / 2;
     }
 }

@@ -5,10 +5,10 @@ class ServiceIndexItem extends React.Component {
 
     render() {
         return (
-            <div className="home__services--item-container">
-                <Material.MdRemoveCircle className="home__services--item-icon" />
-                <h2 className="home__services--item-name">{this.props.service.name}</h2>
-                <p className="home__services--item-description">{this.props.service.description}</p>
+            <div className="services-index-item__container--home">
+                <Material.MdRemoveCircle className="services-index-item__icon--home" />
+                <h2 className="services-index-item__header-2--home">{this.props.service.name}</h2>
+                <h3 className="services-index-item__header-3--home">{this.props.service.description}</h3>
             </div>
         );
     }

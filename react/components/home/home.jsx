@@ -63,25 +63,23 @@ class Home extends React.Component {
                         }</h1>
                     </div>
                 </section >
-                <section className="home__main--container">
-                    <section className="home__services--container">
-                        <div className="summary__container">
-                            <h3 className="summary__header-3">{
-                                (this.props.company && this.props.company.short_description) ? this.props.company.short_description : ''
-                            }</h3>
-                        </div>
-                        <div className="home__services--items-container">
-                            {this.renderServices()}
-                        </div>
-                    </section>
-                    <section className="home__reviews--container">
+                <section className="main__meta-container">
+                    <div className="summary__container">
+                        <h3 className="summary__header-3">{
+                            (this.props.company && this.props.company.short_description) ? this.props.company.short_description : ''
+                        }</h3>
+                    </div>
+                    <div className="services-index__container--home">
+                        {this.renderServices()}
+                    </div>
+                    <div className="home__reviews--container">
                         <div></div>
                         {this.renderReviews()}
                         <div></div>
-                    </section>
-                    <Contact />
+                    </div>
                 </section>
-            </React.Fragment>
+                <Contact />
+            </React.Fragment >
         )
     }
 }

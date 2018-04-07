@@ -1,0 +1,8 @@
+@import '../utils/*';
+.main__meta-container {
+    display: grid;
+    background-image: $white;
+    width: 100vw;
+    justify-items: center;
+    grid-template-rows: repeat(3, fit-content(100%));
+}
