@@ -10,6 +10,7 @@ import createStore from './store/store';
 import Header from './components/header';
 import Footer from './components/footer';
 import Home from './components/home/home_container';
+import About from './components/about/about_container';
 
 const Root = ({ store }) => (
     <Provider store={store}>
@@ -18,11 +19,12 @@ const Root = ({ store }) => (
                 <Route component={Header} />
                 <Switch>
                     <Route exact path="/" component={Home} />
+                    <Route exact path="/about" component={About} />
                 </Switch>
                 <Route component={Footer} />
             </React.Fragment>
         </HashRouter>
-    </Provider>
+    </Provider >
 )
 
 document.addEventListener('DOMContentLoaded', () => {

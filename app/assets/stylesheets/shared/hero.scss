@@ -1,0 +1,28 @@
+@import '../utils/*';
+$hero-height: calc(100vh - 130px);
+.hero__container {
+    height: $hero-height;
+    background-image: $primary-gradient-2;
+    background-size: cover;
+}
+
+.hero__opacity-container {
+    height: $hero-height;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    display: grid;
+}
+
+.hero__header-1 {
+    color: $white;
+    align-self: center;
+    margin-left: $gutter-30;
+}
+
+@media (min-width: 760px) {
+    .hero__container {
+        background-position-y: 80%;
+    }
+    .hero__header-1 {
+        width: 350px;
+    }
+}

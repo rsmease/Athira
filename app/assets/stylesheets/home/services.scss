@@ -1,6 +1,4 @@
-@import '../utils/colors.scss';
-@import '../utils/fonts.scss';
-@import '../utils/layout.scss';
+@import '../utils/*';
 .home__services--container {
     display: grid;
     width: 100vw;
@@ -10,28 +8,9 @@
     justify-items: center;
 }
 
-.home__services--summary-container {
-    display: grid;
-    grid-template-rows: 1fr fit-content(100%);
-    width: 80vw;
-    height: 300px;
-    align-items: center;
-    justify-items: center;
-    align-self: center;
-}
-
-.home__services--summary-text {
-    font-size: $large;
-    text-align: center;
-    color: $primary-dark;
-}
-
-.home__services--summary-container::after {
-    height: 10px;
-    content: "";
-    border-bottom: 1px solid $primary-dark;
-    width: 50vw;
-    display: block;
+.about__mixed--container {
+    @extend .home__services--container;
+    grid-template-rows: 600px auto;
 }
 
 .home__services--items-container {
@@ -39,8 +18,8 @@
     width: 80vw;
     grid-template-rows: fit-content(100%) fit-content(100%);
     grid-template-columns: auto auto;
-    grid-column-gap: $gutter;
-    grid-row-gap: $gutter / 2;
+    grid-column-gap: $gutter-30;
+    grid-row-gap: $gutter-30 / 2;
     align-self: center;
 }
 
@@ -62,7 +41,7 @@
     text-align: center;
     text-transform: uppercase;
     align-self: start;
-    margin-top: $gutter / 2;
+    margin-top: $gutter-30 / 2;
 }
 
 .home__services--item-description {
@@ -71,7 +50,7 @@
     font-size: $baseline;
     width: 80%;
     align-self: start;
-    margin-top: $gutter/2;
+    margin-top: $gutter-30/2;
 }
 
 @media (min-width: 760px) {
@@ -82,18 +61,10 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
-    .home__services--summary-text {
-        font-size: $baseline * 2;
-    }
-    .home__services--summary-text::after {
-        display: block;
-        margin: auto;
-        margin-top: $gutter;
-    }
     .home__services--item-icon {
         font-size: $baseline * 16;
     }
     .home__services--item-description {
-        margin-top: $gutter / 2;
+        margin-top: $gutter-30 / 2;
     }
 }

@@ -1,0 +1,43 @@
+@import '../utils/*';
+.summary__container {
+    display: grid;
+    grid-template-rows: 1fr fit-content(100%);
+    width: 80vw;
+    height: 300px;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+}
+
+.summary__header-3 {
+    text-align: center;
+    color: $primary-dark;
+}
+
+.summary__header-2 {
+    font-size: $subheader;
+    text-align: center;
+    color: $primary-dark;
+    text-transform: uppercase;
+}
+
+.summary__container::after {
+    height: 10px;
+    content: "";
+    border-bottom: 1px solid $primary-dark;
+    width: 50vw;
+    display: block;
+}
+
+@media (min-width: 760px) {
+    .summary__header-3,
+    .summary__header-3 {
+        font-size: $baseline * 2;
+    }
+    .summary__container::after,
+    .summary__container::after {
+        display: block;
+        margin: auto;
+        margin-top: $gutter-30;
+    }
+}

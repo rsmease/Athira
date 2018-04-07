@@ -1,7 +1,8 @@
 @import '../utils/colors.scss';
 @import '../utils/fonts.scss';
 @import '../utils/layout.scss';
-.home__main--container {
+.home__main--container,
+.about__main--container {
     display: grid;
     background-image: $white;
     width: 100vw;
@@ -20,13 +21,13 @@
     grid-template-rows: repeat(4, fit-content(100%));
     justify-items: center;
     justify-content: center;
-    grid-row-gap: $gutter / 2;
+    grid-row-gap: $gutter-30 / 2;
 }
 
 .home__contact--text {
     color: $primary-dark;
     font-size: $header;
-    margin-bottom: $gutter / 2;
+    margin-bottom: $gutter-30 / 2;
     align-self: end;
     justify-self: center;
 }
@@ -50,6 +51,6 @@
         grid-template-rows: none;
     }
     .home__contact--methods-icon {
-        margin: 0 $gutter/2;
+        margin: 0 $gutter-30/2;
     }
 }

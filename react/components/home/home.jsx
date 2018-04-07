@@ -4,6 +4,7 @@ import * as Material from 'react-icons/lib/md';
 
 import ServiceIndexItem from './service_index_item';
 import ReviewIndexItem from './review_index_item';
+import Contact from '../contact/contact';
 
 class Home extends React.Component {
     constructor() {
@@ -54,20 +55,20 @@ class Home extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <section className="home__hero--container"
+                <section className="hero__container"
                     style={this.renderHeroBackground()}>
-                    <div className="home__hero--opacity">
-                        <h1 className="home__hero--text">{
+                    <div className="hero__opacity-container">
+                        <h1 className="hero__header-1">{
                             (this.props.company && this.props.company.headline) ? this.props.company.headline : ''
                         }</h1>
                     </div>
                 </section >
                 <section className="home__main--container">
                     <section className="home__services--container">
-                        <div className="home__services--summary-container">
-                            <h1 className="home__services--summary-text">{
+                        <div className="summary__container">
+                            <h3 className="summary__header-3">{
                                 (this.props.company && this.props.company.short_description) ? this.props.company.short_description : ''
-                            }</h1>
+                            }</h3>
                         </div>
                         <div className="home__services--items-container">
                             {this.renderServices()}
@@ -78,15 +79,7 @@ class Home extends React.Component {
                         {this.renderReviews()}
                         <div></div>
                     </section>
-                    <section className="home__contact--container">
-                        <h1 className="home__contact--text">Say Hello!</h1>
-                        <div className="home__contact--methods">
-                            <Material.MdEmail className="home__contact--methods-icon" />
-                            <h2 className="home__contact--email">hello@athira.com</h2>
-                            <Material.MdPhoneIphone className="home__contact--methods-icon" />
-                            <h2 className="home__contact--phone">(415) 638-1940</h2>
-                        </div>
-                    </section>
+                    <Contact />
                 </section>
             </React.Fragment>
         )

@@ -1,12 +1,10 @@
-@import '../utils/colors.scss';
-@import '../utils/layout.scss';
-@import '../utils/fonts.scss';
+@import '../utils/*';
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 100vw;
-    height: 65px;
+    height: $gutter-65;
     background-color: $primary-dark;
 }
 
@@ -14,8 +12,8 @@ header {
     display: grid;
     justify-items: start;
     align-items: end;
-    margin-left: $gutter / 2;
-    margin-bottom: $gutter / 2;
+    margin-left: $gutter-30 / 2;
+    margin-bottom: $gutter-30 / 2;
 }
 
 .header__navigation-link--container {
@@ -23,13 +21,13 @@ header {
     grid-template-columns: auto auto auto;
     grid-template-rows: 1fr;
     align-items: end;
-    margin-right: $gutter / 2;
-    margin-bottom: $gutter / 2;
+    margin-right: $gutter-30 / 2;
+    margin-bottom: $gutter-30 / 2;
 }
 
 .header__navigation-link {
     color: $secondary-light;
-    margin-left: $gutter / 2;
+    margin-left: $gutter-30 / 2;
 }
 
 .header__logo {
@@ -43,14 +41,14 @@ header {
         grid-template-columns: auto auto auto;
         grid-template-rows: 1fr;
         justify-content: end;
-        margin-right: $gutter;
+        margin-right: $gutter-30;
     }
     .header__logo--container {
-        margin-left: $gutter;
+        margin-left: $gutter-30;
     }
     .header__navigation-link {
         justify-self: start;
         align-self: end;
-        margin-left: $gutter / 2;
+        margin-left: $gutter-30 / 2;
     }
 }

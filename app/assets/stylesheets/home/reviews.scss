@@ -5,7 +5,7 @@
     display: grid;
     width: 100vw;
     grid-template-rows: 0 1fr 1fr 1fr 0;
-    grid-row-gap: $gutter;
+    grid-row-gap: $gutter-30;
     background-color: $primary-light;
     color: $primary-dark;
 }
@@ -19,14 +19,14 @@
 
 .home__reviews--body {
     text-align: center;
-    margin: 0 $gutter;
+    margin: 0 $gutter-30;
     justify-self: center;
     font-size: $baseline;
 }
 
 .home__reviews--name {
     text-align: center;
-    margin-top: $gutter / 2;
+    margin-top: $gutter-30 / 2;
     text-transform: uppercase;
     font-size: $large;
 }

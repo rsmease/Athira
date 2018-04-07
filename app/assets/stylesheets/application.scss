@@ -14,15 +14,9 @@
  *= require_self
  */
 
-@import 'utils/reset';
-@import 'utils/colors';
-@import 'utils/layout';
-@import 'header/header';
-@import 'footer/footer';
-@import 'home/home';
-@import 'home/hero';
-@import 'home/reviews';
-@import 'home/services';
+@import 'utils/*';
+@import 'home/*';
+@import 'shared/*';
 #root {
     display: grid;
     grid-template-columns: 1fr;
