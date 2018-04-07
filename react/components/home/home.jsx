@@ -72,10 +72,8 @@ class Home extends React.Component {
                     <div className="services-index__container--home">
                         {this.renderServices()}
                     </div>
-                    <div className="home__reviews--container">
-                        <div></div>
+                    <div className="reviews-index__container--home">
                         {this.renderReviews()}
-                        <div></div>
                     </div>
                 </section>
                 <Contact />

@@ -1,46 +1,40 @@
 @import '../utils/layout.scss';
 @import '../utils/colors.scss';
 @import '../utils/fonts.scss';
-.home__reviews--container {
+.reviews-index__container--home {
     display: grid;
     width: 100vw;
-    grid-template-rows: 0 1fr 1fr 1fr 0;
+    box-sizing: border-box;
+    padding: $gutter-65 $gutter-30;
+    grid-template-rows: repeat(3, fit-content(100%));
     grid-row-gap: $gutter-30;
     background-color: $primary-light;
+}
+
+.reviews-index-item__container--home {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-row-gap: $gutter-30 / 2;
+    grid-template-rows: repeat(2, fit-content(100%));
+}
+
+.reviews-index-item__header-4--home {
+    text-align: center;
     color: $primary-dark;
 }
 
-.home__reviews--item-container--left,
-.home__reviews--item-container--right {
-    display: grid;
-    align-items: center;
-    grid-template-rows: 1fr fit-content(100%) fit-content(100%) fit-content(100%) 1fr;
-}
-
-.home__reviews--body {
+.reviews-index-item__header-3--home {
     text-align: center;
-    margin: 0 $gutter-30;
-    justify-self: center;
-    font-size: $baseline;
-}
-
-.home__reviews--name {
-    text-align: center;
-    margin-top: $gutter-30 / 2;
     text-transform: uppercase;
-    font-size: $large;
+    color: $primary-dark;
 }
 
 @media (min-width: 760px) {
-    .home__reviews--container {
-        height: 290px;
+    .reviews-index__container--home {
         grid-template-rows: 1fr;
-        grid-template-columns: 0 1fr 1fr 1fr 0;
-    }
-    .home__reviews--body {
-        font-size: $large;
-    }
-    .home__reviews--name {
-        font-size: $subheader;
+        grid-template-columns: repeat(3, fit-content(100%));
+        grid-column-gap: $gutter-65;
+        padding: $gutter-65;
     }
 }

@@ -11,9 +11,8 @@ header {
 .header__logo--container {
     display: grid;
     justify-items: start;
-    align-items: end;
+    align-items: center;
     margin-left: $gutter-30 / 2;
-    margin-bottom: $gutter-30 / 2;
 }
 
 .header__navigation-link--container {
@@ -31,9 +30,8 @@ header {
 }
 
 .header__logo {
-    text-transform: uppercase;
-    font-size: $baseline * 2;
-    color: $secondary-light;
+    margin-top: 3px;
+    height: 40px;
 }
 
 @media (min-width: 760px) {

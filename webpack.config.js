@@ -38,13 +38,18 @@ module.exports = {
     plugins: plugins,
     module: {
         loaders: [{
-            test: /\.jsx?$/,
-            exclude: /(node_modules|bower_components)/,
-            loader: 'babel-loader',
-            query: {
-                presets: ['react', 'es2015']
+                test: /\.jsx?$/,
+                exclude: /(node_modules|bower_components)/,
+                loader: 'babel-loader',
+                query: {
+                    presets: ['react', 'es2015']
+                }
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loader: 'url-loader'
             }
-        }]
+        ]
     },
     devtool: 'source-map'
 };

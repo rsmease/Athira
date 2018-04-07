@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../../app/assets/images/full-logo.png';
 
 class Header extends React.Component {
     constructor() {
@@ -10,7 +11,9 @@ class Header extends React.Component {
         return (
             <header>
                 <section className="header__logo--container">
-                    <Link to="/" className="header__logo">Athira</Link>
+                    <Link to="/" className="header__link--home">
+                        <img className="header__logo" src={Logo} alt="athira logo" />
+                    </Link>
                 </section>
                 <section className="header__navigation-link--container">
                     <Link to="/about" className="header__navigation-link">About</Link>
