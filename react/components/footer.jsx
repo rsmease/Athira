@@ -22,7 +22,6 @@ class Footer extends React.Component {
                     <Link to='/terms'>Terms of Service</Link>
                 </section>
                 <section className="footer__social">
-                    <div></div>
                     <a href="https://www.linkedin.com" target="_blank">
                         <Typicons.TiSocialLinkedinCircular />
                     </a>

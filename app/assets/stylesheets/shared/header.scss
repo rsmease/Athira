@@ -12,7 +12,7 @@ header {
     display: grid;
     justify-items: start;
     align-items: center;
-    margin-left: $gutter-30 / 2;
+    margin-left: $gutter-30;
 }
 
 .header__navigation-link--container {
@@ -25,7 +25,7 @@ header {
 }
 
 .header__navigation-link {
-    color: $secondary-dark;
+    color: $secondary-light;
     margin-left: $gutter-30 / 2;
 }
 
@@ -38,9 +38,6 @@ header {
     .header__navigation-link--container {
         margin-right: $gutter-30;
         justify-content: end;
-    }
-    .header__logo--container {
-        margin-left: $gutter-30;
     }
     .header__navigation-link {
         justify-self: start;
