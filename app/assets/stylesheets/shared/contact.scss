@@ -43,6 +43,9 @@
         grid-template-rows: none;
     }
     .contact__icon {
-        margin: 0 $gutter-30/2;
+        margin-right: $gutter-30/3;
+    }
+    .contact__icon--email {
+        margin-right: $gutter-30/2;
     }
 }
