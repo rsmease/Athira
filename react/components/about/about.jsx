@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
 
 import Contact from '../contact/contact';
+import LeaderIndexItem from './leader_index_item';
 
 class About extends React.Component {
     constructor() {
@@ -19,7 +20,11 @@ class About extends React.Component {
             return (
                 <React.Fragment>
                     {this.props.leaders.map(leader => (
-                        <h1>{leader.name}</h1>
+                        <LeaderIndexItem
+                            key={leader.id}
+                            alignment={leader.id % 2 === 0 ? "left" : "right"}
+                            leader={leader}
+                        />
                     ))}
                 </React.Fragment>
             )
@@ -30,14 +35,14 @@ class About extends React.Component {
             <React.Fragment>
                 <section className="hero__container">
                 </section >
-                <section className="about__main--container">
+                <section className="main__meta-container">
                     <div className="summary__container--with-title">
                         <h2 className="summary__header-2">About Athira</h2>
                         <h3 className="summary__header-3">{
                             (this.props.company && this.props.company.long_description) ? this.props.company.long_description : ''
                         }</h3>
                     </div>
-                    <div className="home__leaders--items-container">
+                    <div className="leaders-index__container">
                         {this.renderLeaders()}
                     </div>
                     <Contact />
