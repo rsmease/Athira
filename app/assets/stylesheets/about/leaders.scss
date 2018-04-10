@@ -23,6 +23,7 @@
     grid-template-rows: repeat(2, fit-content(100%));
     grid-row-gap: $gutter-30;
     justify-items: center;
+    color: $primary-dark;
 }
 
 .leader-index-item__header-2 {
