@@ -66,6 +66,6 @@ company1 = Company.create!(
 leader1 = Leader.create!(
     name: 'M Ria Shah',
     title: 'Owner',
-    description: 'Ria is a global financial and operations professional with 18 yars of experience in international non-profit, the digital market place, higher education, auditing and consulting, specializing in the early growth phase of emerging comanies.',
+    description: 'Ria is a global financial and operations professional with 18 years of experience in international non-profit, the digital market place, higher education, auditing and consulting, specializing in the early growth phase of emerging comanies.',
     headshot_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Blank_woman_placeholder.svg/630px-Blank_woman_placeholder.svg.png'
 )
