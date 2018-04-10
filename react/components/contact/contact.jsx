@@ -9,13 +9,17 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <section className="home__contact--container">
-                <h1 className="home__contact--text">Say Hello!</h1>
-                <div className="home__contact--methods">
-                    <Material.MdEmail className="home__contact--methods-icon" />
-                    <h2 className="home__contact--email">hello@athira.com</h2>
-                    <Material.MdPhoneIphone className="home__contact--methods-icon" />
-                    <h2 className="home__contact--phone">(415) 638-1940</h2>
+            <section className="contact__container">
+                <h1 className="contact__header-1">Say Hello!</h1>
+                <div className="contact__container--methods-index">
+                    <div className="contact__container--methods-index-item">
+                        <Material.MdEmail className="contact__icon contact__icon--email" />
+                        <h4>hello@athira.com</h4>
+                    </div>
+                    <div className="contact__container--methods-index-item">
+                        <Material.MdPhoneIphone className="contact__icon" />
+                        <h4 >(415) 638-1940</h4>
+                    </div>
                 </div>
             </section>
         )

@@ -1,0 +1,48 @@
+@import '../utils/*';
+.contact__container {
+    display: grid;
+    width: 100vw;
+    padding: $gutter-65 0;
+    grid-template-rows: repeat(2, fit-content(100%));
+    grid-row-gap: $gutter-30 / 2;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contact__header-1 {
+    color: $primary-dark;
+    text-transform: uppercase;
+}
+
+.contact__container--methods-index {
+    display: grid;
+    grid-template-rows: repeat(2, fit-content(100%));
+    grid-row-gap: $gutter-30 / 2;
+}
+
+.contact__container--methods-index-item {
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(100%));
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__icon {
+    font-size: $subheader;
+    color: $primary-light;
+}
+
+.contact__icon--email {
+    margin-right: 5px;
+}
+
+@media (min-width: 760px) {
+    .contact__container--methods-index {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none;
+    }
+    .contact__icon {
+        margin: 0 $gutter-30/2;
+    }
+}
