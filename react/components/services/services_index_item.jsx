@@ -8,9 +8,9 @@ class ServicesIndexItem extends React.Component {
             <div className="services-index-item__container">
                 <div className="services-index-item__container--header">
                     <Material.MdRemoveCircle className="services-index-item__icon" />
-                    <h2 className="services-index-item__header-2">{this.props.service.name}</h2>
+                    <h3 className="services-index-item__header-3--name">{this.props.service.name}</h3>
                 </div>
-                <h3 className="services-index-item__header-3">{this.props.service.long_description}</h3>
+                <h3 className="services-index-item__header-3--description">{this.props.service.long_description}</h3>
             </div>
         );
     }
