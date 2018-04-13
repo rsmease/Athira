@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Typicon from 'react-icons/lib/ti';
 
-class ReviewIndexItem extends React.Component {
+class ReviewsIndexItem extends React.Component {
     render() {
         return (
             <div className="reviews-index-item__container--home">
@@ -16,4 +16,4 @@ class ReviewIndexItem extends React.Component {
     }
 }
 
-export default ReviewIndexItem;
+export default ReviewsIndexItem;

@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
 
-import ServiceIndexItem from './services_index_item--home';
-import ReviewIndexItem from './review_index_item--home';
+import ServicesIndexItem from './services_index_item--home';
+import ReviewsIndexItem from './reviews_index_item--home';
 import Contact from '../contact/contact';
 
 class Home extends React.Component {
@@ -32,7 +32,7 @@ class Home extends React.Component {
             return (
                 <React.Fragment>
                     {this.props.services.map(service => (
-                        <ServiceIndexItem key={service.id} service={service} />
+                        <ServicesIndexItem key={service.id} service={service} />
                     ))}
                 </React.Fragment>
             )
@@ -45,7 +45,7 @@ class Home extends React.Component {
                 <React.Fragment>
                     {this.props.reviews.map(function (review, i) {
                         let alignment = (i % 2 === 0 ? 'left' : 'right');
-                        return <ReviewIndexItem key={review.id} review={review} alignment={alignment} />;
+                        return <ReviewsIndexItem key={review.id} review={review} alignment={alignment} />;
                     })}
                 </React.Fragment>
             )

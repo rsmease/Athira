@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Material from 'react-icons/lib/md';
 
-class ServiceIndexItem extends React.Component {
+class ServicesIndexItem extends React.Component {
 
     render() {
         return (
@@ -14,4 +14,4 @@ class ServiceIndexItem extends React.Component {
     }
 }
 
-export default ServiceIndexItem;
+export default ServicesIndexItem;
