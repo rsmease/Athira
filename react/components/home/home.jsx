@@ -14,13 +14,13 @@ class Home extends React.Component {
     componentDidMount() {
         this.props.getAllReviews();
         this.props.getAllServices();
-        this.props.getAllCompanies().then(console.log(this.props));
+        this.props.getAllCompanies();
     }
 
     renderHeroBackground() {
         if (this.props.company && this.props.company.splash_image_url) {
             return {
-                'background-image': `url(${this.props.company.splash_image_url})`
+                'backgroundImage': `url(${this.props.company.splash_image_url})`
             };
         } else {
             return {};

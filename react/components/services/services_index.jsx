@@ -35,7 +35,6 @@ class ServicesIndex extends React.Component {
                         {this.renderServices()}
                     </div>
                 </section>
-                <Contact />
             </React.Fragment >
         )
     }

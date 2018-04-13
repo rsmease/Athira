@@ -1,3 +1,3 @@
 class Service < ApplicationRecord
-    validates :name, :description, presence: true
+    validates :name, :short_description, :long_description, presence: true
 end
