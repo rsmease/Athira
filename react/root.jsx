@@ -11,6 +11,8 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Home from './components/home/home_container';
 import About from './components/about/about_container';
+import Contact from './components/contact/contact';
+import { runInThisContext } from 'vm';
 
 const Root = ({ store }) => (
     <Provider store={store}>
@@ -21,6 +23,7 @@ const Root = ({ store }) => (
                     <Route exact path="/" component={Home} />
                     <Route exact path="/about" component={About} />
                 </Switch>
+                <Route exact path="/contact" component={Contact} />
                 <Route component={Footer} />
             </React.Fragment>
         </HashRouter>

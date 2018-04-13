@@ -17,7 +17,7 @@
 
 .services-index-item__icon--home {
     color: $primary-dark;
-    font-size: $baseline * 8;
+    font-size: 112px;
 }
 
 .services-index-item__header-2--home {
@@ -38,15 +38,12 @@
 }
 
 @media (min-width: 760px) {
-    .home__services--container {
-        height: 900px;
-    }
     .services-index__container--home {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
     .services-index-item__icon--home {
-        font-size: $baseline * 16;
+        font-size: 170px;
     }
     .services-index-item__header-3--home {
         margin-top: $gutter-30 / 2;

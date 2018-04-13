@@ -2,11 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
 
-import ServiceIndexItem from './services_index_item--home';
-import ReviewIndexItem from './review_index_item--home';
-import Contact from '../contact/contact';
+import ServicesIndexItem from './services_index_item';
 
-class Home extends React.Component {
+class ServicesIndex extends React.Component {
     constructor() {
         super();
     }
@@ -69,10 +67,10 @@ class Home extends React.Component {
                             (this.props.company && this.props.company.short_description) ? this.props.company.short_description : ''
                         }</h3>
                     </div>
-                    <div className="services-index__container--home">
+                    <div className="services-index__container--ServiceIndex">
                         {this.renderServices()}
                     </div>
-                    <div className="reviews-index__container--home">
+                    <div className="reviews-index__container--ServiceIndex">
                         {this.renderReviews()}
                     </div>
                 </section>
@@ -82,4 +80,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default ServicesIndex;
