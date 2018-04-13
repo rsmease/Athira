@@ -31,7 +31,7 @@ class ServicesIndex extends React.Component {
                 <section className="hero__container">
                 </section >
                 <section className="main__meta-container">
-                    <div className="services-index__container--ServiceIndex">
+                    <div className="services-index__container">
                         {this.renderServices()}
                     </div>
                 </section>
