@@ -45,3 +45,23 @@ header {
         margin-left: $gutter-30 / 2;
     }
 }
+
+@media (max-width: 350px) {
+    header {
+        height: $gutter-65 + 15;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .header__logo--container {
+        justify-items: center;
+        margin-left: 0px;
+    }
+    .header__logo {
+        margin-top: 8px;
+    }
+    .header__navigation-link--container {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+}
