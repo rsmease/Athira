@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
+import * as ScrollMagic from 'scrollmagic';
+import * as GSAP from 'gsap';
 
 import ServicesIndexItem from './services_index_item--home';
 import ReviewsIndexItem from './reviews_index_item--home';

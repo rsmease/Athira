@@ -1,10 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../app/assets/images/full-logo.png';
+import * as ScrollMagic from 'scrollmagic';
 
 class Header extends React.Component {
     constructor() {
         super();
+    }
+
+    componentDidMount() {
+        this.buildStickyHeaderAnimation();
+    }
+
+    buildStickyHeaderAnimation() {
+        const controller = new ScrollMagic.Controller();
+        const scene = new ScrollMagic.Scene({
+            triggerHook: 0,
+            triggerElement: "header"
+        }).setPin("header").addTo(controller);;
+
     }
 
     render() {
