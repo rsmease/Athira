@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
 
-import ServicesIndexItem from './services_index_item';
+import { ServicesIndexItemLeft, ServicesIndexItemRight } from './services_index_item';
 
 class ServicesIndex extends React.Component {
     constructor() {
@@ -17,9 +17,13 @@ class ServicesIndex extends React.Component {
         if (this.props.services && this.props.services.length) {
             return (
                 <React.Fragment>
-                    {this.props.services.map(service => (
-                        <ServicesIndexItem key={service.id} service={service} />
-                    ))}
+                    {this.props.services.map(service => {
+                        if (service.id % 2 === 0) {
+                            return <ServicesIndexItemLeft key={service.id} service={service} />
+                        } else {
+                            return <ServicesIndexItemRight key={service.id} service={service} />
+                        }
+                    })}
                 </React.Fragment>
             )
         }

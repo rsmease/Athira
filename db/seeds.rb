@@ -20,19 +20,19 @@ service1 = Service.create!(
 service2 = Service.create!(
     name: 'Define Values',
     short_description: 'We define the values for your company',
-    long_description: 'Proin blandit quam eros, nec mollis nibh scelerisque sed. Vestibulum auctor condimentum dolor nec pharetra. Aenean tempor mattis feugiat. Nunc dictum tincidunt velit, id faucibus lorem hendrerit id. Maecenas sed mollis sem, ac suscipit nisl. Nam placerat nulla vitae massa finibus hendrerit. Suspendisse semper risus augue, non efficitur diam tincidunt ullamcorper. Maecenas cursus ac massa quis elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed quam arcu, convallis at sollicitudin id, luctus eget dolor. Nunc quis venenatis velit, ut maximus ligula. Donec ultricies ut erat sit amet lacinia.'
+    long_description: 'Proin blandit quam eros, nec mollis nibh scelerisque sed. Vestibulum auctor condimentum dolor nec pharetra. Aenean tempor mattis feugiat. Nunc dictum tincidunt velit, id faucibus lorem hendrerit id. Maecenas sed mollis sem, ac suscipit nisl. Nam placerat nulla vitae massa finibus hendrerit. Suspendisse semper risus augue, non efficitur diam tincidunt ullamcorper.'
 )
 
 service3 = Service.create!(
     name: 'Find Tools',
     short_description: 'We work to identify tools that will save you time and money',
-    long_description: 'Fusce pretium, sem a ullamcorper auctor, velit magna vestibulum turpis, ut posuere mi ex a libero. Sed molestie venenatis turpis, non luctus erat porta id. Nullam sed orci et dolor hendrerit rhoncus sit amet in nisi. Morbi nunc dui, bibendum vel erat sed, lacinia mattis metus. Nam volutpat efficitur sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget ex pulvinar, euismod quam id, imperdiet libero. Nunc a aliquam sapien. Sed at vehicula urna, vel tincidunt sapien. Morbi velit nibh, ornare sed leo quis, sollicitudin cursus nisi. Nulla condimentum ante quis orci ornare laoreet. Sed lobortis felis leo, nec condimentum risus dignissim a.'
+    long_description: 'Fusce pretium, sem a ullamcorper auctor, velit magna vestibulum turpis, ut posuere mi ex a libero. Sed molestie venenatis turpis, non luctus erat porta id. Nullam sed orci et dolor hendrerit rhoncus sit amet in nisi. Morbi nunc dui, bibendum vel erat sed, lacinia mattis metus. Nam volutpat efficitur sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget ex pulvinar, euismod quam id, imperdiet libero.'
 )
 
 service4 = Service.create!(
     name: 'Build A Community',
     short_description: 'We leverage social media to find you a community of supporters',
-    long_description: 'Phasellus at semper sapien. Nam efficitur venenatis tortor, at convallis neque pharetra id. Ut a sapien ac velit condimentum dignissim. Donec sollicitudin consequat pulvinar. Etiam rhoncus ex id pharetra laoreet. In vehicula est a purus pulvinar, eu vulputate elit scelerisque. Nullam eu maximus felis, et vulputate massa. Duis faucibus sagittis est, vel rhoncus nulla ornare ut. Sed pellentesque orci ac arcu vulputate, eget venenatis nisl hendrerit. Integer quis metus id sem porttitor pharetra. Nunc euismod arcu a lobortis laoreet. Praesent pretium tristique odio at viverra. In in lectus sed ante posuere molestie. Suspendisse pretium rutrum mi, in tempor ex tristique laoreet. Donec vel nibh ullamcorper, auctor nisi quis, feugiat nisi.'
+    long_description: 'Phasellus at semper sapien. Nam efficitur venenatis tortor, at convallis neque pharetra id. Ut a sapien ac velit condimentum dignissim. Donec sollicitudin consequat pulvinar. Etiam rhoncus ex id pharetra laoreet. In vehicula est a purus pulvinar, eu vulputate elit scelerisque. Nullam eu maximus felis, et vulputate massa. Duis faucibus sagittis est, vel rhoncus nulla ornare ut. Sed pellentesque orci ac arcu vulputate, eget venenatis nisl hendrerit.'
 )
 
 review1 = Review.create!(

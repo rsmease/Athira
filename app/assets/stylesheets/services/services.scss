@@ -36,17 +36,17 @@
 }
 
 .services-index-item__header-3--description {
-    color: $dark-gray;
+    color: $primary-dark;
     text-align: justify;
 }
 
 @media (min-width: 760px) {
     .services-index__container {
-        padding: $gutter-30 $gutter-65;
+        padding: $gutter-30 $gutter-65 * 2;
     }
     .services-index-item__container {
         grid-template-columns: repeat(2, fit-content(100%));
-        grid-column-gap: $gutter-65;
+        grid-column-gap: $gutter-30;
         margin: $gutter-30 0;
         justify-content: center;
         align-items: center;
