@@ -15,6 +15,16 @@ class ServicesIndex extends React.Component {
 
     renderServices() {
         if (this.props.services && this.props.services.length) {
+            if (window.innerWidth < 800) {
+                console.log("mobile width")
+                return (
+                    <React.Fragment>
+                        {this.props.services.map(service => {
+                            return <ServicesIndexItemLeft key={service.id} service={service} />
+                        })}
+                    </React.Fragment>
+                )
+            }
             return (
                 <React.Fragment>
                     {this.props.services.map(service => {
