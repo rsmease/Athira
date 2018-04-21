@@ -26,6 +26,8 @@
     text-transform: uppercase;
     margin-top: $gutter-30;
     align-self: center;
+    font-weight: 600;
+    letter-spacing: 1.3px;
 }
 
 .services-index-item__header-3--home {
@@ -35,6 +37,8 @@
     width: 80%;
     align-self: start;
     margin-top: $gutter-30/2;
+    letter-spacing: 1.3px;
+    line-height: 1.21;
 }
 
 @media (min-width: 760px) {

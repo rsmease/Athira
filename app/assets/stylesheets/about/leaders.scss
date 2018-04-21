@@ -29,10 +29,13 @@
 .leader-index-item__header-2 {
     font-size: $h2-big;
     text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 .leader-index-item__header-3 {
     text-align: center;
+    line-height: 1.65;
+    letter-spacing: 1.3px;
 }
 
 @media (min-width: 760px) {

@@ -17,6 +17,8 @@
 .summary__header-3 {
     text-align: center;
     color: $primary-dark;
+    letter-spacing: 1.3px;
+    line-height: 1.65;
 }
 
 .summary__header-2 {
@@ -25,6 +27,7 @@
     text-transform: uppercase;
     margin-bottom: $gutter-30;
     font-size: $h2-big;
+    letter-spacing: 0.8px;
 }
 
 .summary__container::after {

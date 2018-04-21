@@ -33,11 +33,14 @@
     color: $primary-dark;
     text-align: left;
     text-transform: uppercase;
+    letter-spacing: 1.3px;
 }
 
 .services-index-item__header-3--description {
     color: $primary-dark;
     text-align: justify;
+    letter-spacing: 1.3px;
+    line-height: 1.65;
 }
 
 .border-maker {
@@ -59,7 +62,7 @@
     .border-maker {
         height: 1px;
         border-bottom: 1px solid $primary-dark;
-        width: 70vw;
+        width: 60vw;
         margin: auto;
     }
     .border-maker:last-of-type {

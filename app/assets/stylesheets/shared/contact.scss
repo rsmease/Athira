@@ -13,6 +13,7 @@
 .contact__header-1 {
     color: $primary-dark;
     text-transform: uppercase;
+    letter-spacing: 1.3px;
 }
 
 .contact__container--methods-index {
@@ -26,6 +27,11 @@
     grid-template-columns: repeat(2, fit-content(100%));
     align-items: center;
     justify-content: center;
+}
+
+.contact__container--methods-index-item>h4 {
+    letter-spacing: 1.1px;
+    color: $mid-gray;
 }
 
 .contact__icon {

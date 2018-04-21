@@ -18,12 +18,11 @@
 @import 'utils/*';
 @import 'home/*';
 @import 'shared/*';
-#root {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100vw;
-}
-
+// #root {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     width: 100vw;
+// }
 body {
     font-family: 'Proxima Nova', Georgia, sans-serif;
 }
