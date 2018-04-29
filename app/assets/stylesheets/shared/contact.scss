@@ -2,7 +2,7 @@
 .contact__container {
     display: grid;
     width: 100%;
-    padding: $gutter-65 0;
+    padding: 88px 0;
     grid-template-rows: repeat(2, fit-content(100%));
     grid-row-gap: $gutter-30 / 2;
     align-content: center;

@@ -4,9 +4,9 @@
 .reviews-index__container--home {
     display: grid;
     box-sizing: border-box;
-    padding: $gutter-65 $gutter-30;
+    padding: 98px 15vw;
     grid-template-rows: repeat(3, fit-content(100%));
-    grid-row-gap: $gutter-30;
+    grid-row-gap: $gutter-65;
     background-color: $primary-light;
     width: 100%;
 }
@@ -36,6 +36,6 @@
         grid-template-rows: 1fr;
         grid-template-columns: repeat(3, fit-content(100%));
         grid-column-gap: $gutter-65;
-        padding: $gutter-65;
+        padding: 98px 20vw;
     }
 }
