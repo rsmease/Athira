@@ -2,7 +2,8 @@
 .summary__container {
     display: grid;
     width: 80vw;
-    margin: $gutter-65 0;
+    max-width: 1007px;
+    margin: 109px 0;
     align-items: center;
     justify-items: center;
     align-self: center;
@@ -36,12 +37,11 @@
     border-bottom: 1px solid $primary-dark;
     width: 50vw;
     display: block;
+    margin-top: 72px;
 }
 
 @media (min-width: 760px) {
     .summary__container::after {
         display: block;
-        margin: auto;
-        margin-top: $gutter-30;
     }
 }

@@ -1,7 +1,7 @@
 @import '../utils/*';
 .contact__container {
     display: grid;
-    width: 100vw;
+    width: 100%;
     padding: $gutter-65 0;
     grid-template-rows: repeat(2, fit-content(100%));
     grid-row-gap: $gutter-30 / 2;

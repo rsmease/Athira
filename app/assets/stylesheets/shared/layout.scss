@@ -2,7 +2,7 @@
 .main__meta-container {
     display: grid;
     background-image: $white;
-    width: 100vw;
+    width: 100%;
     justify-items: center;
     grid-template-rows: repeat(3, fit-content(100%));
 }

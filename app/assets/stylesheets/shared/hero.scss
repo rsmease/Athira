@@ -1,9 +1,10 @@
 @import '../utils/*';
-$hero-height: calc(100vh - 130px);
+$hero-height: calc(100vh - 182px);
 .hero__container {
     height: $hero-height;
     background-image: $primary-gradient-2;
     background-size: cover;
+    width: 100%;
 }
 
 .hero__opacity-container {
@@ -15,7 +16,8 @@ $hero-height: calc(100vh - 130px);
 .hero__header-1 {
     color: $white;
     letter-spacing: 1.3px;
-    align-self: center;
+    align-self: start;
+    margin-top: 91px;
     margin-left: $gutter-30;
 }
 
@@ -25,5 +27,6 @@ $hero-height: calc(100vh - 130px);
     }
     .hero__header-1 {
         width: 350px;
+        margin-left: 141px;
     }
 }

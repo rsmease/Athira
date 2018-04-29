@@ -1,11 +1,12 @@
 @import '../utils/*';
 .services-index__container--home {
     display: grid;
-    margin: 0 $gutter-30 $gutter-30 $gutter-30;
-    grid-template-rows: fit-content(100%) fit-content(100%);
-    grid-template-columns: auto auto;
-    grid-column-gap: $gutter-30;
+    grid-template-rows: repeat(4, fit-content(100%));
+    grid-template-columns: auto;
     grid-row-gap: $gutter-30;
+    margin-bottom: $gutter-65;
+    padding: 0 $gutter-30;
+    width: 100%;
 }
 
 .services-index-item__container--home {
@@ -43,11 +44,24 @@
 
 @media (min-width: 760px) {
     .services-index__container--home {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        display: grid;
+        grid-template-rows: fit-content(100%) fit-content(100%);
+        grid-template-columns: auto auto;
+        grid-row-gap: $gutter-30;
+        margin-bottom: $gutter-65;
+        width: 80%;
     }
     .services-index-item__icon--home {
         font-size: 170px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .services-index__container--home {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 0;
+        grid-template-rows: 1fr;
+        width: 100%;
     }
     .services-index-item__header-3--home {
         margin-top: $gutter-30 / 2;

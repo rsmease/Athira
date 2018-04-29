@@ -3,12 +3,12 @@
 @import '../utils/fonts.scss';
 .reviews-index__container--home {
     display: grid;
-    width: 100vw;
     box-sizing: border-box;
     padding: $gutter-65 $gutter-30;
     grid-template-rows: repeat(3, fit-content(100%));
     grid-row-gap: $gutter-30;
     background-color: $primary-light;
+    width: 100%;
 }
 
 .reviews-index-item__container--home {
