@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
+
 import * as ScrollMagic from 'scrollmagic';
+import Fade from 'react-reveal/Fade';
 
 import ServicesIndexItem from './services_index_item--home';
 import ReviewsIndexItem from './reviews_index_item--home';
@@ -13,9 +15,9 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-        this.props.getAllReviews();
-        this.props.getAllServices();
-        this.props.getAllCompanies();
+        this.props.getAllReviews()
+        this.props.getAllServices()
+        this.props.getAllCompanies()
     }
 
     renderHeroBackground() {

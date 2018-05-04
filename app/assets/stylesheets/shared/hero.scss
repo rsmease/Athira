@@ -19,6 +19,11 @@ $hero-height: calc(100vh - 182px);
     align-self: start;
     margin-top: 91px;
     margin-left: $gutter-30;
+    -webkit-animation: fadein 6s;
+    -moz-animation: fadein 6s;
+    -ms-animation: fadein 6s;
+    -o-animation: fadein 6s;
+    animation: fadein 6s;
 }
 
 @media (min-width: 760px) {
@@ -28,5 +33,59 @@ $hero-height: calc(100vh - 182px);
     .hero__header-1 {
         width: 350px;
         margin-left: 141px;
+    }
+}
+
+//animation keyframes
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
