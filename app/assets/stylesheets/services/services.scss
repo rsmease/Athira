@@ -50,14 +50,15 @@
 @media (min-width: 800px) {
     .services-index__container {
         padding: $gutter-30 $gutter-65 * 2;
+        margin: 50px 0;
     }
     .services-index-item__container {
         grid-template-columns: repeat(2, fit-content(100%));
         grid-column-gap: $gutter-30;
         grid-row-gap: none;
-        margin: $gutter-30 0;
         justify-content: center;
         align-items: center;
+        margin: 75px 233px;
     }
     .border-maker {
         height: 1px;

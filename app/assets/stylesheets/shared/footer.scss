@@ -6,7 +6,7 @@ footer {
     height: $gutter-65;
     background-color: $primary-dark;
     width: 100%;
-    border: solid 1px #dddddd;
+    border-top: solid 1px #dddddd;
 }
 
 .footer__legal {
@@ -33,6 +33,13 @@ footer {
 .footer__social>a {
     color: $light-gray;
     letter-spacing: 1.3px;
+    transition: color 500ms ease;
+}
+
+.footer__legal>a:hover,
+.footer__legal>p:hover,
+.footer__social>a:hover {
+    color: $primary-light;
 }
 
 .footer__social>a {

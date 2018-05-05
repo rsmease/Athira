@@ -5,6 +5,8 @@ import * as Material from 'react-icons/lib/md';
 import Contact from '../contact/contact';
 import LeaderIndexItem from './leader_index_item';
 
+import Fade from 'react-reveal/Fade';
+
 class About extends React.Component {
     constructor() {
         super();
@@ -36,12 +38,14 @@ class About extends React.Component {
                 <section className="hero__container">
                 </section >
                 <section className="main__meta-container">
-                    <div className="summary__container--with-title">
-                        <h2 className="summary__header-2">About Athira</h2>
-                        <h3 className="summary__header-3">{
-                            (this.props.company && this.props.company.long_description) ? this.props.company.long_description : ''
-                        }</h3>
-                    </div>
+                    <Fade bottom cascade>
+                        <div className="summary__container--with-title">
+                            <h2 className="summary__header-2">About Athira</h2>
+                            <h3 className="summary__header-3">{
+                                (this.props.company && this.props.company.long_description) ? this.props.company.long_description : ''
+                            }</h3>
+                        </div>
+                    </Fade>
                     <div className="leaders-index__container">
                         {this.renderLeaders()}
                     </div>

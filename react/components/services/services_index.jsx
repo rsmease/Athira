@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
 
-import { ServicesIndexItemLeft, ServicesIndexItemRight } from './services_index_item';
+import { ServicesIndexItemLeft, ServicesIndexItemRight, ServicesIndexItemMobile } from './services_index_item';
 
 class ServicesIndex extends React.Component {
     constructor() {
@@ -16,11 +16,10 @@ class ServicesIndex extends React.Component {
     renderServices() {
         if (this.props.services && this.props.services.length) {
             if (window.innerWidth < 800) {
-                console.log("mobile width")
                 return (
                     <React.Fragment>
                         {this.props.services.map(service => {
-                            return <ServicesIndexItemLeft key={service.id} service={service} />
+                            return <ServicesIndexItemMobile key={service.id} service={service} />
                         })}
                     </React.Fragment>
                 )

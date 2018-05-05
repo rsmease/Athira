@@ -1,11 +1,12 @@
 import React from 'react';
 import * as Material from 'react-icons/lib/md';
+import Fade from 'react-reveal/fade';
 
 export class ServicesIndexItemLeft extends React.Component {
 
     render() {
         return (
-            <React.Fragment>
+            <Fade left>
                 <div className="services-index-item__container">
                     <div className="services-index-item__container--header">
                         <Material.MdRemoveCircle className="services-index-item__icon" />
@@ -14,7 +15,7 @@ export class ServicesIndexItemLeft extends React.Component {
                     <h3 className="services-index-item__header-3--description">{this.props.service.long_description}</h3>
                 </div>
                 <div className="border-maker"></div>
-            </React.Fragment>
+            </Fade>
         );
     }
 }
@@ -23,7 +24,7 @@ export class ServicesIndexItemRight extends React.Component {
 
     render() {
         return (
-            <React.Fragment>
+            <Fade right>
                 <div className="services-index-item__container">
                     <h3 className="services-index-item__header-3--description">{this.props.service.long_description}</h3>
                     <div className="services-index-item__container--header">
@@ -32,10 +33,25 @@ export class ServicesIndexItemRight extends React.Component {
                     </div>
                 </div>
                 <div className="border-maker"></div>
-            </React.Fragment>
+            </Fade>
         );
     }
 }
 
-        // export const ServicesIndexItemLeft;
-// export const ServicesIndexItemRight;
+export class ServicesIndexItemMobile extends React.Component {
+
+    render() {
+        return (
+            <Fade bottom cascade>
+                <div className="services-index-item__container">
+                    <div className="services-index-item__container--header">
+                        <Material.MdRemoveCircle className="services-index-item__icon" />
+                        <h3 className="services-index-item__header-3--name">{this.props.service.name}</h3>
+                    </div>
+                    <h3 className="services-index-item__header-3--description">{this.props.service.long_description}</h3>
+                </div>
+                <div className="border-maker"></div>
+            </Fade>
+        );
+    }
+}

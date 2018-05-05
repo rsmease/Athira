@@ -42,9 +42,8 @@
     .leader-index-item__container {
         grid-template-columns: repeat(2, fit-content(100%));
         grid-template-rows: none;
-        grid-column-gap: $gutter-30;
-        margin: none;
-        width: 80vw;
+        grid-column-gap: 76px;
+        width: 65vw;
         box-sizing: border-box;
     }
     .leader-index-item__headshot {
