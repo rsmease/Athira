@@ -1,6 +1,6 @@
 class Admin::ImageCarouselsController < ApplicationController
     def index
-        @image_carousels = ImageCarousels.all
+        @image_carousels = ImageCarousel.all
         render 'admin/image_carousels/index'
     end
 

@@ -15,9 +15,10 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-        this.props.getAllReviews()
-        this.props.getAllServices()
-        this.props.getAllCompanies()
+        this.props.getAllReviews();
+        this.props.getAllServices();
+        this.props.getAllCompanies();
+        this.props.getAllImageCarousels();
     }
 
     renderHeroBackground() {
