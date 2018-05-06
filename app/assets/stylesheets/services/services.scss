@@ -49,7 +49,8 @@
 
 @media (min-width: 800px) {
     .services-index__container {
-        padding: $gutter-30 $gutter-65 * 2;
+        padding: $gutter-30 0;
+        justify-items: center;
         margin: 50px 0;
     }
     .services-index-item__container {
@@ -58,7 +59,8 @@
         grid-row-gap: none;
         justify-content: center;
         align-items: center;
-        margin: 75px 233px;
+        margin: 75px 0;
+        width: 70vw;
     }
     .border-maker {
         height: 1px;
