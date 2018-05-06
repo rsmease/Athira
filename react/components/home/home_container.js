@@ -8,7 +8,7 @@ import Home from './home';
 import * as ReviewActions from '../../actions/review_actions';
 import * as ServiceActions from '../../actions/service_actions';
 import * as CompanyActions from '../../actions/company_actions';
-import * as ImageCarouselActions from '../../ations/image_carousel_actions';
+import * as ImageCarouselActions from '../../actions/image_carousel_actions';
 import {
     getAllImageCarousels
 } from '../../actions/image_carousel_actions';

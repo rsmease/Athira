@@ -1,4 +1,4 @@
-import * as ImageCarouselsAJAX from '../ajax/image_carousel_ajax';
+import * as ImageCarouselsAJAX from '../ajax/image_carousels_ajax';
 
 export const RECEIVE_IMAGE_CAROUSEL = 'RECEIVE_IMAGE_CAROUSEL';
 export const RECEIVE_ALL_IMAGE_CAROUSELS = 'RECEIVE_ALL_IMAGE_CAROUSELS';
