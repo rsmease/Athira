@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
 
 import { ServicesIndexItemLeft, ServicesIndexItemRight, ServicesIndexItemMobile } from './services_index_item';
+import HeroCarousel from '../hero/hero_carousel';
 
 class ServicesIndex extends React.Component {
     constructor() {
@@ -41,8 +42,15 @@ class ServicesIndex extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <section className="hero__container">
-                </section >
+                <HeroCarousel
+                    imageURLs={
+                        this.props.imageCarousel && this.props.imageCarousel.length ? this.props.imageCarousel[0].urls : []
+                    }
+                    headline={
+                        this.props.imageCarousel && this.props.imageCarousel.length ?
+                            this.props.imageCarousel[0].headline : ''
+                    }
+                />
                 <section className="main__meta-container">
                     <div className="services-index__container">
                         {this.renderServices()}

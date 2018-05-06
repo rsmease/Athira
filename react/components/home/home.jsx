@@ -64,6 +64,9 @@ class Home extends React.Component {
                     imageURLs={
                         this.props.imageCarousel.length ? this.props.imageCarousel[0].urls : []
                     }
+                    headline={
+                        this.props.imageCarousel.length ? this.props.imageCarousel[0].headline : ''
+                    }
                 />
                 <section className="main__meta-container">
                     <div className="summary__container">

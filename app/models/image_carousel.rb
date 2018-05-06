@@ -1,3 +1,3 @@
 class ImageCarousel < ApplicationRecord
-    validates :location, :urls, presence: true
+    validates :location, :urls, :headline, presence: true
 end

@@ -72,7 +72,7 @@ leader1 = Leader.create!(
     name: 'M Ria Shah',
     title: 'Owner',
     description: 'Ria is a global financial and operations professional with 18 years of experience in international non-profit, the digital market place, higher education, auditing and consulting, specializing in the early growth phase of emerging comanies.',
-    headshot_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Blank_woman_placeholder.svg/630px-Blank_woman_placeholder.svg.png'
+    headshot_url: 'https://images.unsplash.com/photo-1503186528747-b747035d1401?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea2b3a85e854e98130d3e7c58ff1fc0c&auto=format&fit=crop&w=999&q=80'
 )
 
 image_carousel1 = ImageCarousel.create!(
@@ -82,35 +82,39 @@ image_carousel1 = ImageCarousel.create!(
         'https://images.unsplash.com/photo-1493551511613-abc8320c265e?ixlib=rb-0.3.5&s=a7ca157eedcbcdbbcf7286ffc545c480&auto=format&fit=crop&w=1950&q=80',
         'https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a322c74c18eb76a9884e03724ddf7a9&auto=format&fit=crop&w=2978&q=80',
         'https://images.unsplash.com/photo-1444663837429-d2d894a77c77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cca3645c73e16e83608ffe03b414e13&auto=format&fit=crop&w=1992&q=80'
-    ]
+    ],
+    headline: 'Light the Fire, Grow Your Dream'
 )
 
 image_carousel2 = ImageCarousel.create!(
     location: 'about',
     urls: [
-        'https://images.unsplash.com/photo-1520428166013-aa14a295cb19?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8203a433fe2a2c11251cb6ac6438855c&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1493551511613-abc8320c265e?ixlib=rb-0.3.5&s=a7ca157eedcbcdbbcf7286ffc545c480&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a322c74c18eb76a9884e03724ddf7a9&auto=format&fit=crop&w=2978&q=80',
-        'https://images.unsplash.com/photo-1444663837429-d2d894a77c77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cca3645c73e16e83608ffe03b414e13&auto=format&fit=crop&w=1992&q=80'
-    ]
+        'https://images.unsplash.com/photo-1455793067932-146d5b4a694f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0a99a121c6a007e3cc9ecda129bb61a1&auto=format&fit=crop&w=934&q=80',
+        'https://images.unsplash.com/photo-1467241850596-6a0de48568da?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c1f57e313ec82598cfb80047483e93a&auto=format&fit=crop&w=933&q=80',
+        'https://images.unsplash.com/photo-1518707101210-10794fcdc3f0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d124d3625023f15aa18624f0295b4173&auto=format&fit=crop&w=1955&q=80',
+        'https://images.unsplash.com/photo-1518008931783-51b25ba2ccc9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=87a6a9889936a62f928eb3e67f348907&auto=format&fit=crop&w=1950&q=80'
+    ],
+    headline: 'Your Business, Evolved'
 )
 
 image_carousel3 = ImageCarousel.create!(
     location: 'services',
     urls: [
-        'https://images.unsplash.com/photo-1520428166013-aa14a295cb19?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8203a433fe2a2c11251cb6ac6438855c&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1493551511613-abc8320c265e?ixlib=rb-0.3.5&s=a7ca157eedcbcdbbcf7286ffc545c480&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a322c74c18eb76a9884e03724ddf7a9&auto=format&fit=crop&w=2978&q=80',
-        'https://images.unsplash.com/photo-1444663837429-d2d894a77c77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cca3645c73e16e83608ffe03b414e13&auto=format&fit=crop&w=1992&q=80'
-    ]
+        'https://images.unsplash.com/photo-1518557743312-e86ea8b29b3b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a889fdfafc4123f38dabc056e8ba8b3b&auto=format&fit=crop&w=1955&q=80',
+        'https://images.unsplash.com/photo-1504438652155-a421a09f1f1c?ixlib=rb-0.3.5&s=8051aaffbf40f1ecda174e95d5d7f90c&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1521508567009-a6d821b3db22?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f59eacb18a82d459d9be6ce4d81c8fa6&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1519458861917-ec46e733681b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e87a6e62cf9d86971837469c3e44a26a&auto=format&fit=crop&w=1950&q=80'
+    ],
+    headline: 'Providing Services To Your Business'
 )
 
 image_carousel4 = ImageCarousel.create!(
     location: 'contact',
     urls: [
-        'https://images.unsplash.com/photo-1520428166013-aa14a295cb19?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8203a433fe2a2c11251cb6ac6438855c&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1493551511613-abc8320c265e?ixlib=rb-0.3.5&s=a7ca157eedcbcdbbcf7286ffc545c480&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a322c74c18eb76a9884e03724ddf7a9&auto=format&fit=crop&w=2978&q=80',
-        'https://images.unsplash.com/photo-1444663837429-d2d894a77c77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cca3645c73e16e83608ffe03b414e13&auto=format&fit=crop&w=1992&q=80'
-    ]
+        'https://images.unsplash.com/photo-1505210069911-a8e20f39ae6f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5889fa8316c30ec614bfeeadaf9f1fe2&auto=format&fit=crop&w=963&q=80',
+        'https://images.unsplash.com/photo-1506277450472-30e3f3f55129?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f1d9511266a5133052e7a7778f856171&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1492104387331-206462f14a88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=669f876b55701abd081133e601502ab3&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1504890283869-c3de3cea0c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea9ddbbfc4a373c1b0f92a50cd68e4d2&auto=format&fit=crop&w=1950&q=80'
+    ],
+    headline: ''
 )

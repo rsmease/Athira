@@ -9,9 +9,6 @@ import * as ReviewActions from '../../actions/review_actions';
 import * as ServiceActions from '../../actions/service_actions';
 import * as CompanyActions from '../../actions/company_actions';
 import * as ImageCarouselActions from '../../actions/image_carousel_actions';
-import {
-    getAllImageCarousels
-} from '../../actions/image_carousel_actions';
 
 const mapStateToProps = (state, ownProps) => ({
     services: _.values(state.services),

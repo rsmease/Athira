@@ -8,28 +8,32 @@ class HeroCarousel extends React.Component {
     }
 
     renderImages() {
-        console.log(this.props.imageURLs)
+        const settings = {
+            dots: true,
+            arrows: true,
+            infinite: true,
+            speed: 2000,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            fade: true,
+            swipe: true
+        };
         if (this.props.imageURLs && this.props.imageURLs.length) {
             return (
-                <React.Fragment>
+                <Slider {...settings}>
                     {this.props.imageURLs.map(imageURL => (
-                        <HeroCarouselImage key={Math.random()} imageURL={imageURL} headline='Test of Headline' />
+                        <HeroCarouselImage key={Math.random()} imageURL={imageURL} headline={this.props.headline ? this.props.headline : ''} />
                     ))}
-                </React.Fragment>
+                </Slider>
             )
         }
     }
 
     render() {
-        const settings = {
-            dots: true,
-            infinite: true,
-            speed: 500
-        };
         return (
-            <Slider {...settings}>
+            <div className='hero__container'>
                 {this.renderImages()}
-            </Slider>
+            </div>
         )
     }
 }

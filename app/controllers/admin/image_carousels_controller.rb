@@ -38,6 +38,6 @@ class Admin::ImageCarouselsController < ApplicationController
 
     private
     def image_carousel_params
-        params.require(:image_carousel).permit(:location, :urls)
+        params.require(:image_carousel).permit(:location, :urls, :headline)
     end
 end
