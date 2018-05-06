@@ -7,7 +7,7 @@ export class ServicesIndexItemLeft extends React.Component {
     render() {
         return (
             <Fade left>
-                <div className="services-index-item__container">
+                <div className="services-index-item__container" id={this.props.service.name.split(' ').join('_').toLowerCase()}>
                     <div className="services-index-item__container--header">
                         <Material.MdRemoveCircle className="services-index-item__icon" />
                         <h3 className="services-index-item__header-3--name">{this.props.service.name}</h3>
@@ -25,7 +25,7 @@ export class ServicesIndexItemRight extends React.Component {
     render() {
         return (
             <Fade right>
-                <div className="services-index-item__container">
+                <div className="services-index-item__container" id={this.props.service.name.split(' ').join('_').toLowerCase()}>
                     <h3 className="services-index-item__header-3--description">{this.props.service.long_description}</h3>
                     <div className="services-index-item__container--header">
                         <Material.MdRemoveCircle className="services-index-item__icon" />
@@ -33,7 +33,7 @@ export class ServicesIndexItemRight extends React.Component {
                     </div>
                 </div>
                 <div className="border-maker"></div>
-            </Fade>
+            </Fade >
         );
     }
 }
@@ -43,7 +43,7 @@ export class ServicesIndexItemMobile extends React.Component {
     render() {
         return (
             <Fade bottom cascade>
-                <div className="services-index-item__container">
+                <div className="services-index-item__container" id={this.props.service.name.split(' ').join('_').toLowerCase()}>
                     <div className="services-index-item__container--header">
                         <Material.MdRemoveCircle className="services-index-item__icon" />
                         <h3 className="services-index-item__header-3--name">{this.props.service.name}</h3>
