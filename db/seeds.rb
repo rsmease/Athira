@@ -10,6 +10,7 @@ Service.destroy_all
 Review.destroy_all
 Company.destroy_all
 Leader.destroy_all
+ImageCarousel.destroy_all
 
 service1 = Service.create!(
     name: 'Draw A Roadmap',
@@ -72,4 +73,44 @@ leader1 = Leader.create!(
     title: 'Owner',
     description: 'Ria is a global financial and operations professional with 18 years of experience in international non-profit, the digital market place, higher education, auditing and consulting, specializing in the early growth phase of emerging comanies.',
     headshot_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Blank_woman_placeholder.svg/630px-Blank_woman_placeholder.svg.png'
+)
+
+image_carousel1 = ImageCarousel.create!(
+    location: 'home',
+    urls: [
+        'https://images.unsplash.com/photo-1520428166013-aa14a295cb19?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8203a433fe2a2c11251cb6ac6438855c&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1493551511613-abc8320c265e?ixlib=rb-0.3.5&s=a7ca157eedcbcdbbcf7286ffc545c480&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a322c74c18eb76a9884e03724ddf7a9&auto=format&fit=crop&w=2978&q=80',
+        'https://images.unsplash.com/photo-1444663837429-d2d894a77c77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cca3645c73e16e83608ffe03b414e13&auto=format&fit=crop&w=1992&q=80'
+    ]
+)
+
+image_carousel2 = ImageCarousel.create!(
+    location: 'about',
+    urls: [
+        'https://images.unsplash.com/photo-1520428166013-aa14a295cb19?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8203a433fe2a2c11251cb6ac6438855c&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1493551511613-abc8320c265e?ixlib=rb-0.3.5&s=a7ca157eedcbcdbbcf7286ffc545c480&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a322c74c18eb76a9884e03724ddf7a9&auto=format&fit=crop&w=2978&q=80',
+        'https://images.unsplash.com/photo-1444663837429-d2d894a77c77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cca3645c73e16e83608ffe03b414e13&auto=format&fit=crop&w=1992&q=80'
+    ]
+)
+
+image_carousel3 = ImageCarousel.create!(
+    location: 'services',
+    urls: [
+        'https://images.unsplash.com/photo-1520428166013-aa14a295cb19?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8203a433fe2a2c11251cb6ac6438855c&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1493551511613-abc8320c265e?ixlib=rb-0.3.5&s=a7ca157eedcbcdbbcf7286ffc545c480&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a322c74c18eb76a9884e03724ddf7a9&auto=format&fit=crop&w=2978&q=80',
+        'https://images.unsplash.com/photo-1444663837429-d2d894a77c77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cca3645c73e16e83608ffe03b414e13&auto=format&fit=crop&w=1992&q=80'
+    ]
+)
+
+image_carousel4 = ImageCarousel.create!(
+    location: 'contact',
+    urls: [
+        'https://images.unsplash.com/photo-1520428166013-aa14a295cb19?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8203a433fe2a2c11251cb6ac6438855c&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1493551511613-abc8320c265e?ixlib=rb-0.3.5&s=a7ca157eedcbcdbbcf7286ffc545c480&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1491146179969-d674118945ff?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a322c74c18eb76a9884e03724ddf7a9&auto=format&fit=crop&w=2978&q=80',
+        'https://images.unsplash.com/photo-1444663837429-d2d894a77c77?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cca3645c73e16e83608ffe03b414e13&auto=format&fit=crop&w=1992&q=80'
+    ]
 )
