@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     resources :reviews
     resources :companies
     resources :leaders
+    resources :image_carousels
   end
 end

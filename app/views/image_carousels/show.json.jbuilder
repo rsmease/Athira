@@ -1,0 +1,1 @@
+json.partial! 'admin/image_carousels/image_carousel', image_carousel: @image_carousel
