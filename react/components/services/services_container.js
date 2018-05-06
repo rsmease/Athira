@@ -15,7 +15,7 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
     getAllServices: () => dispatch(ServiceActions.getAllServices()),
-    getAllCarouselImages: () => dispatch(ImageCarouselActions.getAllImageCarousels())
+    getAllImageCarousels: () => dispatch(ImageCarouselActions.getAllImageCarousels())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ServicesIndex);

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import createStore from './store/store';
 
@@ -13,11 +13,10 @@ import Home from './components/home/home_container';
 import About from './components/about/about_container';
 import Contact from './components/contact/contact';
 import ServicesIndex from './components/services/services_container';
-import { runInThisContext } from 'vm';
 
 const Root = ({ store }) => (
     <Provider store={store}>
-        <HashRouter>
+        <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
             <React.Fragment>
                 <Route component={Header} />
                 <Switch>
@@ -28,7 +27,7 @@ const Root = ({ store }) => (
                 </Switch>
                 <Route component={Footer} />
             </React.Fragment>
-        </HashRouter>
+        </BrowserRouter>
     </Provider >
 )
 

@@ -14,15 +14,10 @@ class About extends React.Component {
     }
 
     componentDidMount() {
-        if (!this.props.leaders || !this.props.leaders.length) {
-            this.props.getAllLeaders();
-        }
-        if (!this.props.company || !this.props.company.size) {
-            this.props.getAllCompanies();
-        }
-        if (!this.props.imageCarousel || !this.props.imageCarousel.length) {
-            this.props.getAllImageCarousels();
-        }
+        this.props.getAllLeaders();
+        this.props.getAllCompanies();
+        this.props.getAllImageCarousels();
+
     }
 
     renderLeaders() {
