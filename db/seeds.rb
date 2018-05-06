@@ -116,5 +116,5 @@ image_carousel4 = ImageCarousel.create!(
         'https://images.unsplash.com/photo-1492104387331-206462f14a88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=669f876b55701abd081133e601502ab3&auto=format&fit=crop&w=1950&q=80',
         'https://images.unsplash.com/photo-1504890283869-c3de3cea0c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea9ddbbfc4a373c1b0f92a50cd68e4d2&auto=format&fit=crop&w=1950&q=80'
     ],
-    headline: ''
+    headline: 'Get in touch'
 )
