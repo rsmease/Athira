@@ -16,7 +16,7 @@ class Header extends React.Component {
         const controller = new ScrollMagic.Controller();
         const scene = new ScrollMagic.Scene({
             triggerHook: 0,
-            triggerElement: "header"
+            triggerElement: "header",
         }).setPin("header").addTo(controller);;
 
     }

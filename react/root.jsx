@@ -33,7 +33,6 @@ const Root = ({ store }) => (
 
 document.addEventListener('DOMContentLoaded', () => {
     const store = createStore();
-    console.log(store);
     const root = document.getElementById('root');
     ReactDOM.render(<Root store={store} />, root);
 });
