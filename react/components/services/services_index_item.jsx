@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Material from 'react-icons/lib/md';
-import Fade from 'react-reveal/fade';
+import Fade from 'react-reveaL/Fade';
 
 export class ServicesIndexItemLeft extends React.Component {
 
