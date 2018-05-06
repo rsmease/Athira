@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180413131220) do
+ActiveRecord::Schema.define(version: 20180506154558) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 20180413131220) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "splash_image_url", default: "", null: false
+  end
+
+  create_table "image_carousels", force: :cascade do |t|
+    t.string "location", null: false
+    t.string "urls", default: [], null: false, array: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "leaders", force: :cascade do |t|
