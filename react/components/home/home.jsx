@@ -5,6 +5,7 @@ import * as Material from 'react-icons/lib/md';
 import * as ScrollMagic from 'scrollmagic';
 import Fade from 'react-reveal/Fade';
 
+import HeroCarousel from '../hero/hero_carousel';
 import ServicesIndexItem from './services_index_item--home';
 import ReviewsIndexItem from './reviews_index_item--home';
 import Contact from '../contact/contact';
@@ -59,14 +60,11 @@ class Home extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <section className="hero__container"
-                    style={this.renderHeroBackground()}>
-                    <div className="hero__opacity-container">
-                        <h1 className="hero__header-1">{
-                            (this.props.company && this.props.company.headline) ? this.props.company.headline : ''
-                        }</h1>
-                    </div>
-                </section >
+                <HeroCarousel
+                    imageURLs={
+                        this.props.imageCarousel.length ? this.props.imageCarousel[0].urls : []
+                    }
+                />
                 <section className="main__meta-container">
                     <div className="summary__container">
                         <h3 className="summary__header-3">{
