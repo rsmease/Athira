@@ -55,7 +55,7 @@ header {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
     header {
         height: $gutter-65 + 15;
         grid-template-columns: 1fr;

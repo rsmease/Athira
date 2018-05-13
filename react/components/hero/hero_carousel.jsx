@@ -12,11 +12,12 @@ class HeroCarousel extends React.Component {
             dots: true,
             arrows: true,
             infinite: true,
-            speed: 2000,
+            speed: 6000,
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 6000,
             fade: true,
-            swipe: true
+            swipe: true,
+            pauseOnHover: false
         };
         if (this.props.imageURLs && this.props.imageURLs.length) {
             return (

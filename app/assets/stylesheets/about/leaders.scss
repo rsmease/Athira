@@ -9,8 +9,18 @@
     display: grid;
     grid-template-rows: repeat(2, fit-content(100%));
     grid-row-gap: $gutter-30;
-    margin: 0 $gutter-30;
+    margin: 0 $gutter-65 $gutter-30 $gutter-65;
     width: 100wv;
+    z-index: 1;
+    position: relative;
+}
+
+.leader-backdrop {
+    position: absolute;
+    height: 120px;
+    top: 30px;
+    background-color: $primary-light;
+    width: 100%;
 }
 
 .leader-index-item__headshot {
@@ -40,21 +50,11 @@
 
 @media (min-width: 760px) {
     .leader-index-item__container {
-        grid-template-columns: repeat(2, fit-content(100%));
-        grid-template-rows: none;
-        grid-column-gap: 76px;
         width: 65vw;
         box-sizing: border-box;
+        justify-items: center;
     }
     .leader-index-item__headshot {
-        width: 400px;
-    }
-    .leader-index-item__container--text {
-        grid-template-rows: repeat(2, fit-content(100%));
-        grid-template-columns: none;
-        justify-items: start;
-    }
-    .leader-index-item__header-3 {
-        text-align: left;
+        width: 200px;
     }
 }

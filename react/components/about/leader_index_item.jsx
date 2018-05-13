@@ -12,6 +12,7 @@ class LeaderIndexItem extends React.Component {
                 cascade
             >
                 <div className="leader-index-item__container">
+                    <div className="leader-backdrop"></div>
                     <img className="leader-index-item__headshot" src={this.props.leader.headshot_url} alt={`${this.props.leader.name} headshot`} />
                     <div className="leader-index-item__container--text">
                         <h2 className="leader-index-item__header-2">{this.props.leader.name}</h2>
