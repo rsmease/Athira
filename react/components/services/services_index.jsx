@@ -4,6 +4,7 @@ import * as Material from 'react-icons/lib/md';
 
 import { ServicesIndexItemLeft, ServicesIndexItemRight, ServicesIndexItemMobile } from './services_index_item';
 import HeroCarousel from '../hero/hero_carousel';
+import Contact from '../contact/contact';
 
 class ServicesIndex extends React.Component {
     constructor() {
@@ -56,6 +57,7 @@ class ServicesIndex extends React.Component {
                     <div className="services-index__container">
                         {this.renderServices()}
                     </div>
+                    <Contact />
                 </section>
             </React.Fragment >
         )

@@ -2,7 +2,7 @@
 .services-index__container {
     display: grid;
     width: 100vw;
-    padding: $gutter-65 $gutter-30;
+    padding: $gutter-65 $gutter-30 0 $gutter-30;
     box-sizing: border-box;
     grid-template-rows: repeat(8, fit-content(100%));
     grid-template-columns: 1fr;
@@ -49,9 +49,9 @@
 
 @media (min-width: 800px) {
     .services-index__container {
-        padding: $gutter-30 0;
+        padding: $gutter-30 0 0 0;
         justify-items: center;
-        margin: 50px 0;
+        margin: 50px 0 0 0;
     }
     .services-index-item__container {
         grid-template-columns: repeat(2, fit-content(100%));
@@ -67,11 +67,10 @@
         border-bottom: 1px solid $primary-dark;
         width: 60vw;
         margin: auto;
-    }
-    .border-maker:last-of-type {
-        height: 0px;
-        border-bottom: none;
-    }
+    } // .border-maker:last-of-type {
+    //     height: 0px;
+    //     border-bottom: none;
+    // }
     .services-index-item__container--header {
         width: 200px;
     }
