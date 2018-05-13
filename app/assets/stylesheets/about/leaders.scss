@@ -8,7 +8,7 @@
 .leader-index-item__container {
     display: grid;
     grid-template-rows: repeat(2, fit-content(100%));
-    grid-row-gap: $gutter-30;
+    grid-row-gap: 45px;
     margin: 0 $gutter-65 $gutter-30 $gutter-65;
     width: 100wv;
     z-index: 1;
