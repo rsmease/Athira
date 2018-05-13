@@ -35,7 +35,7 @@
     .reviews-index__container--home {
         grid-template-rows: 1fr;
         grid-template-columns: repeat(3, fit-content(100%));
-        grid-column-gap: $gutter-65;
-        padding: 98px 20vw;
+        grid-column-gap: 98px;
+        padding: 98px;
     }
 }
