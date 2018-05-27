@@ -7,7 +7,9 @@ header {
     height: 91px;
     border-bottom: solid 1px #dddddd;
     background-color: $primary-dark;
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .header__logo--container {
