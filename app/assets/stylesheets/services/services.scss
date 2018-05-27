@@ -55,7 +55,7 @@
     }
     .services-index-item__container {
         grid-template-columns: repeat(2, fit-content(100%));
-        grid-column-gap: $gutter-30;
+        grid-column-gap: 55px;
         grid-row-gap: none;
         justify-content: center;
         align-items: center;
@@ -67,15 +67,12 @@
         border-bottom: 1px solid $primary-dark;
         width: 60vw;
         margin: auto;
-    } // .border-maker:last-of-type {
-    //     height: 0px;
-    //     border-bottom: none;
-    // }
+    }
     .services-index-item__container--header {
         width: 200px;
     }
     .services-index-item__icon {
-        font-size: 170px;
+        font-size: 185px;
     }
     .services-index-item__header-3--name {
         text-align: center;

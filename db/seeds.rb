@@ -72,7 +72,7 @@ leader1 = Leader.create!(
     name: 'M Ria Shah',
     title: 'Owner',
     description: 'Ria is a global financial and operations professional with 18 years of experience in international non-profit, the digital market place, higher education, auditing and consulting, specializing in the early growth phase of emerging comanies.',
-    headshot_url: 'https://images.unsplash.com/photo-1503186528747-b747035d1401?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea2b3a85e854e98130d3e7c58ff1fc0c&auto=format&fit=crop&w=999&q=80'
+    headshot_url: 'http://gdurl.com/t08f'
 )
 
 image_carousel1 = ImageCarousel.create!(
