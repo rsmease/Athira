@@ -11,7 +11,7 @@ class ReviewsIndexItem extends React.Component {
                         "{this.props.review.body}"
                 </h4>
                     <h3 className="reviews-index-item__header-3--home">
-                        -{this.props.review.reviewer_name}
+                        -  {this.props.review.reviewer_name}
                     </h3>
                 </div>
             </Fade>

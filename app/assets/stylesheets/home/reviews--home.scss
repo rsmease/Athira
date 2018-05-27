@@ -22,11 +22,14 @@
 .reviews-index-item__header-4--home {
     text-align: center;
     color: $primary-dark;
+    letter-spacing: 1.3px;
+    line-height: 1.21;
 }
 
 .reviews-index-item__header-3--home {
     text-align: center;
     text-transform: uppercase;
+    font-weight: 600;
     color: $primary-dark;
     letter-spacing: 1.3px;
 }

@@ -34,3 +34,17 @@ a {
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: asset-url('ProximaNova-Semibold.otf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+// @font-face {
+//     font-family: 'Proxima Nova';
+//     src: asset-url('ProximaNova-Extrabld.otf');
+//     font-size: normal;
+//     font-weight: 800;
+// }
