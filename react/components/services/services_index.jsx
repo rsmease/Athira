@@ -44,15 +44,6 @@ class ServicesIndex extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <HeroCarousel
-                    imageURLs={
-                        this.props.imageCarousel && this.props.imageCarousel.length ? this.props.imageCarousel[0].urls : []
-                    }
-                    headline={
-                        this.props.imageCarousel && this.props.imageCarousel.length ?
-                            this.props.imageCarousel[0].headline : ''
-                    }
-                />
                 <section className="main__meta-container">
                     <div className="services-index__container">
                         {this.renderServices()}
