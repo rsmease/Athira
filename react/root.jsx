@@ -1,10 +1,10 @@
 //utils
-
 import React from 'react';
 import { Provider } from 'react-redux';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import createStore from './store/store';
+import AOS from 'aos';
 
 //components
 import Header from './components/header';
@@ -34,5 +34,6 @@ const Root = ({ store }) => (
 document.addEventListener('DOMContentLoaded', () => {
     const store = createStore();
     const root = document.getElementById('root');
+    AOS.init();
     ReactDOM.render(<Root store={store} />, root);
 });
