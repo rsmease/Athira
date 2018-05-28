@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
 import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css/animate.min.css";
 
 class ServicesIndexItem extends React.Component {
 
