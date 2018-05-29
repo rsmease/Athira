@@ -10,7 +10,7 @@ class HeroCarousel extends React.Component {
     renderImages() {
         const settings = {
             dots: true,
-            arrows: true,
+            arrows: false,
             infinite: true,
             speed: 6000,
             autoplay: true,
