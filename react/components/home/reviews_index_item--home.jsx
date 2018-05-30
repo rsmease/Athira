@@ -1,11 +1,7 @@
 import React from 'react';
 import * as Typicon from 'react-icons/lib/ti';
-import AOS from 'aos';
 
 class ReviewsIndexItem extends React.Component {
-    componentWillReceiveProps() {
-        AOS.refresh();
-    }
     render() {
         return (
             <div className="reviews-index-item__container--home">

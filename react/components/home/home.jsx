@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
-import AOS from 'aos';
 
 import Fade from 'react-reveal/Fade';
 
@@ -20,10 +19,6 @@ class Home extends React.Component {
         this.props.getAllServices();
         this.props.getAllCompanies();
         this.props.getAllImageCarousels();
-    }
-
-    componentWillReceiveProps() {
-        AOS.refreshHard();
     }
 
     renderHeroBackground() {
