@@ -1,10 +1,14 @@
 @import '../utils/*';
 $hero-height: calc(100vh - 182px);
-.hero__container {
+.hero__container, .hero__container-image {
     height: $hero-height;
     background-image: $primary-gradient-2;
     background-size: cover;
     width: 100%;
+}
+
+.hero__container {
+    margin-top: 91px;
 }
 
 .hero__opacity-container {
