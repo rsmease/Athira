@@ -76,7 +76,7 @@ class Home extends React.Component {
                     <div className="services-index__container--home">
                         {this.renderServices()}
                     </div>
-                    <div data-aos="fade" className="reviews-index__container--home">
+                    <div className="reviews-index__container--home">
                         {this.renderReviews()}
                     </div>
                 </section>
