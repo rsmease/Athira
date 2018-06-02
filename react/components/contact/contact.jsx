@@ -7,9 +7,13 @@ class Contact extends React.Component {
         super();
     }
 
+    addMarginOnContactPage() {
+        return window.location.hash.includes('contact') ? { marginTop: "91px" } : {}
+    }
+
     render() {
         return (
-            <section className="contact__container">
+            <section className="contact__container" style={this.addMarginOnContactPage()}>
                 <h1 className="contact__header-1">Say Hello!</h1>
                 <div className="contact__container--methods-index">
                     <div className="contact__container--methods-index-item">
