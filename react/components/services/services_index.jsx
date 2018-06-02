@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
 
 import { ServicesIndexItemLeft, ServicesIndexItemRight, ServicesIndexItemMobile } from './services_index_item';
@@ -12,12 +12,24 @@ class ServicesIndex extends React.Component {
     }
 
     componentWillMount() {
+        console.log('mounting')
         window.scroll(0, 0);
     }
 
     componentDidMount() {
         this.props.getAllServices();
         this.props.getAllImageCarousels();
+    }
+
+    componentDidUpdate() {
+        console.log('updating')
+        if (this.props.location.hash.length) {
+            const targetOfHash = document.querySelector(this.props.location.hash);
+            console.log(targetOfHash)
+            if (targetOfHash) {
+                targetOfHash.scrollIntoView()
+            }
+        }
     }
 
     renderServices() {
@@ -59,4 +71,4 @@ class ServicesIndex extends React.Component {
     }
 }
 
-export default ServicesIndex;
+export default withRouter(ServicesIndex);

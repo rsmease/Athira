@@ -1,16 +1,11 @@
 import React from 'react';
 import * as Material from 'react-icons/lib/md';
-import { withRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
 class ServicesIndexItem extends React.Component {
 
-    redirect(id) {
-        this.props.history.push(`/services#service-${id}`)
-    }
-
     render() {
-        console.log(this.props)
         return (
             <Fade bottom exit opposite>
                 <Link to={`/services#service-${this.props.service.id}`}>
@@ -25,4 +20,4 @@ class ServicesIndexItem extends React.Component {
     }
 }
 
-export default withRouter(ServicesIndexItem);
+export default ServicesIndexItem;
