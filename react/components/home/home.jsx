@@ -14,6 +14,10 @@ class Home extends React.Component {
         super();
     }
 
+    componentWillMount() {
+        window.scroll(0, 0);
+    }
+
     componentDidMount() {
         this.props.getAllReviews();
         this.props.getAllServices();

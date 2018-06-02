@@ -7,6 +7,10 @@ class Contact extends React.Component {
         super();
     }
 
+    componentWillMount() {
+        window.scroll(0, 0);
+    }
+
     addMarginOnContactPage() {
         return window.location.hash.includes('contact') ? { marginTop: "91px" } : {}
     }

@@ -13,6 +13,10 @@ class About extends React.Component {
         super();
     }
 
+    componentWillMount() {
+        window.scroll(0, 0);
+    }
+
     componentDidMount() {
         this.props.getAllLeaders();
         this.props.getAllCompanies();

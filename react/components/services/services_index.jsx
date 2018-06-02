@@ -11,6 +11,10 @@ class ServicesIndex extends React.Component {
         super();
     }
 
+    componentWillMount() {
+        window.scroll(0, 0);
+    }
+
     componentDidMount() {
         this.props.getAllServices();
         this.props.getAllImageCarousels();
