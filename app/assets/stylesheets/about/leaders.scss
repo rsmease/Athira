@@ -8,24 +8,19 @@
 .leader-index-item__container {
     display: grid;
     grid-template-rows: repeat(2, fit-content(100%));
-    grid-row-gap: 45px;
-    margin: 0 $gutter-65 $gutter-30 $gutter-65;
+    grid-row-gap: $gutter-65;
+    padding: $gutter-65 $gutter-30;
     width: 100wv;
     z-index: 1;
+    justify-items: center;
+    background-color: $primary-light;
     position: relative;
 }
 
-.leader-backdrop {
-    position: absolute;
-    height: 120px;
-    top: 30px;
-    background-color: $primary-light;
-    width: 100%;
-}
-
 .leader-index-item__headshot {
-    width: calc(100vw - 60px);
-    border: 1px solid $primary-dark;
+    width:  calc(100vw - 130px);
+    height: calc(100vw - 130px);
+    background-size: contain;
 }
 
 .leader-index-item__container--text {
@@ -40,6 +35,7 @@
     font-size: $h2-big;
     text-transform: uppercase;
     letter-spacing: 0.8px;
+    text-align: center;
 }
 
 .leader-index-item__header-3 {
@@ -50,11 +46,31 @@
 
 @media (min-width: 760px) {
     .leader-index-item__container {
-        width: 65vw;
-        box-sizing: border-box;
-        justify-items: center;
+        padding: $gutter-65;
     }
     .leader-index-item__headshot {
-        width: 600px;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+//will need more logic if we have multiple leaders and left/right alignment
+@media (min-width: 1024px) {
+    .leader-index-item__container {
+        width: 100vw;
+        box-sizing: border-box;
+        padding: $gutter-65 $gutter-65*3;
+        padding-left: $gutter-65*3.5; //adjusted to properly center
+        grid-template-columns: repeat(2, fit-content(100%));
+        grid-column-gap: $gutter-65;
+        grid-template-rows: none;
+        justify-items: center;
+        align-items: center;
+    }
+    .leader-index-item__container--text {
+        justify-items: start;
+    }
+    .leader-index-item__header-2, .leader-index-item__header-3 {
+        text-align: left;
     }
 }
