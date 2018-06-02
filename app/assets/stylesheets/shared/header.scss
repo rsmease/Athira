@@ -26,6 +26,7 @@ header {
     align-items: end;
     margin-right: $gutter-30 / 2;
     margin-bottom: $gutter-30 / 2;
+    padding-bottom: 15px;
 }
 
 .header__navigation-link {
@@ -49,6 +50,7 @@ header {
     .header__navigation-link--container {
         margin-right: $gutter-30;
         justify-content: end;
+        padding-bottom: 0;
     }
     .header__navigation-link {
         justify-self: start;
@@ -58,22 +60,8 @@ header {
 }
 
 @media (max-width: 414px) {
-    header {
-        height: $gutter-65 + 30px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-row-gap: 10px;
-    }
-    .header__logo--container {
-        justify-items: center;
-        margin-left: 0px;
-    }
-    .header__logo {
-        margin-top: 10px;
-    }
     .header__navigation-link--container {
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 8px;
+        justify-content: end;
+        margin-right: 30px;
     }
 }
