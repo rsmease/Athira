@@ -2,6 +2,7 @@
 .services-index__container {
     display: grid;
     width: 100vw;
+    margin-top: 91px;
     padding: $gutter-65 $gutter-30 0 $gutter-30;
     box-sizing: border-box;
     grid-template-rows: repeat(8, fit-content(100%));
@@ -51,7 +52,6 @@
     .services-index__container {
         padding: $gutter-30 0 0 0;
         justify-items: center;
-        margin: 50px 0 0 0;
     }
     .services-index-item__container {
         grid-template-columns: repeat(2, fit-content(100%));
