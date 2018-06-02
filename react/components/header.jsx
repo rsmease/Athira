@@ -18,6 +18,10 @@ class Header extends React.Component {
         });
     }
 
+    styleActiveTab(input) {
+        return window.location.hash.includes(input) ? { color: '#B07B31' } : {}
+    }
+
     closeHamburger() {
         if (this.state.open) {
             this.setState({ open: false })
@@ -35,9 +39,9 @@ class Header extends React.Component {
     renderNavLinks() {
         return (
             <React.Fragment>
-                <Link to="/about" className="header__navigation-link">About</Link>
-                <Link to="/services" className="header__navigation-link">Services</Link>
-                <Link to="/contact" className="header__navigation-link">Contact</Link>
+                <Link to="/about" className="header__navigation-link" style={this.styleActiveTab('about')}>About</Link>
+                <Link to="/services" className="header__navigation-link" style={this.styleActiveTab('services')}>Services</Link>
+                <Link to="/contact" className="header__navigation-link" style={this.styleActiveTab('contact')}>Contact</Link>
             </React.Fragment>
         )
     }
@@ -72,9 +76,7 @@ class Header extends React.Component {
                 onClose={this.closeHamburger.bind(this)}
             >
                 <div className="header__navigation-link--popup">
-                    <Link to="/about" className="header__navigation-link">About</Link>
-                    <Link to="/services" className="header__navigation-link">Services</Link>
-                    <Link to="/contact" className="header__navigation-link">Contact</Link>
+                    {this.renderNavLinks()}
                 </div>
             </Popup>
         )
