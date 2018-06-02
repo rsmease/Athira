@@ -60,12 +60,6 @@ header {
     .header__navigation-link--container {
         margin-right: $gutter-30;
         justify-content: end;
-        padding-bottom: 0;
-    }
-    .header__navigation-link {
-        justify-self: start;
-        align-self: end;
-        margin-left: $gutter-30 / 2;
     }
 }
 
@@ -73,5 +67,16 @@ header {
     .header__navigation-link--container {
         justify-content: end;
         margin-right: 30px;
+    }
+}
+
+@media (min-width: 769px) {
+    .header__navigation-link--container {
+        padding-bottom: 0;
+    }
+    .header__navigation-link {
+        justify-self: start;
+        align-self: end;
+        margin-left: $gutter-30 / 2;
     }
 }
