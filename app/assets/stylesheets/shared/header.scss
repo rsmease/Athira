@@ -29,12 +29,22 @@ header {
     padding-bottom: 15px;
 }
 
+.header__navigation-link--popup {
+    background: $primary-dark;
+    display: grid;
+    grid-template-rows: repeat(3, fit-content(100%));
+    grid-row-gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
 .header__navigation-link {
     color: $secondary-light;
     letter-spacing: 1.3px;
     text-transform: uppercase;
     margin-left: $gutter-30 / 2;
     transition: color 500ms ease;
+    text-align: center;
 }
 
 .header__navigation-link:hover {
