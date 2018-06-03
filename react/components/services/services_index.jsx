@@ -15,7 +15,6 @@ class ServicesIndex extends React.Component {
         if (!this.props.location.hash.length) {
             window.scroll(0, 0);
         }
-        window.scroll(0, 0)
     }
 
     componentDidMount() {
