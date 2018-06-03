@@ -12,9 +12,7 @@ class ServicesIndex extends React.Component {
     }
 
     componentWillMount() {
-        if (!this.props.location.hash.length ||
-            this.props.services) {
-            console.log('it works')
+        if (!this.props.location.hash.length) {
             window.scroll(0, 0);
         }
         window.scroll(0, 0)

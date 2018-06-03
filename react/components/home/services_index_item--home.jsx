@@ -10,7 +10,6 @@ class ServicesIndexItem extends React.Component {
     }
 
     render() {
-        console.log(this.props.first)
         return (
             <Fade bottom exit opposite>
                 <HashLink
