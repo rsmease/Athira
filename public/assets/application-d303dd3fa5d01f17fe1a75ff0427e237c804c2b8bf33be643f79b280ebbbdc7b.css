@@ -51,29 +51,23 @@ a {
 .leader-index-item__container {
   display: grid;
   grid-template-rows: repeat(2, fit-content(100%));
-  grid-row-gap: 45px;
-  margin: 0 65px 30px 65px;
+  grid-row-gap: 65px;
+  padding: 65px 30px;
   width: 100wv;
   z-index: 1;
+  justify-items: center;
+  background-color: #79CBCB;
   position: relative;
 }
 
-/* line 18, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
-.leader-backdrop {
-  position: absolute;
-  height: 120px;
-  top: 30px;
-  background-color: #79CBCB;
-  width: 100%;
+/* line 20, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
+.leader-index-item__headshot {
+  width: calc(100vw - 130px);
+  height: calc(100vw - 130px);
+  background-size: contain;
 }
 
 /* line 26, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
-.leader-index-item__headshot {
-  width: calc(100vw - 60px);
-  border: 1px solid #063C3C;
-}
-
-/* line 31, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
 .leader-index-item__container--text {
   display: grid;
   grid-template-rows: repeat(2, fit-content(100%));
@@ -82,14 +76,15 @@ a {
   color: #063C3C;
 }
 
-/* line 39, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
+/* line 34, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
 .leader-index-item__header-2 {
   font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 0.8px;
+  text-align: center;
 }
 
-/* line 45, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
+/* line 41, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
 .leader-index-item__header-3 {
   text-align: center;
   line-height: 1.65;
@@ -97,16 +92,39 @@ a {
 }
 
 @media (min-width: 760px) {
-  /* line 52, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
+  /* line 48, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
   .leader-index-item__container {
-    width: 65vw;
-    box-sizing: border-box;
-    justify-items: center;
+    padding: 65px;
   }
 
-  /* line 57, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
+  /* line 51, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
   .leader-index-item__headshot {
-    width: 600px;
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 59, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
+  .leader-index-item__container {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 65px 195px;
+    padding-left: 227.5px;
+    grid-template-columns: repeat(2, fit-content(100%));
+    grid-column-gap: 65px;
+    grid-template-rows: none;
+    justify-items: center;
+    align-items: center;
+  }
+
+  /* line 70, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
+  .leader-index-item__container--text {
+    justify-items: start;
+  }
+
+  /* line 73, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/about/leaders.scss */
+  .leader-index-item__header-2, .leader-index-item__header-3 {
+    text-align: left;
   }
 }
 /* line 7, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/utils/fonts.scss */
@@ -512,7 +530,7 @@ a {
   display: grid;
   width: 100vw;
   margin-top: 91px;
-  padding: 65px 30px 0 30px;
+  padding: 0 65px 30px 0 30px;
   box-sizing: border-box;
   grid-template-rows: repeat(8, fit-content(100%));
   grid-template-columns: 1fr;
@@ -923,45 +941,61 @@ header {
 }
 
 /* line 32, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+.header__navigation-link--popup {
+  background: #063C3C;
+  display: grid;
+  grid-template-rows: repeat(3, fit-content(100%));
+  grid-row-gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* line 41, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
 .header__navigation-link {
   color: #FFDAA6;
   letter-spacing: 1.3px;
   text-transform: uppercase;
   margin-left: 15px;
   transition: color 500ms ease;
+  text-align: center;
 }
 
-/* line 40, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+/* line 50, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
 .header__navigation-link:hover {
   color: #B07B31;
 }
 
-/* line 44, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+/* line 54, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
 .header__logo {
   margin-top: 3px;
   height: 50px;
 }
 
 @media (min-width: 760px) {
-  /* line 50, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+  /* line 60, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
   .header__navigation-link--container {
     margin-right: 30px;
     justify-content: end;
+  }
+}
+@media (max-width: 414px) {
+  /* line 67, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+  .header__navigation-link--container {
+    justify-content: end;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 74, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+  .header__navigation-link--container {
     padding-bottom: 0;
   }
 
-  /* line 55, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+  /* line 77, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
   .header__navigation-link {
     justify-self: start;
     align-self: end;
     margin-left: 15px;
-  }
-}
-@media (max-width: 414px) {
-  /* line 63, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
-  .header__navigation-link--container {
-    justify-content: end;
-    margin-right: 30px;
   }
 }
 /* line 7, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/utils/fonts.scss */
@@ -2014,45 +2048,61 @@ header {
 }
 
 /* line 32, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+.header__navigation-link--popup {
+  background: #063C3C;
+  display: grid;
+  grid-template-rows: repeat(3, fit-content(100%));
+  grid-row-gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* line 41, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
 .header__navigation-link {
   color: #FFDAA6;
   letter-spacing: 1.3px;
   text-transform: uppercase;
   margin-left: 15px;
   transition: color 500ms ease;
+  text-align: center;
 }
 
-/* line 40, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+/* line 50, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
 .header__navigation-link:hover {
   color: #B07B31;
 }
 
-/* line 44, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+/* line 54, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
 .header__logo {
   margin-top: 3px;
   height: 50px;
 }
 
 @media (min-width: 760px) {
-  /* line 50, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+  /* line 60, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
   .header__navigation-link--container {
     margin-right: 30px;
     justify-content: end;
+  }
+}
+@media (max-width: 414px) {
+  /* line 67, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+  .header__navigation-link--container {
+    justify-content: end;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 74, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+  .header__navigation-link--container {
     padding-bottom: 0;
   }
 
-  /* line 55, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
+  /* line 77, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
   .header__navigation-link {
     justify-self: start;
     align-self: end;
     margin-left: 15px;
-  }
-}
-@media (max-width: 414px) {
-  /* line 63, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/shared/header.scss */
-  .header__navigation-link--container {
-    justify-content: end;
-    margin-right: 30px;
   }
 }
 /* line 7, /Users/ryan/Documents/GitHub/Athira 2/app/assets/stylesheets/utils/fonts.scss */
