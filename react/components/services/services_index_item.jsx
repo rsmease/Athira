@@ -45,6 +45,7 @@ export class ServicesIndexItemMobile extends React.Component {
     render() {
         return (
             <Fade bottom cascade>
+                <div id={`service-${this.props.service.id}`} style={{ height: '100px' }}></div>
                 <div className="services-index-item__container">
                     <div className="services-index-item__container--header">
                         <Material.MdRemoveCircle className="services-index-item__icon" id={
