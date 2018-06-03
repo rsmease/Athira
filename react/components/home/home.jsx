@@ -37,10 +37,12 @@ class Home extends React.Component {
 
     renderServices() {
         if (this.props.services && this.props.services.length) {
+            const ids = this.props.services.map(service => service.id)
+            const minId = Math.min(...ids)
             return (
                 <React.Fragment>
                     {this.props.services.map(service => (
-                        <ServicesIndexItem key={service.id} service={service} />
+                        <ServicesIndexItem key={service.id} service={service} first={service.id === minId} />
                     ))}
                 </React.Fragment>
             )
