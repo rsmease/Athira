@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 class ServicesIndexItem extends React.Component {
 
-    detectSeviceRoute() {
+    parseAnchor() {
         return this.props.first ? '/services' : `/services#service-${this.props.service.id}`
     }
 
@@ -14,7 +14,7 @@ class ServicesIndexItem extends React.Component {
             <Fade bottom exit opposite>
                 <HashLink
                     smooth
-                    to={this.anchor()}
+                    to={this.parseAnchor()}
                 >
                     <div className="services-index-item__container--home">
                         <Material.MdRemoveCircle className="services-index-item__icon--home" />
