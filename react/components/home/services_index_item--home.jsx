@@ -8,7 +8,10 @@ class ServicesIndexItem extends React.Component {
     render() {
         return (
             <Fade bottom exit opposite>
-                <HashLink smooth to={`/services#service-${this.props.service.id}`}>
+                <HashLink
+                    smooth
+                    to={`/services#service-${this.props.service.id}`}
+                >
                     <div className="services-index-item__container--home">
                         <Material.MdRemoveCircle className="services-index-item__icon--home" />
                         <h3 className="services-index-item__header-2--home">{this.props.service.name}</h3>
