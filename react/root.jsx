@@ -13,6 +13,8 @@ import About from './components/about/about_container';
 import Contact from './components/contact/contact';
 import ServicesIndex from './components/services/services_container';
 
+import { postVisitor } from './ajax/visitors_ajax';
+
 const Root = ({ store }) => (
     <Provider store={store}>
         <Router>
@@ -31,7 +33,10 @@ const Root = ({ store }) => (
 )
 
 document.addEventListener('DOMContentLoaded', () => {
+    window.postVisitor = postVisitor;
+    console.log("updateing")
     const store = createStore();
+    window.store = store;
     const root = document.getElementById('root');
     ReactDOM.render(<Root store={store} />, root);
 });

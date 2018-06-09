@@ -1,9 +1,7 @@
-export const postVisitor = (visitorData) => (
+export const postVisitor = (visitor) => (
   $.ajax({
-      url: `admin/visitors`,
-      method: 'POST',
-      data: {
-          visitor: visitorData
-      }
+    url: 'admin/visitors',
+    method: 'POST',
+    data: { visitor }
   })
 );
