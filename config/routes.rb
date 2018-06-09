@@ -8,5 +8,6 @@ Rails.application.routes.draw do
     resources :companies
     resources :leaders
     resources :image_carousels
+    resources :visitors
   end
 end
