@@ -8,7 +8,7 @@ import ContactForm from './contact_form';
 import * as VisitorActions from '../../actions/visitor_actions';
 
 const mapStateToProps = (state, ownProps) => ({
-  errors: _.values(state.errors.visitors),
+  errors: state.errors.visitors,
   visitors: _.values(state.visitors)
 });
 

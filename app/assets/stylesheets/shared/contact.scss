@@ -75,20 +75,27 @@
     margin-top: 35px;
     display: grid;
     grid-template-rows: repeat(4, fit-content(100%));
+    grid-row-gap: 31px;
     justify-items: center;
 }
 
 .contact__form--input-pair {
     display: grid;
     grid-template-rows: repeat(2, fit-content(100%));
+    grid-row-gap: 31px;
     justify-items:center;
 }
 
 .contact__form--input-container {
     display: grid;
     grid-template-rows: repeat(2, fit-content(100%));
-    grid-row-gap: 31px;
+    grid-row-gap: 5px;
     justify-items: center;
+}
+
+.visitor-error {
+    color: red;
+    margin-top: 5px;
 }
 
 .contact__form--input {

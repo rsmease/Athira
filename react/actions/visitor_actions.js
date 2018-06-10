@@ -15,7 +15,8 @@ const receiveErrors = (errors) => ({
 });
 
 const removeAllVisitorErrors = () => ({
-  type: REMOVE_ALL_VISITOR_ERRORS
+  type: REMOVE_ALL_VISITOR_ERRORS,
+  errors: []
 })
 
 export const requestToCreateVisitor = (visitorData) => (dispatch) => VisitorsAJAX.postVisitor(visitorData)

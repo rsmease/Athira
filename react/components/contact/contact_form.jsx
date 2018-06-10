@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal';
+import _ from 'lodash';
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -15,7 +16,13 @@ class ContactForm extends React.Component {
     this.clearForm = this.clearForm.bind(this);
   }
 
-  componentWilLMount() {
+  componentWillMount() {
+    console.log(this.props)
+    this.props.clearVisitorErrors();
+    window.scroll(0, 0);
+  }
+
+  componentWillUnmount() {
     this.props.clearVisitorErrors();
   }
 
@@ -28,7 +35,7 @@ class ContactForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.requestToCreateVisitor(this.state)
-      .then(() => this.clearForm(), err => console.log(err))
+      .then(() => this.clearForm())
   }
 
   clearForm() {
@@ -44,13 +51,13 @@ class ContactForm extends React.Component {
   }
 
   filteredErrors(labelName) {
-    return this.props.errors.filter((error) => (
+    return _.uniq(this.props.errors).filter((error) => (
       error.toLowerCase().includes(labelName)
     ));
   }
 
   showErrors(labelName, displayClass) {
-    if (this.props.errors.length > 0) {
+    if (this.props.errors && this.props.errors.length > 0) {
       return (
         this.filteredErrors(labelName).map((error, i) => (
           <span key={i} className={displayClass}>{error}</span>
@@ -67,7 +74,7 @@ class ContactForm extends React.Component {
         <form className="contact__form">
           <div className="contact__form--input-pair">
             <div className="contact__form--input-container">
-              {this.showErrors("first", "session-error")}
+              {this.showErrors("first", "visitor-error")}
               <input
                 className="contact__form--input"
                 type="text"
@@ -78,7 +85,7 @@ class ContactForm extends React.Component {
             </div>
 
             <div className="contact__form--input-container">
-              {this.showErrors("last", "session-error")}
+              {this.showErrors("last", "visitor-error")}
               <input
                 className="contact__form--input"
                 type="text"
@@ -90,7 +97,7 @@ class ContactForm extends React.Component {
           </div>
           <div className="contact__form--input-pair">
             <div className="contact__form--input-container">
-              {this.showErrors("email", "session-error")}
+              {this.showErrors("email", "visitor-error")}
               <input
                 className="contact__form--input"
                 type="text"
@@ -101,7 +108,7 @@ class ContactForm extends React.Component {
             </div>
 
             <div className="contact__form--input-container">
-              {this.showErrors("phone", "session-error")}
+              {this.showErrors("phone", "visitor-error")}
               <input
                 className="contact__form--input"
                 type="text"
@@ -112,7 +119,7 @@ class ContactForm extends React.Component {
             </div>
           </div>
           <div className="contact__form--input-container">
-            {this.showErrors("message", "session-error")}
+            {this.showErrors("message", "visitor-error")}
             <textarea
               className="contact__form--input contact__form--text-input"
               type="textarea"
