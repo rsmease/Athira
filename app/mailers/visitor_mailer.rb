@@ -1,8 +1,4 @@
 class VisitorMailer < ApplicationMailer
-  # def new_visitor
-  #   @visitor = params[:visitor]
-  #   mail(to: 'rsmease@gmail.com', subject: 'Welcome to My Awesome Site')
-  # end
 
   def visitor
     @visitor = params[:visitor]
