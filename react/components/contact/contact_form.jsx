@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal';
+import PhoneInput from "react-phone-input-auto-format";
 import _ from 'lodash';
 
 class ContactForm extends React.Component {
@@ -13,11 +14,11 @@ class ContactForm extends React.Component {
       message: ''
     }
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleInput = this.handleInput.bind(this);
     this.clearForm = this.clearForm.bind(this);
   }
 
   componentWillMount() {
-    console.log(this.props)
     this.props.clearVisitorErrors();
     window.scroll(0, 0);
   }
@@ -28,6 +29,7 @@ class ContactForm extends React.Component {
 
   handleInput(type) {
     return (e) => {
+      console.log(e)
       this.setState({ [type]: e.target.value });
     };
   }
@@ -109,7 +111,7 @@ class ContactForm extends React.Component {
 
             <div className="contact__form--input-container">
               {this.showErrors("phone", "visitor-error")}
-              <input
+              <PhoneInput
                 className="contact__form--input"
                 type="text"
                 placeholder="Phone Number"

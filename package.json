@@ -16,6 +16,7 @@
     "react-dom": "^16.2.0",
     "react-hamburger-menu": "^1.1.0",
     "react-icons": "^2.2.7",
+    "react-phone-input-auto-format": "0.0.6",
     "react-redux": "^5.0.7",
     "react-reveal": "^1.2.1",
     "react-router": "^4.2.0",

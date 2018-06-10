@@ -11,5 +11,5 @@ import rootReducer from './root_reducer';
 export default (preloadedState = {}) => createStore(
     rootReducer,
     preloadedState,
-    applyMiddleware(logger, thunk)
+    applyMiddleware(thunk)
 );
