@@ -15,6 +15,7 @@ class ContactForm extends React.Component {
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInput = this.handleInput.bind(this);
+    this.handlePhoneInput = this.handlePhoneInput.bind(this);
     this.clearForm = this.clearForm.bind(this);
   }
 
@@ -29,9 +30,13 @@ class ContactForm extends React.Component {
 
   handleInput(type) {
     return (e) => {
-      console.log(e)
       this.setState({ [type]: e.target.value });
     };
+  }
+
+  handlePhoneInput(value) {
+    const phoneInput = $('#phone-input')[0];
+    this.setState({ phone_number: phoneInput.value })
   }
 
   handleSubmit(e) {
@@ -50,6 +55,7 @@ class ContactForm extends React.Component {
         message: ''
       }
     );
+    $("#phone-input").val("");
   }
 
   filteredErrors(labelName) {
@@ -113,10 +119,11 @@ class ContactForm extends React.Component {
               {this.showErrors("phone", "visitor-error")}
               <PhoneInput
                 className="contact__form--input"
+                id="phone-input"
                 type="text"
                 placeholder="Phone Number"
                 value={this.state.phone_number}
-                onChange={this.handleInput('phone_number')}
+                onKeyUp={this.handlePhoneInput}
               />
             </div>
           </div>
