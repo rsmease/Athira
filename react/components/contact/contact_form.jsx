@@ -43,6 +43,7 @@ class ContactForm extends React.Component {
     e.preventDefault();
     this.props.requestToCreateVisitor(this.state)
       .then(() => this.clearForm())
+    this.props.clearVisitorErrors();
   }
 
   clearForm() {
