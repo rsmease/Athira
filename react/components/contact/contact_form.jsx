@@ -1,6 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal';
 import PhoneInput from "react-phone-input-auto-format";
+import Popup from 'reactjs-popup';
 import _ from 'lodash';
 
 class ContactForm extends React.Component {
@@ -11,11 +12,13 @@ class ContactForm extends React.Component {
       last_name: '',
       email_address: '',
       phone_number: '',
-      message: ''
+      message: '',
+      confirmationModalOpen: false
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInput = this.handleInput.bind(this);
     this.handlePhoneInput = this.handlePhoneInput.bind(this);
+    this.closeConfirmationModal = this.closeConfirmationModal.bind(this);
     this.clearForm = this.clearForm.bind(this);
   }
 
@@ -28,15 +31,18 @@ class ContactForm extends React.Component {
     this.props.clearVisitorErrors();
   }
 
+  closeConfirmationModal() {
+    this.setState({ confirmationModalOpen: false })
+  }
+
   handleInput(type) {
     return (e) => {
       this.setState({ [type]: e.target.value });
     };
   }
 
-  handlePhoneInput(value) {
-    const phoneInput = $('#phone-input')[0];
-    this.setState({ phone_number: phoneInput.value })
+  handlePhoneInput() {
+    this.setState({ phone_number: $('#phone-input').val() })
   }
 
   handleSubmit(e) {
@@ -53,7 +59,8 @@ class ContactForm extends React.Component {
         last_name: '',
         email_address: '',
         phone_number: '',
-        message: ''
+        message: '',
+        confirmationModalOpen: true
       }
     );
     $("#phone-input").val("");
@@ -142,6 +149,30 @@ class ContactForm extends React.Component {
             <button className="contact__form--submit-button"
               onClick={this.handleSubmit}>Submit</button>
           </Fade>
+          <Popup
+            modal
+            open={this.state.confirmationModalOpen}
+            contentStyle={
+              {
+                padding: '0',
+                border: '0',
+                backgroundColor: 'transparent',
+                width: '100%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center'
+              }
+            }
+            closeOnDocumentClick
+            onClose={this.closeConfirmationModal}
+          >
+            <Fade down>
+              <div className="contact__form--modal-container">
+                <h4 className="contact__form--modal-h4">Thanks!</h4>
+                <p className="contact__form--modal-p">We'll reach out to you shortly</p>
+              </div>
+            </Fade>
+          </Popup>
         </form>
       </section>
     )
