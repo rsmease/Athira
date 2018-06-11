@@ -63,7 +63,6 @@ class ContactForm extends React.Component {
         confirmationModalOpen: true
       }
     );
-    $("#phone-input").val("");
   }
 
   filteredErrors(labelName) {
