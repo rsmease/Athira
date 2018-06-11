@@ -1,6 +1,5 @@
 import React from 'react';
 import Fade from 'react-reveal';
-import PhoneInput from "react-phone-input-auto-format";
 import Popup from 'reactjs-popup';
 import _ from 'lodash';
 
@@ -17,7 +16,6 @@ class ContactForm extends React.Component {
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInput = this.handleInput.bind(this);
-    this.handlePhoneInput = this.handlePhoneInput.bind(this);
     this.closeConfirmationModal = this.closeConfirmationModal.bind(this);
     this.clearForm = this.clearForm.bind(this);
   }
@@ -39,10 +37,6 @@ class ContactForm extends React.Component {
     return (e) => {
       this.setState({ [type]: e.target.value });
     };
-  }
-
-  handlePhoneInput() {
-    this.setState({ phone_number: $('#phone-input').val() })
   }
 
   handleSubmit(e) {
@@ -124,13 +118,12 @@ class ContactForm extends React.Component {
 
             <div className="contact__form--input-container">
               {this.showErrors("phone", "visitor-error")}
-              <PhoneInput
+              <input
                 className="contact__form--input"
-                id="phone-input"
                 type="text"
                 placeholder="Phone Number"
                 value={this.state.phone_number}
-                onKeyUp={this.handlePhoneInput}
+                onChange={this.handleInput('phone_number')}
               />
             </div>
           </div>
