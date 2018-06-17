@@ -1,13 +1,13 @@
 export const getAllLeaders = () => (
     $.ajax({
-        url: 'api/leaders',
+        url: 'json/leaders',
         method: 'GET'
     })
 );
 
 export const getLeader = (id) => (
     $.ajax({
-        url: `api/leaders/${id}`,
+        url: `json/leaders/${id}`,
         method: 'GET',
         data: {
             id
