@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Admin::ImageCarouselsControllerTest < ActionDispatch::IntegrationTest
+class Json::ImageCarouselsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

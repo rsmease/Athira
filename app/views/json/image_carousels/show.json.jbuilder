@@ -1,0 +1,1 @@
+json.partial! 'json/image_carousels/image_carousel', image_carousel: @image_carousel
