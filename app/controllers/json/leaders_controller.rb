@@ -10,7 +10,7 @@ def show
 end
 
 private
-def leader_params
-    params.require(:leader).permit(:name, :description, :title, :headshot_url)
-end
+  def leader_params
+      params.require(:leader).permit(:name, :description, :title, :headshot_url)
+  end
 end
