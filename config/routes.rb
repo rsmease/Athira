@@ -12,4 +12,8 @@ Rails.application.routes.draw do
     resources :image_carousels
     resources :visitors
   end
+
+  namespace :json, defaults: {format: JSON} do
+    resources :leaders
+  end
 end
