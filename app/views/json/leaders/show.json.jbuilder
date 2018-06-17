@@ -1,1 +1,1 @@
-json.partial! 'admin/leaders/leader', leader: @leader
+json.partial! 'json/leaders/leader', leader: @leader

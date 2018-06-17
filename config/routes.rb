@@ -8,11 +8,11 @@ Rails.application.routes.draw do
     resources :reviews
     resources :companies
     resources :image_carousels
-    resources :visitors
   end
 
   namespace :json, defaults: {format: JSON} do
     resources :leaders
     resources :services
+    resources :visitors
   end
 end
