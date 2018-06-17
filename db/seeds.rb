@@ -117,4 +117,6 @@ image_carousel4 = ImageCarousel.create!(
         'https://images.unsplash.com/photo-1504890283869-c3de3cea0c59?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea9ddbbfc4a373c1b0f92a50cd68e4d2&auto=format&fit=crop&w=1950&q=80'
     ],
     headline: 'Get in touch'
-)AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+)
+
+AdminUser.create!(email: 'rsmease@gmail.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
