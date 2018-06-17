@@ -5,15 +5,14 @@ Rails.application.routes.draw do
   root 'react_portal#root'
 
   namespace :admin, defaults: {format: JSON } do
-    resources :services
     resources :reviews
     resources :companies
-    resources :leaders
     resources :image_carousels
     resources :visitors
   end
 
   namespace :json, defaults: {format: JSON} do
     resources :leaders
+    resources :services
   end
 end
