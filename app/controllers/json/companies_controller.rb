@@ -1,12 +1,12 @@
 class Json::CompaniesController < ApplicationController
   def index
       @companies = Company.all
-      render 'admin/companies/index'
+      render 'json/companies/index'
   end
 
   def show
       @company = Company.find(params[:id])
-      render 'admin/companies/show'
+      render 'json/companies/show'
   end
 
   private

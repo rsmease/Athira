@@ -1,12 +1,12 @@
 class Json::ReviewsController < ApplicationController
   def index
     @reviews = Review.all
-    render 'admin/reviews/index'
+    render 'json/reviews/index'
   end
 
   def show
       @review = Review.find(params[:id])
-      render 'admin/reviews/show'
+      render 'json/reviews/show'
   end
 
   private
