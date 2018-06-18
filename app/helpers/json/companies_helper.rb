@@ -1,0 +1,2 @@
+module Json::CompaniesHelper
+end

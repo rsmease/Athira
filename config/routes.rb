@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   namespace :admin, defaults: {format: JSON } do
     resources :reviews
     resources :companies
- 
   end
 
   namespace :json, defaults: {format: JSON} do
@@ -16,5 +15,6 @@ Rails.application.routes.draw do
     resources :services
     resources :visitors
     resources :image_carousels
+    resources :companies
   end
 end
