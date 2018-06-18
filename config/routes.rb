@@ -4,11 +4,6 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'react_portal#root'
 
-  namespace :admin, defaults: {format: JSON } do
-    resources :reviews
-    resources :companies
-  end
-
   namespace :json, defaults: {format: JSON} do
     resources :image_carousels
     resources :leaders
@@ -16,5 +11,6 @@ Rails.application.routes.draw do
     resources :visitors
     resources :image_carousels
     resources :companies
+    resources :reviews
   end
 end
