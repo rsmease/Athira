@@ -11,6 +11,6 @@ class Json::ReviewsController < ApplicationController
 
   private
   def review_params
-      params.require(:review).permit(:title, :body, :reviewer_name, :reviewer_location, :reviewer_description, :other_image_url)
+      params.require(:review).permit(:title, :body, :reviewer_name, :reviewer_location, :reviewer_description, :logo_url)
   end
 end
