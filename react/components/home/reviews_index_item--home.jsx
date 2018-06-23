@@ -13,6 +13,7 @@ class ReviewsIndexItem extends React.Component {
                     <h3 className="reviews-index-item__header-3--home">
                         -  {this.props.review.reviewer_name}
                     </h3>
+                    <img src={this.props.review.logo_url} alt={`${this.props.review.company} logo`} />
                 </div>
             </Fade>
         );

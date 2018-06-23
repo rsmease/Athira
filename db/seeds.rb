@@ -11,6 +11,7 @@ Review.destroy_all
 Company.destroy_all
 Leader.destroy_all
 ImageCarousel.destroy_all
+AdminUser.destroy_all
 
 service1 = Service.create!(
     name: 'Finance & Accounting Transformation',
