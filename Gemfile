@@ -32,6 +32,7 @@ gem 'jquery-rails'
 # gem 'capistrano-rails', group: :development
 gem 'inherited_resources'
 gem 'activeadmin'
+gem 'active_material'
 gem 'devise'
 
 group :development, :test do
