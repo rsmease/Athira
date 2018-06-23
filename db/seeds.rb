@@ -13,26 +13,26 @@ Leader.destroy_all
 ImageCarousel.destroy_all
 
 service1 = Service.create!(
-    name: 'Draw A Roadmap',
-    short_description: 'Together, we work with you to build your plan for the next year—or five!',
+    name: 'Finance & Accounting Transformation',
+    short_description: 'Build a financial function for operational excellence',
     long_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet porttitor tortor. Maecenas mollis rhoncus lacus sed vehicula. Duis laoreet fermentum ex, nec scelerisque mauris cursus ac. Mauris vel euismod quam. Etiam auctor sapien cursus enim feugiat mattis. Aenean ac orci sit amet metus porta feugiat euismod in ligula. Curabitur sagittis rhoncus purus vitae feugiat. Cras volutpat id eros sit amet lobortis. Etiam sollicitudin lacus quis mauris mattis, nec aliquam nulla scelerisque. Curabitur lacinia at diam tincidunt porta. Duis eu facilisis erat, eget porta nunc.'
 )
 
 service2 = Service.create!(
-    name: 'Define Values',
-    short_description: 'We define the values for your company',
+    name: 'Tools for Management',
+    short_description: 'Design and deploy effective tools for decision making',
     long_description: 'Proin blandit quam eros, nec mollis nibh scelerisque sed. Vestibulum auctor condimentum dolor nec pharetra. Aenean tempor mattis feugiat. Nunc dictum tincidunt velit, id faucibus lorem hendrerit id. Maecenas sed mollis sem, ac suscipit nisl. Nam placerat nulla vitae massa finibus hendrerit. Suspendisse semper risus augue, non efficitur diam tincidunt ullamcorper.'
 )
 
 service3 = Service.create!(
-    name: 'Find Tools',
-    short_description: 'We work to identify tools that will save you time and money',
+    name: 'Business Development',
+    short_description: 'Identify and explore business growth opportunities',
     long_description: 'Fusce pretium, sem a ullamcorper auctor, velit magna vestibulum turpis, ut posuere mi ex a libero. Sed molestie venenatis turpis, non luctus erat porta id. Nullam sed orci et dolor hendrerit rhoncus sit amet in nisi. Morbi nunc dui, bibendum vel erat sed, lacinia mattis metus. Nam volutpat efficitur sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus eget ex pulvinar, euismod quam id, imperdiet libero.'
 )
 
 service4 = Service.create!(
-    name: 'Build A Community',
-    short_description: 'We leverage social media to find you a community of supporters',
+    name: 'Diagnostic and Advisory Services',
+    short_description: 'Assess your business and implement best practices for growth',
     long_description: 'Phasellus at semper sapien. Nam efficitur venenatis tortor, at convallis neque pharetra id. Ut a sapien ac velit condimentum dignissim. Donec sollicitudin consequat pulvinar. Etiam rhoncus ex id pharetra laoreet. In vehicula est a purus pulvinar, eu vulputate elit scelerisque. Nullam eu maximus felis, et vulputate massa. Duis faucibus sagittis est, vel rhoncus nulla ornare ut. Sed pellentesque orci ac arcu vulputate, eget venenatis nisl hendrerit.'
 )
 
@@ -41,7 +41,8 @@ review1 = Review.create!(
     reviewer_description: 'Sr. Director of Operations',
     reviewer_location: 'Company, LLC',
     title: 'Review',
-    body: 'Athira did wonders for our company. Our company culture has been focused and driven towards our new goals.'
+    body: 'Athira did wonders for our company. Our company culture has been focused and driven towards our new goals.',
+    logo_url: 'http://www.gdurl.com/St0Q'
 )
 
 review2 = Review.create!(
@@ -49,7 +50,8 @@ review2 = Review.create!(
     reviewer_description: 'Sr. Director of Operations',
     reviewer_location: 'Company, LLC',
     title: 'Review',
-    body: 'After a year of working with Athira, I have saved hundreds of thousands of dollars in scaling costs for services that I would have otherwise spent on pricey consultants.'
+    body: 'After a year of working with Athira, I have saved hundreds of thousands of dollars in scaling costs for services that I would have otherwise spent on pricey consultants.',
+    logo_url: 'http://www.gdurl.com/l7k6'
 )
 
 review3 = Review.create!(
@@ -57,22 +59,23 @@ review3 = Review.create!(
     reviewer_description: 'Sr. Director of Operations',
     reviewer_location: 'Company, LLC',
     title: 'Review',
-    body: 'I have nothing but wonderful things to say about my time working with Ria.'
+    body: 'I have nothing but wonderful things to say about my time working with Ria.',
+    logo_url: 'http://www.gdurl.com/xWEt'
 )
 
 company1 = Company.create!(
     name: 'Athira',
     headline: 'Light The Fire, Grow Your Dream',
-    short_description: 'Athira helps companies scale by selecting infrastructure, developing social media plans and defining a brand and values.',
-    long_description: 'Founded in 2016, Athira is a different kind of company. We are focused on developing solutions for non-profit clients seeking to scale their organization to meet new, larger goals that was previously possible. We are dedicated to helping young and aspiring by creating and implementing business support solutions. We believe in listening to our clients and helping to build a joint strategy for growth and anchoring that strategy by training new and existing staff. Backed by hard-won experience with numerous high profile clients, you can trust Athira to kindle new life into your organization.',
+    short_description: 'Athira crafts business support solutions to help your organization reach its goals. Our approach is to understand your business’s growth challenges, design and implement tailored solutions, and equip your employees with the knowledge to operate independently and successfully.',
+    long_description: 'Athira is a different kind of company. We craft business support solutions to help entrepreneurial organizations scale to meet new and more ambitious goals. Our approach is to quickly understand your growth challenges, design and implement tailored solutions, and equip your employees with the knowledge to operate independently and successfully. Our style is centered on collaboration and creativity, but with a dose of realism. We listen to our clients, help them build a strategy for growth, and provide them with the tools to make clear and effective decisions. Backed by hard-won experience and thought leadership, you can trust Athira to kindle new life into your organization.',
     splash_image_url: 'https://images.unsplash.com/photo-1473041117018-269bc8c130de?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cad94ead49f0eefefec9b33067633fb8&auto=format&fit=crop&w=1908&q=80'
 )
 
 leader1 = Leader.create!(
     name: 'M Ria Shah',
     title: 'Owner',
-    description: 'Ria is a global financial and operations professional with 18 years of experience in international non-profit, the digital market place, higher education, auditing and consulting, specializing in the early growth phase of emerging comanies.',
-    headshot_url: 'http://gdurl.com/t08f'
+    description: 'Ria is the founder/managing director, true GSD’er and creative mind at Athira. She is a global finance and operations professional with 20 years of experience with international nonprofit, digital marketplace, higher education, auditing, and consulting -- specializing in the startup and growth phase. She is dedicated to helping entrepreneurial organizations achieve strategic growth with a goal of having a measurable and meaningful impact in short period of time. Ria has served as a CFO, helped decentralize an international nonprofit, served on the board of Asian American LEAD, lectured on all things finance, and did time consulting for a Big 4 firm. Ria has a BS in Accounting and Finance and an MS in Accounting from Trinity University. She’s also a die-hard Houston sports fan.',
+    headshot_url: 'http://gdurl.com/nidr'
 )
 
 image_carousel1 = ImageCarousel.create!(
