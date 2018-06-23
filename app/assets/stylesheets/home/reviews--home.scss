@@ -34,11 +34,23 @@
     letter-spacing: 1.3px;
 }
 
+.reviews-index-item__image--home {
+    width: 60vw;
+    max-width: 350px;
+    height: auto;
+    justify-self: center;
+    padding-top: 15px;
+}
+
 @media (min-width: 760px) {
     .reviews-index__container--home {
         grid-template-rows: 1fr;
         grid-template-columns: repeat(3, fit-content(100%));
         grid-column-gap: 98px;
         padding: 98px;
+    }
+    .reviews-index-item__image--home {
+        width: 20vw;
+        height: auto;
     }
 }
