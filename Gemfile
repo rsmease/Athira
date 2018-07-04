@@ -35,6 +35,7 @@ gem 'activeadmin'
 gem 'active_material'
 gem 'activeadmin_quill_editor'
 gem 'devise'
+gem 'sendgrid-ruby'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
