@@ -12,4 +12,14 @@ permit_params :name, :title, :description, :headshot_url, :created_at, :updated_
 #   permitted
 # end
 
+form do |f|
+f.inputs do
+    f.input :name
+    f.input :title
+    f.input :description, as: :quill_editor
+    f.input :headshot_url
+end
+f.actions
+end
+
 end
