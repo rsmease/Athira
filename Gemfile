@@ -33,6 +33,7 @@ gem 'jquery-rails'
 gem 'inherited_resources'
 gem 'activeadmin'
 gem 'active_material'
+gem 'activeadmin_quill_editor'
 gem 'devise'
 
 group :development, :test do
