@@ -123,4 +123,4 @@ image_carousel4 = ImageCarousel.create!(
     headline: 'Get in touch'
 )
 
-AdminUser.create!(email: 'rsmease@gmail.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+AdminUser.create!(email: 'rsmease@gmail.com', password: 'password', password_confirmation: 'password')
