@@ -83,7 +83,7 @@
     display: grid;
     grid-template-rows: repeat(2, fit-content(100%));
     grid-row-gap: 31px;
-    justify-items:center;
+    justify-items: center;
 }
 
 .contact__form--input-container {
@@ -114,10 +114,12 @@
     display: inline-block;
 }
 
-.contact__form--input::placeholder {
+.contact__form--input::placeholder,
+.contact__form--text-input::placeholder {
     text-transform: uppercase;
     color: $primary-dark;
     opacity: 0.25;
+    font-family: 'Proxima Nova', Georgia, sans-serif
 }
 
 .contact__form--input:focus {
@@ -198,5 +200,4 @@
     .contact__form {
         grid-row-gap: 31px;
     }
-
 }
