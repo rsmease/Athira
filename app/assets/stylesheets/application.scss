@@ -20,9 +20,13 @@
 @import 'services/*';
 @import 'image_carousels';
 @import 'about/*';
-
 body {
     font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+//default for rich text fields
+span {
+    font-size: 20px;
 }
 
 html,
@@ -32,4 +36,3 @@ body {
     padding: 0;
     margin: 0;
 }
-

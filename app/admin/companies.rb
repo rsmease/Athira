@@ -12,4 +12,15 @@ permit_params :name, :headline, :long_description, :short_description, :created_
 #   permitted
 # end
 
+form do |f|
+f.inputs do
+    f.input :name
+    f.input :headline
+    f.input :long_description, as: :quill_editor
+    f.input :short_description
+    f.input :splash_image_url
+end
+f.actions
+end
+
 end
