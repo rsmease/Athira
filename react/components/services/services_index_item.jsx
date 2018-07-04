@@ -13,7 +13,9 @@ export class ServicesIndexItemLeft extends React.Component {
                         <Material.MdRemoveCircle className="services-index-item__icon" />
                         <h3 className="services-index-item__header-3--name">{this.props.service.name}</h3>
                     </div>
-                    <h3 className="services-index-item__header-3--description">{this.props.service.long_description}</h3>
+                    <div className="services-index-item__header-3--description" dangerouslySetInnerHTML={
+                        { __html: this.props.service.long_description }
+                    } />
                 </div>
                 <div className="border-maker"></div>
             </Fade>
@@ -28,7 +30,9 @@ export class ServicesIndexItemRight extends React.Component {
             <Fade right>
                 <div className="services-index-item__container" id={
                     `service-${this.props.service.id}`}>
-                    <h3 className="services-index-item__header-3--description">{this.props.service.long_description}</h3>
+                    <div className="services-index-item__header-3--description" dangerouslySetInnerHTML={
+                        { __html: this.props.service.long_description }
+                    } />
                     <div className="services-index-item__container--header">
                         <Material.MdRemoveCircle className="services-index-item__icon" />
                         <h3 className="services-index-item__header-3--name">{this.props.service.name}</h3>
@@ -52,7 +56,9 @@ export class ServicesIndexItemMobile extends React.Component {
                             `service-${this.props.service.id}`} />
                         <h3 className="services-index-item__header-3--name">{this.props.service.name}</h3>
                     </div>
-                    <h3 className="services-index-item__header-3--description">{this.props.service.long_description}</h3>
+                    <div className="services-index-item__header-3--description" dangerouslySetInnerHTML={
+                        { __html: this.props.service.long_description }
+                    } />
                 </div>
                 <div className="border-maker"></div>
             </Fade>
