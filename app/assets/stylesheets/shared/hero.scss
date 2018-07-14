@@ -1,6 +1,7 @@
 @import '../utils/*';
-$hero-height: calc(100vh - 335px);
-.hero__container, .hero__container-image {
+$hero-height: calc(100vh - 285px);
+.hero__container,
+.hero__container-image {
     height: $hero-height;
     background-image: $primary-gradient-2;
     background-size: cover;

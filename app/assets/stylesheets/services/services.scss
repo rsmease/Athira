@@ -124,6 +124,9 @@
         padding: 0 0 16px 0;
         text-align: left;
     }
+    .services-index-item__header-3--description>ul {
+        margin-left: $gutter-65;
+    }
     .services-index-item__header-3--description li {
         list-style-type: disc;
         text-align: left;
