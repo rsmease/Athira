@@ -23,6 +23,11 @@ f.inputs do
     f.input :phone_number
 end
 f.actions
+
+before_save do |company|
+    unless params[:company].nil? || params[:company][:splash_image_url].nil?
+        company.splash_image_url = "http://drive.google.com/uc?export=view&id=" + params[:company][:splash_image_url]
+    end
 end
 
 end
