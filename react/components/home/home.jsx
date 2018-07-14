@@ -86,7 +86,10 @@ class Home extends React.Component {
                         {this.renderReviews()}
                     </div>
                 </section>
-                <Contact />
+                <Contact
+                    email_address={this.props.company ? this.props.company.email_address : ''}
+                    phone_number={this.props.company ? this.props.company.phone_number : ''}
+                />
             </React.Fragment >
         )
     }

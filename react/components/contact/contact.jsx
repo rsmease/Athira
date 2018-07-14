@@ -22,11 +22,11 @@ class Contact extends React.Component {
                 <div className="contact__container--methods-index">
                     <div className="contact__container--methods-index-item">
                         <Material.MdEmail className="contact__icon contact__icon--email" />
-                        <h4>hello@athira.com</h4>
+                        <h4>{this.props.email_address}</h4>
                     </div>
                     <div className="contact__container--methods-index-item">
                         <Material.MdPhoneIphone className="contact__icon" />
-                        <h4 >(415) 638-1940</h4>
+                        <h4 >{this.props.phone_number}</h4>
                     </div>
                 </div>
             </section>
