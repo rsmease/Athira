@@ -10,9 +10,6 @@ class ReviewsIndexItem extends React.Component {
                     <h4 className="reviews-index-item__header-4--home">
                         "{this.props.review.body}"
                 </h4>
-                    <h3 className="reviews-index-item__header-3--home">
-                        -  {this.props.review.reviewer_name}
-                    </h3>
                     <img
                         className="reviews-index-item__image--home"
                         src={this.props.review.logo_url}
