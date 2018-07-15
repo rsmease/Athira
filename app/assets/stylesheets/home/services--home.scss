@@ -17,9 +17,19 @@
     max-width: 220px;
 }
 
+.services-index-item__icon-container--home {
+    width: $gutter-65 * 2;
+    height: $gutter-65 * 2;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: $secondary-medium;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 .services-index-item__icon--home {
-    background-color: $primary-dark;
-    width: 100px;
+    width: $gutter-65;
 }
 
 .services-index-item__header-2--home {

@@ -25,9 +25,19 @@
     justify-items: center;
 }
 
+.services-index-item__image-container {
+    width: $gutter-65 * 2;
+    height: $gutter-65 * 2;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: $secondary-medium;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 .services-index-item__icon {
-    color: $primary-dark;
-    font-size: 112px;
+    width: $gutter-65;
 }
 
 @keyframes expandBorder {
