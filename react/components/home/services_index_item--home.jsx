@@ -17,7 +17,9 @@ class ServicesIndexItem extends React.Component {
                     to={this.parseAnchor()}
                 >
                     <div className="services-index-item__container--home">
-                        <img className="services-index-item__icon--home" src={this.props.service.icon_url} />
+                        <div className="services-index-item__icon-container--home">
+                            <img className="services-index-item__icon--home" src={this.props.service.icon_url} />
+                        </div>
                         <h3 className="services-index-item__header-2--home">{this.props.service.name}</h3>
                         <h3 className="services-index-item__header-3--home">{this.props.service.short_description}</h3>
                     </div>
