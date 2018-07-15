@@ -18,15 +18,13 @@ permit_params :name, :short_description, :icon_url, :other_image_url, :created_a
             f.input :short_description
             f.input :long_description, as: :quill_editor
             f.input :icon_url
-            f.input :other_image_url
         end
         f.actions
     end
 
     before_save do |service|
-        unless params[:service].nil? || params[:service][:icon_url].nil?
-            service.icon_url = '' unless params[:service][:icon_url].include('id')
-            service.icon_url = "http://drive.google.com/uc?export=view&id=" + params[:service][:icon_url].split("id")[1]
+        unless params[:service].nil? || params[:service][:icon_url].nil? || !params[:service][:icon_url].includes?('http://drive.google.com')
+            service.icon_url = "http://drive.google.com/uc?export=view&id" + params[:service][:icon_url].split("id")[1]
         end
     end
 
