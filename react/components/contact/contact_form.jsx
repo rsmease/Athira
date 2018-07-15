@@ -42,7 +42,7 @@ class ContactForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.requestToCreateVisitor(this.state)
-      .then(() => this.clearForm())
+      .then(() => setTimeout(this.clearForm, 2000))
     this.props.clearVisitorErrors();
   }
 
