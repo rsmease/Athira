@@ -18,17 +18,10 @@ permit_params :name, :headline, :long_description, :short_description, :email_ad
             f.input :headline
             f.input :long_description, as: :quill_editor
             f.input :short_description
-            f.input :splash_image_url
             f.input :email_address
             f.input :phone_number
         end
         f.actions
-    end
-
-    before_save do |company|
-        unless params[:company].nil? || params[:company][:splash_image_url].nil?
-            company.splash_image_url = "http://drive.google.com/uc?export=view&id=" + params[:company][:splash_image_url]
-        end
     end
 
 end
