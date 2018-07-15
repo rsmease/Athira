@@ -20,6 +20,7 @@ class ServicesIndex extends React.Component {
     componentDidMount() {
         this.props.getAllServices();
         this.props.getAllImageCarousels();
+        this.props.getAllCompanies();
     }
 
     renderServices() {
@@ -54,7 +55,10 @@ class ServicesIndex extends React.Component {
                     <div className="services-index__container">
                         {this.renderServices()}
                     </div>
-                    <Contact />
+                    <Contact
+                        email_address={this.props.company ? this.props.company.email_address : ''}
+                        phone_number={this.props.company ? this.props.company.phone_number : ''}
+                    />
                 </section>
             </React.Fragment >
         )

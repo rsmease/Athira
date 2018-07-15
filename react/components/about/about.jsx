@@ -63,7 +63,10 @@ class About extends React.Component {
                     <div className="leaders-index__container">
                         {this.renderLeaders()}
                     </div>
-                    <Contact />
+                    <Contact
+                        email_address={this.props.company ? this.props.company.email_address : ''}
+                        phone_number={this.props.company ? this.props.company.phone_number : ''}
+                    />
                 </section>
             </React.Fragment >
         )
