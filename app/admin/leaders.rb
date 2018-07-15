@@ -12,14 +12,20 @@ permit_params :name, :title, :description, :headshot_url, :created_at, :updated_
 #   permitted
 # end
 
-form do |f|
-f.inputs do
-    f.input :name
-    f.input :title
-    f.input :description, as: :quill_editor
-    f.input :headshot_url
-end
-f.actions
-end
+    form do |f|
+        f.inputs do
+            f.input :name
+            f.input :title
+            f.input :description, as: :quill_editor
+            f.input :headshot_url
+        end
+        f.actions
+    end
 
+    before_save do |leader|
+        unless params[:leader].nil? || params[:leader][:headshot_url].nil?
+            leader.headshot_url = '' unless params[:leader][:headshot_url].include('id')
+            leader.headshot_url = "http://drive.google.com/uc?export=view&id=" + params[:leader][:headshot_url].split("id")[1]
+        end
+    end
 end
