@@ -138,6 +138,9 @@
     height: 60px;
     width: 60vw;
     max-width: 315px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
     text-transform: uppercase;
     color: white;
     font-size: 24px;
@@ -145,10 +148,44 @@
     border-radius: 30px;
     margin-top: 35px;
     border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.contact__form--submit-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, .5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
 }
 
 .contact__form--submit-button:focus {
     outline: none;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+.contact__form--submit-button:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
 }
 
 .contact__form--modal-container {
@@ -163,6 +200,7 @@
     grid-row-gap: 10px;
     align-content: center;
     justify-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .contact__form--modal-h4 {
