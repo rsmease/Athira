@@ -1,0 +1,3974 @@
+@charset "UTF-8";
+/**
+ * Unit
+ * http://www.google.com/design/spec/layout/metrics-and-keylines.html#metrics-and-keylines-baseline-units
+ */
+/**
+ * Unit
+ * http://www.google.com/design/spec/layout/metrics-and-keylines.html#metrics-and-keylines-baseline-units
+ */
+/* line 1, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* line 11, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+::selection {
+  background-color: #79CBCB;
+  color: white;
+}
+
+/* line 16, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 21, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+body {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: sans-serif;
+  margin: 0;
+}
+/* line 21, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/generators/mixins.scss */
+.wf-active body {
+  font-family: "RobotoDraft", sans-serif;
+}
+
+/* line 28, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 32, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+b,
+strong {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+}
+
+/* line 37, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  margin: 0;
+}
+
+/* line 47, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+p {
+  margin: 12px 0;
+}
+
+/* line 51, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+button,
+input {
+  font-family: "RobotoDraft", sans-serif;
+}
+
+/* line 56, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 61, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s color;
+}
+/* line 66, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+a:link, a:visited {
+  color: #063C3C;
+}
+/* line 70, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+a:link:hover, a:visited:hover {
+  text-decoration: underline;
+}
+/* line 75, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+a:hover, a:focus {
+  color: #8bd2d2;
+  transition: 0.1s color;
+}
+/* line 81, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+a:active {
+  color: #80cece;
+  transition: 0.1s color;
+}
+
+/* line 87, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+blockquote {
+  border-left: 4px solid rgba(0, 0, 0, 0.26);
+  margin: 16px 0;
+  padding: 16px;
+}
+
+/* line 93, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+hr {
+  border: 0;
+  border-bottom: 1px solid #efefef;
+  margin: 32px 0;
+}
+
+/* line 99, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 105, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+hr {
+  margin: 0;
+}
+
+/* line 1, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* line 11, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+::selection {
+  background-color: #79CBCB;
+  color: white;
+}
+
+/* line 16, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 21, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+body {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: sans-serif;
+  margin: 0;
+}
+/* line 21, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/generators/mixins.scss */
+.wf-active body {
+  font-family: "RobotoDraft", sans-serif;
+}
+
+/* line 28, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 32, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+b,
+strong {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+}
+
+/* line 37, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  margin: 0;
+}
+
+/* line 47, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+p {
+  margin: 12px 0;
+}
+
+/* line 51, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+button,
+input {
+  font-family: "RobotoDraft", sans-serif;
+}
+
+/* line 56, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 61, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s color;
+}
+/* line 66, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+a:link, a:visited {
+  color: #063C3C;
+}
+/* line 70, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+a:link:hover, a:visited:hover {
+  text-decoration: underline;
+}
+/* line 75, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+a:hover, a:focus {
+  color: #8bd2d2;
+  transition: 0.1s color;
+}
+/* line 81, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+a:active {
+  color: #80cece;
+  transition: 0.1s color;
+}
+
+/* line 87, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+blockquote {
+  border-left: 4px solid rgba(0, 0, 0, 0.26);
+  margin: 16px 0;
+  padding: 16px;
+}
+
+/* line 93, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+hr {
+  border: 0;
+  border-bottom: 1px solid #efefef;
+  margin: 32px 0;
+}
+
+/* line 99, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 105, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/global/foundation.scss */
+hr {
+  margin: 0;
+}
+
+/**
+ * Avatar
+ * A circular image
+ */
+/**
+ * Button Icon
+ * A simple, reusable icon button
+ */
+@keyframes am-dialog-fade {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/**
+ * Multiselects
+ */
+/**
+ * Select
+ * Custom select styles, taken from textfields in material design
+ */
+/**
+ * Snackbars
+ * Material design notifications
+ * http://www.google.com/design/spec/components/snackbars-toasts.html
+ */
+@keyframes am-snackbar-fade {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 5px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/**
+ * Subheader
+ * Used for sidebar headings and other secondary content
+ * which require title text
+ */
+/**
+ * Tables
+ */
+/**
+ * Tabs
+ * http://www.google.com/design/spec/components/tabs.html
+ */
+@keyframes am-tabs-error-throb {
+  from {
+    text-shadow: none;
+    transform: translateY(1px);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(244, 67, 54, 0.8);
+    transform: translateY(-1px);
+  }
+}
+/**
+ * Toolbar
+ * A basic navigation element, primary used for top level navigation
+ */
+/**
+ * Underlay
+ * Underlays appear below modal content that takes up the entire screen.
+ */
+/* line 1, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/avatar.scss */
+.avatar {
+  background: rgba(0, 0, 0, 0.54);
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: transparent;
+  display: block;
+}
+
+/**
+ * Blank Slate
+ * This element appears whenever a resource can not display
+ * any information. For example, the default homescreen.
+ */
+/* line 7, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/blank_slate.scss */
+.blank_slate_container {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.01em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+/* line 16, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/blank_slate.scss */
+.blank_slate {
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: inline-block;
+  padding: 16px 24px;
+}
+/* line 22, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/blank_slate.scss */
+.blank_slate small {
+  display: block;
+  margin-top: 8px;
+}
+
+/**
+ * Breadcrumbs
+ * Appear above the title to help users return to previous
+ * steps in their flow.
+ */
+/* line 7, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/breadcrumbs.scss */
+.breadcrumb {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 0.75rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/**
+ * Buttons
+ * Various selectors for button like elements
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/buttons.scss */
+.clear_filters_btn {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  background: transparent;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  margin: 4px;
+  padding: 12px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s all;
+  user-select: none;
+  vertical-align: center;
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+.clear_filters_btn:focus {
+  outline: none;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+.clear_filters_btn:hover {
+  color: #063C3C;
+  text-decoration: none;
+}
+
+/* line 10, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/buttons.scss */
+.button,
+.cancel a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  background: transparent;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  margin: 4px;
+  padding: 12px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s all;
+  user-select: none;
+  vertical-align: center;
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+.button:focus,
+.cancel a:focus {
+  outline: none;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+.button:hover,
+.cancel a:hover {
+  color: #063C3C;
+  text-decoration: none;
+}
+
+/* line 15, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/buttons.scss */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  background: transparent;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  margin: 4px;
+  padding: 12px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s all;
+  user-select: none;
+  vertical-align: center;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #063C3C;
+  color: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12);
+  font-weight: 600;
+  min-width: 88px;
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  outline: none;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  color: #063C3C;
+  text-decoration: none;
+}
+/* line 43, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+input[type="submit"]:focus, input[type="submit"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="button"]:focus,
+input[type="button"]:hover {
+  color: white;
+  background: #0b6a6a;
+  outline: none;
+}
+/* line 50, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  background: #085353;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/**
+ * Checkboxes
+ * Inputs given the "boolean" class. They have been seperated
+ * from general form styles because of some hairy nesting.
+ */
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/checkbox.scss */
+.input.boolean > label {
+  font-size: 14px;
+}
+/* line 13, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/checkbox.scss */
+.input.boolean > label > input {
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  top: -1px;
+  width: auto;
+}
+
+/* line 1, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/clearfix.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 5, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/clearfix.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 11, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/clearfix.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/**
+ * Date Selects
+ */
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/date-select.scss */
+.date_select .fragments-group,
+.datetime_select .fragments-group,
+.time_select .fragments-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #efefef;
+  border-radius: 2px;
+  display: inline-block;
+  margin-top: 8px;
+}
+/* line 10, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/lists.scss */
+.date_select .fragments-group li,
+.datetime_select .fragments-group li,
+.time_select .fragments-group li {
+  display: inline-block;
+}
+/* line 15, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/date-select.scss */
+.date_select .fragment,
+.datetime_select .fragment,
+.time_select .fragment {
+  border-left: 1px solid #efefef;
+  text-align: center;
+}
+/* line 39, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/select.scss */
+.date_select .fragment:first-child,
+.datetime_select .fragment:first-child,
+.time_select .fragment:first-child {
+  border-left: none;
+}
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/date-select.scss */
+.date_select .fragment select,
+.datetime_select .fragment select,
+.time_select .fragment select {
+  border: 0;
+  border-radius: 0;
+}
+/* line 23, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/date-select.scss */
+.date_select .fragment label,
+.datetime_select .fragment label,
+.time_select .fragment label {
+  clip: rect(0, 0, 0, 0) !important;
+  position: absolute !important;
+}
+/* line 27, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/date-select.scss */
+.date_select .fragment select,
+.datetime_select .fragment select,
+.time_select .fragment select {
+  font-size: 14px;
+  font-size: 0.875rem;
+  background: #fafafa url(/assets/active_material/icons/arrow-dropdown-93cdb34fae47555088422091da046ff9b252673967f30b017fa9ecd2b4ef7585.svg) no-repeat calc(100% - 4px) 50%;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  height: 42px;
+  line-height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  letter-spacing: 0.01em;
+  padding: 0 24px 0 10px;
+}
+
+/**
+ * Datepicker
+ * An input with a dropdown calendar that appears on focus
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker {
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 -1px 1px rgba(0, 0, 0, 0.12);
+  padding: 0 12px 8px;
+  width: 280px;
+}
+
+/* line 10, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-header {
+  line-height: 32px;
+  padding: 8px 0 4px;
+  position: relative;
+  text-align: center;
+}
+/* line 13, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-header .ui-icon {
+  clip: rect(0, 0, 0, 0) !important;
+  position: absolute !important;
+}
+
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-title {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* line 22, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-prev {
+  cursor: pointer;
+  float: left;
+}
+/* line 49, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/datepicker.scss */
+.ui-datepicker-prev:before {
+  content: "‹";
+}
+/* line 37, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/datepicker.scss */
+.ui-datepicker-prev:before:before {
+  font-size: 16px;
+  font-size: 1rem;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 26, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-next {
+  cursor: pointer;
+  float: right;
+}
+/* line 59, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/datepicker.scss */
+.ui-datepicker-next:before {
+  content: "›";
+}
+/* line 37, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/datepicker.scss */
+.ui-datepicker-next:before:before {
+  font-size: 16px;
+  font-size: 1rem;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 30, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-calendar {
+  font-size: 12px;
+  font-size: 0.75rem;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+/* line 33, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-calendar th {
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 500;
+  padding: 0 0 4px;
+}
+/* line 37, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-calendar td {
+  height: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  padding: 0;
+  width: 32px;
+}
+/* line 41, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-calendar a {
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: block;
+  height: inherit;
+  margin: 0 auto;
+  width: inherit;
+}
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.ui-datepicker-calendar a:hover, .ui-datepicker-calendar a:focus {
+  color: #79CBCB;
+}
+/* line 44, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-calendar a.ui-state-active, .ui-datepicker-calendar a:hover, .ui-datepicker-calendar a:focus {
+  color: #063C3C;
+  text-decoration: none;
+}
+/* line 50, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-calendar a.ui-state-highlight {
+  background-color: #063C3C;
+  color: white;
+}
+
+/* line 56, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/datepicker.scss */
+.ui-datepicker-unselectable {
+  opacity: 0;
+}
+
+/**
+ * Dialog
+ * A full page takeover action panel
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dialog.scss */
+.ui-dialog {
+  animation: 0.6s am-dialog-fade;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.23), 0 3px 3px rgba(0, 0, 0, 0.16);
+  outline: none;
+  z-index: 1000;
+}
+
+/* line 10, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dialog.scss */
+.ui-dialog-toolbar {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  position: relative;
+}
+
+/* line 14, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dialog.scss */
+.ui-dialog-title {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+  display: block;
+  padding: 32px 24px 8px;
+}
+
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dialog.scss */
+.ui-dialog-content {
+  display: inline;
+}
+/* line 21, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dialog.scss */
+.ui-dialog-content ul {
+  margin: 0;
+}
+
+/* line 26, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dialog.scss */
+.ui-dialog-buttonset {
+  padding: 8px 8px 0;
+  text-align: right;
+}
+
+/* line 30, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dialog.scss */
+.ui-button {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  background: transparent;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  margin: 4px;
+  padding: 12px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s all;
+  user-select: none;
+  vertical-align: center;
+  color: #063C3C;
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+.ui-button:focus {
+  outline: none;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+.ui-button:hover {
+  color: #063C3C;
+  text-decoration: none;
+}
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.ui-button:hover, .ui-button:focus {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 35, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dialog.scss */
+.ui-dialog-titlebar-close {
+  border-radius: 50%;
+  height: 40px;
+  overflow: hidden;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 40px;
+  background: url(/assets/active_material/icons/clear-724e5c08f3c81476319a3e83bae49fff8c747e984232af84541730941eb95c8e.svg) 50% 50% no-repeat;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/**
+ * Dropdowns
+ */
+/* line 5, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dropdown.scss */
+.dropdown_menu {
+  display: inline-block;
+  outline: 0;
+  position: relative;
+  text-align: left;
+}
+
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dropdown.scss */
+.dropdown_menu_button {
+  position: relative;
+}
+/* line 12, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dropdown.scss */
+.dropdown_menu_button:after {
+  border: 5px solid transparent;
+  border-color: #063C3C transparent transparent;
+  content: "";
+  height: 0;
+  margin-top: -2.5px;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  width: 0;
+}
+/* line 16, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dropdown.scss */
+.dropdown_menu_button.disabled {
+  opacity: 0.4;
+}
+
+/* line 21, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dropdown.scss */
+.dropdown_menu_list {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 1.5px rgba(0, 0, 0, 0.12);
+  filter: blur(1px);
+  left: 0;
+  list-style: none;
+  margin: 0;
+  min-width: 112px;
+  padding: 8px 0;
+  position: absolute;
+  text-align: left;
+  top: 32px;
+  transform-origin: 0 0;
+  transform: translate3d(0, -4px, 0) scaleY(0);
+  transition: 0.2s all;
+  width: auto;
+  will-change: transform;
+  z-index: 1000;
+  filter: none;
+  transition: 0.2s all;
+  transform: translateZ(0) scale(1);
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dropdown.scss */
+.dropdown_menu_list li {
+  display: block;
+  margin: 0;
+  transition: 0.2s all;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dropdown.scss */
+.dropdown_menu_list li a {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  opacity: 0;
+  padding: 4px 16px;
+  transition: 0.28s opacity, 0.28s color;
+  white-space: nowrap;
+  opacity: 1;
+  transition: 0.2s opacity;
+}
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.dropdown_menu_list li a:hover, .dropdown_menu_list li a:focus {
+  color: #79CBCB;
+}
+/* line 19, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.dropdown_menu_list li a:hover, .dropdown_menu_list li a:focus {
+  text-decoration: none;
+}
+/* line 95, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/menu.scss */
+.dropdown_menu_list li a:hover, .dropdown_menu_list li a:focus {
+  color: #063C3C;
+}
+@media screen and (min-width: 1300px) {
+  /* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/dropdown.scss */
+  .dropdown_menu_list li a {
+    font-size: 13px;
+  }
+}
+
+/* line 1, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/featured-blocks.scss */
+.featured-blocks-message {
+  display: block;
+  padding: 0 16px 16px;
+}
+
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/featured-blocks.scss */
+.new-featured-block {
+  background: #fefefe;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 16px;
+}
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/featured-blocks.scss */
+.new-featured-block .button {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #063C3C;
+  color: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12);
+  font-weight: 600;
+  min-width: 88px;
+}
+/* line 43, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+.new-featured-block .button:focus, .new-featured-block .button:hover {
+  color: white;
+  background: #0b6a6a;
+  outline: none;
+}
+/* line 50, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+.new-featured-block .button:active {
+  background: #085353;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/**
+ * Filters
+ * Filters show up as sidebars on most index pages
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/filter.scss */
+.filter_form_field,
+.select_and_search,
+.filter_date_range {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 8px 0;
+  padding: 8px 16px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 12, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/filter.scss */
+.filter_form_field label, .select_and_search label, .filter_date_range label {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: rgba(0, 0, 0, 0.54);
+  display: block;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  position: relative;
+  transition: 0.28s all;
+  width: 100%;
+  width: 100%;
+}
+/* line 93, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/textfield.scss */
+.has-focus .filter_form_field label,
+.has-focus .select_and_search label,
+.has-focus .filter_date_range label {
+  color: #063C3C;
+}
+/* line 17, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/filter.scss */
+.filter_form_field > select:not([multiple]),
+.select_and_search > select:not([multiple]),
+.filter_date_range > select:not([multiple]) {
+  font-size: 14px;
+  font-size: 0.875rem;
+  background: #fafafa url(/assets/active_material/icons/arrow-dropdown-93cdb34fae47555088422091da046ff9b252673967f30b017fa9ecd2b4ef7585.svg) no-repeat calc(100% - 4px) 50%;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  height: 42px;
+  line-height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  letter-spacing: 0.01em;
+  padding: 0 24px 0 10px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  flex-basis: 100px;
+}
+/* line 24, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/filter.scss */
+.filter_form_field > select[multiple],
+.select_and_search > select[multiple],
+.filter_date_range > select[multiple] {
+  flex-basis: 100%;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/filter.scss */
+.filter_form_field > select:last-child,
+.select_and_search > select:last-child,
+.filter_date_range > select:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+/* line 34, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/filter.scss */
+.filter_form_field > select + input[type="text"],
+.filter_form_field > select + input[type="number"],
+.select_and_search > select + input[type="text"],
+.select_and_search > select + input[type="number"],
+.filter_date_range > select + input[type="text"],
+.filter_date_range > select + input[type="number"] {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left: 0;
+}
+/* line 42, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/filter.scss */
+.filter_form_field > input.datepicker,
+.select_and_search > input.datepicker,
+.filter_date_range > input.datepicker {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+  box-shadow: inset 1px 1px 1px rgba(34, 34, 34, 0.08);
+  display: block;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0;
+  padding: 8px;
+  transition: 0.35s border-color, 0.35s box-shadow;
+  width: 100%;
+  flex: 1;
+  width: auto;
+  background: #fff url(/assets/active_material/icons/event-cdca0160ebdc4e778f5b63df0739b6c60592fa46ddb5f8af9dbe344dbcfed3f8.svg) 8px 50% no-repeat;
+  padding-left: 40px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 49, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/textfield.scss */
+.filter_form_field > input.datepicker:focus,
+.select_and_search > input.datepicker:focus,
+.filter_date_range > input.datepicker:focus {
+  border-color: #063C3C;
+  outline: 0;
+  transition: 0.15s border-color, 0.15s box-shadow;
+}
+/* line 50, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/filter.scss */
+.filter_form_field > input[type="submit"],
+.select_and_search > input[type="submit"],
+.filter_date_range > input[type="submit"] {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+/* line 57, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/filter.scss */
+.filter_string input,
+.filter_numeric input {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+  box-shadow: inset 1px 1px 1px rgba(34, 34, 34, 0.08);
+  display: block;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0;
+  padding: 8px;
+  transition: 0.35s border-color, 0.35s box-shadow;
+  width: 100%;
+  flex: 1;
+  width: auto;
+}
+/* line 49, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/textfield.scss */
+.filter_string input:focus,
+.filter_numeric input:focus {
+  border-color: #063C3C;
+  outline: 0;
+  transition: 0.15s border-color, 0.15s box-shadow;
+}
+
+/**
+ * Flash
+ * Notifications that appear whenever a CRUD action or error
+ * has surfaced
+ */
+/* line 7, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/flash.scss */
+.flash {
+  animation: 0.6s am-snackbar-fade, 0.6s am-snackbar-fade reverse 9s forwards;
+  background: #323232;
+  border-radius: 2px;
+  bottom: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.25rem;
+  margin: 16px;
+  min-width: 288px;
+  max-width: 576px;
+  padding: 16px 24px 12px;
+  position: fixed;
+  text-shadow: 0 1px 1px #000;
+  z-index: 1000;
+}
+/* line 10, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/flash.scss */
+.flash.flash_alert {
+  background-color: #a21309;
+  text-shadow: 0 1px 1px black;
+}
+
+/* line 1, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/footer.scss */
+.footer {
+  padding: 16px;
+  text-align: center;
+}
+
+/**
+ * Forms
+ */
+/* line 5, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+fieldset.inputs {
+  margin-bottom: 16px;
+}
+/* line 8, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+fieldset.inputs > ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 12, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+fieldset.inputs > legend {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 500;
+  padding: 16px;
+  line-height: 16px;
+  border: 0;
+}
+
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.input {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 8px 0;
+  padding: 8px 16px;
+  position: relative;
+}
+/* line 21, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.input > label, .input .label > label {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: rgba(0, 0, 0, 0.54);
+  display: block;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  position: relative;
+  transition: 0.28s all;
+  width: 100%;
+}
+/* line 93, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/textfield.scss */
+.has-focus .input > label,
+.has-focus .input .label > label {
+  color: #063C3C;
+}
+/* line 26, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.input.string input, .input.stringish input, .input.numberic input {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+  box-shadow: inset 1px 1px 1px rgba(34, 34, 34, 0.08);
+  display: block;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0;
+  padding: 8px;
+  transition: 0.35s border-color, 0.35s box-shadow;
+  width: 100%;
+}
+/* line 49, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/textfield.scss */
+.input.string input:focus, .input.stringish input:focus, .input.numberic input:focus {
+  border-color: #063C3C;
+  outline: 0;
+  transition: 0.15s border-color, 0.15s box-shadow;
+}
+/* line 32, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.input.email input {
+  background: #fff url(/assets/active_material/icons/email-ff1c595ff9f72629c40d250e5eb8c37c52480ce67d02fd773f165c251046132f.svg) 8px 50% no-repeat;
+  padding-left: 40px;
+}
+/* line 36, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.input.password input {
+  background: #fff url(/assets/active_material/icons/secret-4ac1e52d6ea197ec9e0432e44579067a2c265ece3af04e4852875a1d72fe1be5.svg) 8px 50% no-repeat;
+  padding-left: 40px;
+}
+/* line 40, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.input.datepicker input {
+  background: #fff url(/assets/active_material/icons/event-cdca0160ebdc4e778f5b63df0739b6c60592fa46ddb5f8af9dbe344dbcfed3f8.svg) 8px 50% no-repeat;
+  padding-left: 40px;
+}
+/* line 44, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.input.text textarea {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+  box-shadow: inset 1px 1px 1px rgba(34, 34, 34, 0.08);
+  display: block;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0;
+  padding: 8px;
+  transition: 0.35s border-color, 0.35s box-shadow;
+  width: 100%;
+  border-radius: 2px;
+  height: 3.5rem;
+  padding: 8px;
+}
+/* line 49, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/textfield.scss */
+.input.text textarea:focus {
+  border-color: #063C3C;
+  outline: 0;
+  transition: 0.15s border-color, 0.15s box-shadow;
+}
+/* line 49, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.input select + input {
+  margin-top: 16px;
+}
+
+/* line 55, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.field_with_errors input {
+  border-color: #f44336;
+  box-shadow: 0 1px 0 0 #f44336;
+}
+
+/* line 59, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.inline-hints {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 0.75rem;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 8px 0 0;
+}
+
+/* line 63, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.inline-errors {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 0.75rem;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 8px 0 0;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 0.75rem;
+  color: #f44336;
+  display: inline-block;
+  margin: 4px 0 0;
+  vertical-align: middle;
+  transition: 0.3s all;
+}
+/* line 112, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/textfield.scss */
+.inline-errors:first-letter {
+  text-transform: uppercase;
+}
+/* line 67, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+.inline-errors + .inline-hints {
+  display: none;
+}
+
+/* line 72, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+abbr[title="required"] {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 0.75rem;
+  border: 0;
+  color: #063C3C;
+  margin-left: 4px;
+}
+
+/* line 76, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+fieldset.actions,
+.buttons {
+  background: #fefefe;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 16px;
+}
+/* line 80, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+fieldset.actions > ol,
+.buttons > ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 10, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/lists.scss */
+fieldset.actions > ol li,
+.buttons > ol li {
+  display: inline-block;
+}
+/* line 85, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+fieldset.actions .cancel a,
+.buttons .cancel a {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #063C3C;
+  color: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12);
+  font-weight: 600;
+  min-width: 88px;
+}
+/* line 43, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+fieldset.actions .cancel a:focus, fieldset.actions .cancel a:hover,
+.buttons .cancel a:focus,
+.buttons .cancel a:hover {
+  color: white;
+  background: #0b6a6a;
+  outline: none;
+}
+/* line 50, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+fieldset.actions .cancel a:active,
+.buttons .cancel a:active {
+  background: #085353;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+/* line 89, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/forms.scss */
+fieldset.actions .cancel a,
+.buttons .cancel a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  background: transparent;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  margin: 4px;
+  padding: 12px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s all;
+  user-select: none;
+  vertical-align: center;
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+fieldset.actions .cancel a:focus,
+.buttons .cancel a:focus {
+  outline: none;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+fieldset.actions .cancel a:hover,
+.buttons .cancel a:hover {
+  color: #063C3C;
+  text-decoration: none;
+}
+
+/**
+ * Header
+ * Encapsulates several elements related to navigation at
+ * the top of the page.
+ */
+/* line 7, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.header {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  position: relative;
+  background-color: #063C3C;
+  color: white;
+  padding-right: 64px;
+}
+
+/* line 13, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.site_title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 600px) {
+  /* line 13, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+  .site_title {
+    width: auto;
+  }
+}
+
+/* line 19, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+#tabs {
+  flex-grow: 1;
+}
+
+/* line 23, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.header-item {
+  margin: 0 0 0 16px;
+  padding: 0;
+  text-align: left;
+}
+
+/* line 27, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.header-item > li {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}
+/* line 19, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.header-item > li:hover, .header-item > li:focus {
+  text-decoration: none;
+}
+/* line 30, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.header-item > li > a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  line-height: 16px;
+  padding: 16px 8px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+/* line 19, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.header-item > li > a:hover, .header-item > li > a:focus {
+  text-decoration: none;
+}
+/* line 61, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/toolbar.scss */
+.header-item > li > a:hover, .header-item > li > a:focus {
+  color: #79CBCB;
+}
+/* line 35, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.header-item > li.current > a {
+  color: #79CBCB;
+  font-weight: 600;
+}
+
+/* line 40, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.has_nested {
+  display: inline-block;
+  outline: 0;
+  position: relative;
+  text-align: left;
+}
+/* line 43, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.has_nested ul {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 1.5px rgba(0, 0, 0, 0.12);
+  filter: blur(1px);
+  left: 0;
+  list-style: none;
+  margin: 0;
+  min-width: 112px;
+  padding: 8px 0;
+  position: absolute;
+  text-align: left;
+  top: 32px;
+  transform-origin: 0 0;
+  transform: translate3d(0, -4px, 0) scaleY(0);
+  transition: 0.2s all;
+  width: auto;
+  will-change: transform;
+  z-index: 1000;
+}
+/* line 46, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.has_nested ul li {
+  display: block;
+  margin: 0;
+  transition: 0.2s all;
+}
+/* line 50, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.has_nested ul li a {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  opacity: 0;
+  padding: 4px 16px;
+  transition: 0.28s opacity, 0.28s color;
+  white-space: nowrap;
+}
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.has_nested ul li a:hover, .has_nested ul li a:focus {
+  color: #79CBCB;
+}
+/* line 19, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.has_nested ul li a:hover, .has_nested ul li a:focus {
+  text-decoration: none;
+}
+/* line 95, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/menu.scss */
+.has_nested ul li a:hover, .has_nested ul li a:focus {
+  color: #063C3C;
+}
+@media screen and (min-width: 1300px) {
+  /* line 50, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+  .has_nested ul li a {
+    font-size: 13px;
+  }
+}
+/* line 55, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.has_nested:hover ul, .has_nested:focus ul {
+  filter: none;
+  transition: 0.2s all;
+  transform: translateZ(0) scale(1);
+}
+/* line 59, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/header.scss */
+.has_nested:hover ul li a, .has_nested:focus ul li a {
+  opacity: 1;
+  transition: 0.2s opacity;
+}
+
+/* line 1, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/hidden.scss */
+.hidden {
+  clip: rect(0, 0, 0, 0) !important;
+  position: absolute !important;
+}
+
+/**
+ * Login
+ * This screen appears if no session is active
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/login.scss */
+#login {
+  animation: 0.6s am-dialog-fade;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.23), 0 3px 3px rgba(0, 0, 0, 0.16);
+  outline: none;
+  z-index: 1000;
+  margin: -32px auto 0;
+  max-width: 400px;
+}
+/* line 11, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/login.scss */
+#login h2 {
+  clip: rect(0, 0, 0, 0) !important;
+  position: absolute !important;
+}
+/* line 16, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/login.scss */
+#login > a {
+  background: #fefefe;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 16px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* line 23, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/login.scss */
+#login > br {
+  display: none;
+}
+/* line 27, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/login.scss */
+#login .inputs {
+  margin-bottom: 0;
+}
+/* line 33, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/login.scss */
+#login .actions {
+  background: transparent;
+  box-shadow: none;
+  padding-top: 0;
+  box-shadow: none;
+}
+/* line 39, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/login.scss */
+#login .actions .action,
+#login .actions input[type='submit'] {
+  margin: 0;
+  width: 100%;
+}
+
+/* line 47, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/login.scss */
+body.logged_out {
+  background-color: #79CBCB;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/**
+ * Overlay
+ * Overlays appear below modal content that takes up the entire screen.
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/overlay.scss */
+.ui-widget-overlay {
+  background: rgba(0, 0, 0, 0.54);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/**
+ * Pagination
+ * Typically appears on index pages, below tables
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/pagination.scss */
+.paginated_collection {
+  *zoom: 1;
+  clear: both;
+}
+/* line 5, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/clearfix.scss */
+.paginated_collection:before, .paginated_collection:after {
+  content: " ";
+  display: table;
+}
+/* line 11, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/clearfix.scss */
+.paginated_collection:after {
+  clear: both;
+}
+/* line 10, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/pagination.scss */
+.paginated_collection .pagination_information,
+.paginated_collection .download_links {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 0.75rem;
+  padding: 16px;
+}
+/* line 16, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/pagination.scss */
+.paginated_collection .pagination_information {
+  float: left;
+}
+/* line 20, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/pagination.scss */
+.paginated_collection .download_links {
+  line-height: 24px;
+  float: right;
+  text-align: right;
+}
+
+/* line 28, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/pagination.scss */
+.pagination {
+  background: #fff;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 16px;
+}
+/* line 35, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/pagination.scss */
+.pagination .page,
+.pagination .first,
+.pagination .prev,
+.pagination .next,
+.pagination .last {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  background: transparent;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  margin: 4px;
+  padding: 12px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s all;
+  user-select: none;
+  vertical-align: center;
+  min-width: 24px;
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+.pagination .page:focus,
+.pagination .first:focus,
+.pagination .prev:focus,
+.pagination .next:focus,
+.pagination .last:focus {
+  outline: none;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+.pagination .page:hover,
+.pagination .first:hover,
+.pagination .prev:hover,
+.pagination .next:hover,
+.pagination .last:hover {
+  color: #063C3C;
+  text-decoration: none;
+}
+
+/**
+ * Panels
+ * Stand-alone segments of content, in Material Design
+ * these could be considered Cards or pieces of paper.
+ */
+/* line 7, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/panels.scss */
+.panel,
+.has_many_container,
+body.index #main_content,
+body.edit #main_content > form,
+body.new #main_content > form,
+body.create #main_content > form,
+body.update #main_content > form {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.15);
+}
+/* line 16, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/panels.scss */
+.panel > h3,
+.has_many_container > h3,
+body.index #main_content > h3,
+body.edit #main_content > form > h3,
+body.new #main_content > form > h3,
+body.create #main_content > form > h3,
+body.update #main_content > form > h3 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 500;
+  padding: 16px;
+  line-height: 16px;
+}
+/* line 20, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/panels.scss */
+.panel .header_action,
+.has_many_container .header_action,
+body.index #main_content .header_action,
+body.edit #main_content > form .header_action,
+body.new #main_content > form .header_action,
+body.create #main_content > form .header_action,
+body.update #main_content > form .header_action {
+  float: right;
+}
+/* line 24, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/panels.scss */
+.panel .row th,
+.has_many_container .row th,
+body.index #main_content .row th,
+body.edit #main_content > form .row th,
+body.new #main_content > form .row th,
+body.create #main_content > form .row th,
+body.update #main_content > form .row th {
+  width: 20%;
+  padding-left: 16px;
+}
+
+/* line 31, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/panels.scss */
+.panel + .panel {
+  margin-top: 16px;
+}
+
+/* line 36, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/panels.scss */
+.panel_well {
+  padding: 0 16px 16px;
+}
+
+/**
+ * PhotoSelects
+ */
+/* line 5, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/photo_select.scss */
+.photo_select {
+  display: inline-block;
+}
+
+/**
+ * Scopes
+ * Theses appear above tables, providing the ability to filter rows
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/scopes.scss */
+.scopes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  text-align: right;
+}
+/* line 10, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/lists.scss */
+.scopes li {
+  display: inline-block;
+}
+
+/* line 13, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/scopes.scss */
+.scope {
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 16px;
+}
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/scopes.scss */
+.scope a {
+  color: rgba(0, 0, 0, 0.54);
+}
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.scope a:hover, .scope a:focus {
+  color: #79CBCB;
+}
+/* line 22, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/scopes.scss */
+.scope.selected {
+  font-weight: bold;
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/scopes.scss */
+.scope.selected a {
+  background-color: #063C3C;
+}
+
+/**
+ * Basic Selects
+ */
+/* line 8, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/select.scss */
+.select select:not([multiple]),
+.polymorphic_select select:not([multiple]) {
+  font-size: 14px;
+  font-size: 0.875rem;
+  background: #fafafa url(/assets/active_material/icons/arrow-dropdown-93cdb34fae47555088422091da046ff9b252673967f30b017fa9ecd2b4ef7585.svg) no-repeat calc(100% - 4px) 50%;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  height: 42px;
+  line-height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  letter-spacing: 0.01em;
+  padding: 0 24px 0 10px;
+}
+
+/* line 14, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/select.scss */
+select[multiple] {
+  border: 1px solid #d3d3d3;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  min-width: 250px;
+  max-width: 100%;
+}
+/* line 17, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/select.scss */
+select[multiple] option {
+  padding: 8px;
+  border-top: 1px solid #efefef;
+}
+/* line 17, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/multiselect.scss */
+select[multiple] option:first-child {
+  border-top: 0;
+}
+
+/* line 15, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/sortable.scss */
+.ui-sortable .reorder-handle-col {
+  padding: 0 0 0 8px;
+  width: 56px;
+}
+/* line 20, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/sortable.scss */
+.ui-sortable .reorder-handle {
+  background: transparent url(/assets/active_material/icons/reorder-9838b7dd05efc289655b100df8bc3da883697d726c92157dacbb71d3a14545a9.svg) 50% 50% no-repeat;
+  color: transparent;
+  cursor: move;
+  display: block;
+  height: 56px;
+  margin: 0 auto;
+  opacity: 0.40;
+  transition: 0.2s all;
+  width: 56px;
+}
+/* line 31, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/sortable.scss */
+.ui-sortable .reorder-handle:hover {
+  opacity: 1;
+}
+
+/**
+ * Structure
+ * Global structural elements
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/structure.scss */
+body {
+  background-color: #79CBCB;
+}
+
+/* line 10, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/structure.scss */
+#active_admin_content {
+  padding: 24px;
+}
+
+/* line 14, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/structure.scss */
+#sidebar {
+  margin-left: 24px;
+}
+
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/structure.scss */
+.with_sidebar {
+  display: flex;
+  width: 100%;
+}
+/* line 22, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/structure.scss */
+.with_sidebar #main_content_wrapper {
+  flex-grow: 1;
+}
+/* line 26, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/structure.scss */
+.with_sidebar #sidebar {
+  max-width: 320px;
+  width: 100%;
+}
+
+/**
+ * Tables
+ */
+/* line 5, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.table_tools {
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  padding: 16px;
+}
+
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table,
+.panel_contents table {
+  background: #fff;
+  width: 100%;
+  word-break: break-word;
+}
+/* line 13, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table th,
+.panel_contents table th {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 13px;
+  font-size: 0.8125rem;
+  border-bottom: 1px solid #efefef;
+  font-weight: 600;
+  height: 48px;
+  line-height: 16px;
+  padding: 8px 16px;
+  text-align: left;
+  white-space: nowrap;
+}
+/* line 16, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table th a,
+.panel_contents table th a {
+  position: relative;
+}
+/* line 35, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/table.scss */
+.index_table th a:after,
+.panel_contents table th a:after {
+  border: 5px solid transparent;
+  margin-left: 4px;
+  content: "";
+  margin-top: -1.5px;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 0;
+  height: 0;
+}
+/* line 49, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/table.scss */
+.index_table th.sorted-asc a:after,
+.panel_contents table th.sorted-asc a:after {
+  border-bottom-color: #063C3C;
+  margin-top: -7.5px;
+}
+/* line 56, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/table.scss */
+.index_table th.sorted-desc a:after,
+.panel_contents table th.sorted-desc a:after {
+  border-top-color: #063C3C;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table tr,
+.panel_contents table tr {
+  height: 48px;
+  transition: 0.12s background;
+}
+/* line 34, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table tbody tr:hover,
+.panel_contents table tbody tr:hover {
+  background: #eee;
+}
+/* line 69, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/table.scss */
+.index_table tbody tr:hover td,
+.index_table tbody tr:hover th,
+.panel_contents table tbody tr:hover td,
+.panel_contents table tbody tr:hover th {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e2e2e2;
+}
+/* line 38, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table tbody tr.selected,
+.panel_contents table tbody tr.selected {
+  background: #e0e0e0;
+}
+/* line 79, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/table.scss */
+.index_table tbody tr.selected td,
+.index_table tbody tr.selected th,
+.panel_contents table tbody tr.selected td,
+.panel_contents table tbody tr.selected th {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid #c9c9c9;
+}
+/* line 43, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table td,
+.panel_contents table td {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+  font-size: 0.8125rem;
+  border-bottom: 1px solid #efefef;
+  font-weight: 400;
+  padding: 8px 16px;
+}
+/* line 93, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/table.scss */
+.index_table td img,
+.panel_contents table td img {
+  display: block;
+  max-width: 320px;
+}
+/* line 48, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table .col-selectable,
+.panel_contents table .col-selectable {
+  padding: 16px 24px 16px;
+  width: 66px;
+}
+/* line 103, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/table.scss */
+.index_table .col-selectable [type=checkbox],
+.panel_contents table .col-selectable [type=checkbox] {
+  display: inline-block;
+  height: 18px;
+  margin: 0;
+  vertical-align: middle;
+  width: 18px;
+}
+/* line 53, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table .col-selectable .resource_selection_cell,
+.panel_contents table .col-selectable .resource_selection_cell {
+  display: inline;
+}
+/* line 58, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table td.col-actions,
+.panel_contents table td.col-actions {
+  background: url(/assets/active_material/icons/more-50a9ac99058eaf05a7a8cef5e62c03a533668990fb1eb600f76e3eaf76f1d27a.svg) 25% 50% no-repeat;
+  position: relative;
+  width: 48px;
+}
+/* line 61, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table td.col-actions .table_actions,
+.panel_contents table td.col-actions .table_actions {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 1.5px rgba(0, 0, 0, 0.12);
+  filter: blur(1px);
+  left: 0;
+  list-style: none;
+  margin: 0;
+  min-width: 112px;
+  padding: 8px 0;
+  position: absolute;
+  text-align: left;
+  top: 32px;
+  transform-origin: 0 0;
+  transform: translate3d(0, -4px, 0) scaleY(0);
+  transition: 0.2s all;
+  width: auto;
+  will-change: transform;
+  z-index: 1000;
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -16px;
+  margin-right: 16px;
+}
+/* line 68, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table td.col-actions .table_actions a,
+.panel_contents table td.col-actions .table_actions a {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  opacity: 0;
+  padding: 4px 16px;
+  transition: 0.28s opacity, 0.28s color;
+  white-space: nowrap;
+}
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.index_table td.col-actions .table_actions a:hover, .index_table td.col-actions .table_actions a:focus,
+.panel_contents table td.col-actions .table_actions a:hover,
+.panel_contents table td.col-actions .table_actions a:focus {
+  color: #79CBCB;
+}
+/* line 19, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/atoms/links.scss */
+.index_table td.col-actions .table_actions a:hover, .index_table td.col-actions .table_actions a:focus,
+.panel_contents table td.col-actions .table_actions a:hover,
+.panel_contents table td.col-actions .table_actions a:focus {
+  text-decoration: none;
+}
+/* line 95, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/menu.scss */
+.index_table td.col-actions .table_actions a:hover, .index_table td.col-actions .table_actions a:focus,
+.panel_contents table td.col-actions .table_actions a:hover,
+.panel_contents table td.col-actions .table_actions a:focus {
+  color: #063C3C;
+}
+@media screen and (min-width: 1300px) {
+  /* line 68, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+  .index_table td.col-actions .table_actions a,
+  .panel_contents table td.col-actions .table_actions a {
+    font-size: 13px;
+  }
+}
+/* line 75, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table td.col-actions:hover .table_actions, .index_table td.col-actions:focus .table_actions,
+.panel_contents table td.col-actions:hover .table_actions,
+.panel_contents table td.col-actions:focus .table_actions {
+  filter: none;
+  transition: 0.2s all;
+  transform: translateZ(0) scale(1);
+}
+/* line 78, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tables.scss */
+.index_table td.col-actions:hover .table_actions a, .index_table td.col-actions:focus .table_actions a,
+.panel_contents table td.col-actions:hover .table_actions a,
+.panel_contents table td.col-actions:focus .table_actions a {
+  opacity: 1;
+  transition: 0.2s opacity;
+}
+
+/**
+ * Tabs
+ * Theses show up on complicated forms, such as the Exhibit edit page.
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tabs.scss */
+.nav-tabs {
+  color: rgba(255, 255, 255, 0.6);
+  background: #063C3C;
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.15);
+  line-height: 0;
+  margin: 0;
+  padding: 0 24px;
+  list-style: none;
+}
+/* line 10, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tabs.scss */
+.nav-tabs > li {
+  display: inline-block;
+}
+/* line 14, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tabs.scss */
+.nav-tabs > li > a {
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  font: 400 14px/16px "RobotoDraft", sans-serif;
+  letter-spacing: 0.08em;
+  padding: 16px;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s color;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+/* line 55, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/tabs.scss */
+.nav-tabs > li > a:after {
+  background-color: rgba(255, 255, 255, 0.54);
+  bottom: 0;
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transform: translateY(3px);
+  transition: 0.2s background, 0.25s transform;
+  width: 100%;
+}
+/* line 68, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/tabs.scss */
+.nav-tabs > li > a:focus, .nav-tabs > li > a:hover {
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+}
+/* line 74, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/tabs.scss */
+.nav-tabs > li > a:focus:after, .nav-tabs > li > a:hover:after {
+  transform: none;
+}
+/* line 79, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/tabs.scss */
+.nav-tabs > li > a:active {
+  border: 0;
+  box-shadow: none;
+}
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tabs.scss */
+.nav-tabs > li.ui-state-active > a {
+  color: #fff;
+}
+/* line 88, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/tabs.scss */
+.nav-tabs > li.ui-state-active > a:after {
+  background-color: #79CBCB;
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  transform: none;
+}
+/* line 22, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tabs.scss */
+.nav-tabs > li.tab_with_errors > a {
+  padding-right: 40px;
+}
+/* line 98, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/tabs.scss */
+.nav-tabs > li.tab_with_errors > a:before {
+  color: #FF695E;
+  animation: 2s am-tabs-error-throb infinite alternate;
+  content: '\026a0';
+  font-size: 20px;
+  line-height: 16px;
+  margin-top: -6px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+}
+
+/**
+ * Tags
+ * Tags show up as states within tables and other components
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tag.scss */
+.status_tag {
+  background-color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 0.75rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  line-height: 16px;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* line 9, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tag.scss */
+a .status_tag {
+  transition: 0.2s all;
+}
+/* line 19, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/tag.scss */
+a .status_tag:hover, a .status_tag:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
+  text-shadow: none;
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/tag.scss */
+a .status_tag:active {
+  box-shadow: none;
+}
+/* line 13, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tag.scss */
+.status_tag.yes {
+  background-color: #063C3C;
+}
+
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/tag.scss */
+.empty {
+  color: #ccc;
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/**
+ * Titlebar
+ */
+/* line 5, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/title_bar.scss */
+.title_bar {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
+  align-items: center;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 600px) {
+  /* line 5, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/title_bar.scss */
+  .title_bar {
+    width: auto;
+  }
+}
+
+/* line 15, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/title_bar.scss */
+#titlebar_left {
+  flex-grow: 1;
+}
+
+/* line 19, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/title_bar.scss */
+#titlebar_right .action_item a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  background: transparent;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  margin: 4px;
+  padding: 12px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s all;
+  user-select: none;
+  vertical-align: center;
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+#titlebar_right .action_item a:focus {
+  outline: none;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+#titlebar_right .action_item a:hover {
+  color: #063C3C;
+  text-decoration: none;
+}
+
+/**
+ * Utility Nav
+ * Displays current user and logout information
+ */
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/utility_nav.scss */
+#utility_nav {
+  background: url(/assets/active_material/icons/account_circle-75f753fccce1f1750a37068208ade1fc0e5489d9a98de57f99e2747d390001fb.svg) no-repeat;
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 16px;
+}
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/utility_nav.scss */
+#utility_nav:before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 50px;
+  top: 0;
+  right: -12px;
+}
+/* line 27, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/utility_nav.scss */
+#utility_nav a {
+  color: #333;
+}
+/* line 31, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/utility_nav.scss */
+#utility_nav #current_user,
+#utility_nav #logout {
+  clip: rect(0, 0, 0, 0);
+  opacity: 0;
+  transition: 0.28s all;
+}
+/* line 39, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/utility_nav.scss */
+#utility_nav:hover #current_user,
+#utility_nav:hover #logout {
+  clip: initial;
+  opacity: 1;
+}
+
+/* line 47, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/utility_nav.scss */
+#current_user {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22);
+  background: #fff;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  padding: 16px;
+  height: 56px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 48px;
+}
+/* line 59, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/utility_nav.scss */
+#current_user:before {
+  content: "";
+  border: 7px solid transparent;
+  border-bottom-color: #fff;
+  top: -14px;
+  right: 12px;
+  position: absolute;
+}
+
+/* line 69, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/utility_nav.scss */
+#logout {
+  border-top: 1px solid #d9d9d9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22);
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: 104px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: #efefef;
+  text-align: right;
+}
+/* line 81, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/components/utility_nav.scss */
+#logout a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  background: transparent;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  margin: 4px;
+  padding: 12px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.25s all;
+  user-select: none;
+  vertical-align: center;
+}
+/* line 25, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+#logout a:focus {
+  outline: none;
+}
+/* line 29, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/active_material-1.4.2/app/assets/stylesheets/active_material/prototypes/button.scss */
+#logout a:hover {
+  color: #063C3C;
+  text-decoration: none;
+}
+
+/*!
+ * Quill Editor v1.3.3
+ * https://quilljs.com/
+ * Copyright (c) 2014, Jason Chen
+ * Copyright (c) 2013, salesforce.com
+ */
+/* line 7, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-container {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  height: 100%;
+  margin: 0px;
+  position: relative;
+}
+
+/* line 15, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-container.ql-disabled .ql-tooltip {
+  visibility: hidden;
+}
+
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-container.ql-disabled .ql-editor ul[data-checked] > li::before {
+  pointer-events: none;
+}
+
+/* line 21, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-clipboard {
+  left: -100000px;
+  height: 1px;
+  overflow-y: hidden;
+  position: absolute;
+  top: 50%;
+}
+
+/* line 28, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-clipboard p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 32, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor {
+  box-sizing: border-box;
+  line-height: 1.42;
+  height: 100%;
+  outline: none;
+  overflow-y: auto;
+  padding: 12px 15px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 45, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor > * {
+  cursor: text;
+}
+
+/* line 48, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor p,
+.ql-editor ol,
+.ql-editor ul,
+.ql-editor pre,
+.ql-editor blockquote,
+.ql-editor h1,
+.ql-editor h2,
+.ql-editor h3,
+.ql-editor h4,
+.ql-editor h5,
+.ql-editor h6 {
+  margin: 0;
+  padding: 0;
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+
+/* line 63, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol,
+.ql-editor ul {
+  padding-left: 1.5em;
+}
+
+/* line 67, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol > li,
+.ql-editor ul > li {
+  list-style-type: none;
+}
+
+/* line 71, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ul > li::before {
+  content: '\2022';
+}
+
+/* line 74, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ul[data-checked=true],
+.ql-editor ul[data-checked=false] {
+  pointer-events: none;
+}
+
+/* line 78, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ul[data-checked=true] > li *,
+.ql-editor ul[data-checked=false] > li * {
+  pointer-events: all;
+}
+
+/* line 82, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ul[data-checked=true] > li::before,
+.ql-editor ul[data-checked=false] > li::before {
+  color: #777;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+/* line 88, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ul[data-checked=true] > li::before {
+  content: '\2611';
+}
+
+/* line 91, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ul[data-checked=false] > li::before {
+  content: '\2610';
+}
+
+/* line 94, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li::before {
+  display: inline-block;
+  white-space: nowrap;
+  width: 1.2em;
+}
+
+/* line 99, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li:not(.ql-direction-rtl)::before {
+  margin-left: -1.5em;
+  margin-right: 0.3em;
+  text-align: right;
+}
+
+/* line 104, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-direction-rtl::before {
+  margin-left: 0.3em;
+  margin-right: -1.5em;
+}
+
+/* line 108, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li:not(.ql-direction-rtl),
+.ql-editor ul li:not(.ql-direction-rtl) {
+  padding-left: 1.5em;
+}
+
+/* line 112, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-direction-rtl,
+.ql-editor ul li.ql-direction-rtl {
+  padding-right: 1.5em;
+}
+
+/* line 116, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li {
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-0;
+}
+
+/* line 120, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li:before {
+  content: counter(list-0,decimal) ". ";
+}
+
+/* line 123, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-1 {
+  counter-increment: list-1;
+}
+
+/* line 126, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-1:before {
+  content: counter(list-1,lower-alpha) ". ";
+}
+
+/* line 129, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-1 {
+  counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+
+/* line 132, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-2 {
+  counter-increment: list-2;
+}
+
+/* line 135, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-2:before {
+  content: counter(list-2,lower-roman) ". ";
+}
+
+/* line 138, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-2 {
+  counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+
+/* line 141, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-3 {
+  counter-increment: list-3;
+}
+
+/* line 144, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-3:before {
+  content: counter(list-3,decimal) ". ";
+}
+
+/* line 147, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-3 {
+  counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
+}
+
+/* line 150, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-4 {
+  counter-increment: list-4;
+}
+
+/* line 153, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-4:before {
+  content: counter(list-4,lower-alpha) ". ";
+}
+
+/* line 156, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-4 {
+  counter-reset: list-5 list-6 list-7 list-8 list-9;
+}
+
+/* line 159, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-5 {
+  counter-increment: list-5;
+}
+
+/* line 162, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-5:before {
+  content: counter(list-5,lower-roman) ". ";
+}
+
+/* line 165, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-5 {
+  counter-reset: list-6 list-7 list-8 list-9;
+}
+
+/* line 168, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-6 {
+  counter-increment: list-6;
+}
+
+/* line 171, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-6:before {
+  content: counter(list-6,decimal) ". ";
+}
+
+/* line 174, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-6 {
+  counter-reset: list-7 list-8 list-9;
+}
+
+/* line 177, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-7 {
+  counter-increment: list-7;
+}
+
+/* line 180, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-7:before {
+  content: counter(list-7,lower-alpha) ". ";
+}
+
+/* line 183, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-7 {
+  counter-reset: list-8 list-9;
+}
+
+/* line 186, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-8 {
+  counter-increment: list-8;
+}
+
+/* line 189, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-8:before {
+  content: counter(list-8,lower-roman) ". ";
+}
+
+/* line 192, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-8 {
+  counter-reset: list-9;
+}
+
+/* line 195, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-9 {
+  counter-increment: list-9;
+}
+
+/* line 198, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor ol li.ql-indent-9:before {
+  content: counter(list-9,decimal) ". ";
+}
+
+/* line 201, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 3em;
+}
+
+/* line 204, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 4.5em;
+}
+
+/* line 207, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 3em;
+}
+
+/* line 210, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 4.5em;
+}
+
+/* line 213, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 6em;
+}
+
+/* line 216, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 7.5em;
+}
+
+/* line 219, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 6em;
+}
+
+/* line 222, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 7.5em;
+}
+
+/* line 225, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 9em;
+}
+
+/* line 228, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 10.5em;
+}
+
+/* line 231, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 9em;
+}
+
+/* line 234, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 10.5em;
+}
+
+/* line 237, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 12em;
+}
+
+/* line 240, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 13.5em;
+}
+
+/* line 243, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 12em;
+}
+
+/* line 246, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 13.5em;
+}
+
+/* line 249, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 15em;
+}
+
+/* line 252, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 16.5em;
+}
+
+/* line 255, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 15em;
+}
+
+/* line 258, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 16.5em;
+}
+
+/* line 261, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 18em;
+}
+
+/* line 264, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 19.5em;
+}
+
+/* line 267, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 18em;
+}
+
+/* line 270, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 19.5em;
+}
+
+/* line 273, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 21em;
+}
+
+/* line 276, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 22.5em;
+}
+
+/* line 279, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 21em;
+}
+
+/* line 282, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 22.5em;
+}
+
+/* line 285, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 24em;
+}
+
+/* line 288, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 25.5em;
+}
+
+/* line 291, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 24em;
+}
+
+/* line 294, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 25.5em;
+}
+
+/* line 297, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 27em;
+}
+
+/* line 300, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 28.5em;
+}
+
+/* line 303, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 27em;
+}
+
+/* line 306, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor li.ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 28.5em;
+}
+
+/* line 309, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-video {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 313, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-video.ql-align-center {
+  margin: 0 auto;
+}
+
+/* line 316, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-video.ql-align-right {
+  margin: 0 0 0 auto;
+}
+
+/* line 319, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-bg-black {
+  background-color: #000;
+}
+
+/* line 322, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-bg-red {
+  background-color: #e60000;
+}
+
+/* line 325, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-bg-orange {
+  background-color: #f90;
+}
+
+/* line 328, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-bg-yellow {
+  background-color: #ff0;
+}
+
+/* line 331, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-bg-green {
+  background-color: #008a00;
+}
+
+/* line 334, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-bg-blue {
+  background-color: #06c;
+}
+
+/* line 337, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-bg-purple {
+  background-color: #93f;
+}
+
+/* line 340, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-color-white {
+  color: #fff;
+}
+
+/* line 343, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-color-red {
+  color: #e60000;
+}
+
+/* line 346, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-color-orange {
+  color: #f90;
+}
+
+/* line 349, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-color-yellow {
+  color: #ff0;
+}
+
+/* line 352, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-color-green {
+  color: #008a00;
+}
+
+/* line 355, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-color-blue {
+  color: #06c;
+}
+
+/* line 358, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-color-purple {
+  color: #93f;
+}
+
+/* line 361, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-font-serif {
+  font-family: Georgia, Times New Roman, serif;
+}
+
+/* line 364, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-font-monospace {
+  font-family: Monaco, Courier New, monospace;
+}
+
+/* line 367, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-size-small {
+  font-size: 0.75em;
+}
+
+/* line 370, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-size-large {
+  font-size: 1.5em;
+}
+
+/* line 373, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-size-huge {
+  font-size: 2.5em;
+}
+
+/* line 376, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-direction-rtl {
+  direction: rtl;
+  text-align: inherit;
+}
+
+/* line 380, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-align-center {
+  text-align: center;
+}
+
+/* line 383, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-align-justify {
+  text-align: justify;
+}
+
+/* line 386, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor .ql-align-right {
+  text-align: right;
+}
+
+/* line 389, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-editor.ql-blank::before {
+  color: rgba(0, 0, 0, 0.6);
+  content: attr(data-placeholder);
+  font-style: italic;
+  left: 15px;
+  pointer-events: none;
+  position: absolute;
+  right: 15px;
+}
+
+/* line 398, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow.ql-toolbar:after,
+.ql-snow .ql-toolbar:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/* line 404, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow.ql-toolbar button,
+.ql-snow .ql-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  height: 24px;
+  padding: 3px 5px;
+  width: 28px;
+}
+
+/* line 415, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow.ql-toolbar button svg,
+.ql-snow .ql-toolbar button svg {
+  float: left;
+  height: 100%;
+}
+
+/* line 420, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow.ql-toolbar button:active:hover,
+.ql-snow .ql-toolbar button:active:hover {
+  outline: none;
+}
+
+/* line 424, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow.ql-toolbar input.ql-image[type=file],
+.ql-snow .ql-toolbar input.ql-image[type=file] {
+  display: none;
+}
+
+/* line 428, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow.ql-toolbar button:hover,
+.ql-snow .ql-toolbar button:hover,
+.ql-snow.ql-toolbar button:focus,
+.ql-snow .ql-toolbar button:focus,
+.ql-snow.ql-toolbar button.ql-active,
+.ql-snow .ql-toolbar button.ql-active,
+.ql-snow.ql-toolbar .ql-picker-label:hover,
+.ql-snow .ql-toolbar .ql-picker-label:hover,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active,
+.ql-snow.ql-toolbar .ql-picker-item:hover,
+.ql-snow .ql-toolbar .ql-picker-item:hover,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: #06c;
+}
+
+/* line 444, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow.ql-toolbar button:hover .ql-fill,
+.ql-snow .ql-toolbar button:hover .ql-fill,
+.ql-snow.ql-toolbar button:focus .ql-fill,
+.ql-snow .ql-toolbar button:focus .ql-fill,
+.ql-snow.ql-toolbar button.ql-active .ql-fill,
+.ql-snow .ql-toolbar button.ql-active .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+.ql-snow.ql-toolbar button:hover .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar button:hover .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar button:focus .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar button:focus .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+  fill: #06c;
+}
+
+/* line 474, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow.ql-toolbar button:hover .ql-stroke,
+.ql-snow .ql-toolbar button:hover .ql-stroke,
+.ql-snow.ql-toolbar button:focus .ql-stroke,
+.ql-snow .ql-toolbar button:focus .ql-stroke,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-snow.ql-toolbar button:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar button:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar button:focus .ql-stroke-miter,
+.ql-snow .ql-toolbar button:focus .ql-stroke-miter,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+  stroke: #06c;
+}
+
+@media (pointer: coarse) {
+  /* line 505, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+  .ql-snow.ql-toolbar button:hover:not(.ql-active),
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) {
+    color: #444;
+  }
+
+  /* line 509, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-fill,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-fill,
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke.ql-fill,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke.ql-fill {
+    fill: #444;
+  }
+
+  /* line 515, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke,
+  .ql-snow.ql-toolbar button:hover:not(.ql-active) .ql-stroke-miter,
+  .ql-snow .ql-toolbar button:hover:not(.ql-active) .ql-stroke-miter {
+    stroke: #444;
+  }
+}
+/* line 522, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow {
+  box-sizing: border-box;
+}
+
+/* line 525, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow * {
+  box-sizing: border-box;
+}
+
+/* line 528, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-hidden {
+  display: none;
+}
+
+/* line 531, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-out-bottom,
+.ql-snow .ql-out-top {
+  visibility: hidden;
+}
+
+/* line 535, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip {
+  position: absolute;
+  transform: translateY(10px);
+}
+
+/* line 539, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 543, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip.ql-flip {
+  transform: translateY(-10px);
+}
+
+/* line 546, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-formats {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 550, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-formats:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/* line 555, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-stroke {
+  fill: none;
+  stroke: #444;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+/* line 562, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-stroke-miter {
+  fill: none;
+  stroke: #444;
+  stroke-miterlimit: 10;
+  stroke-width: 2;
+}
+
+/* line 568, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
+  fill: #444;
+}
+
+/* line 572, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-empty {
+  fill: none;
+}
+
+/* line 575, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-even {
+  fill-rule: evenodd;
+}
+
+/* line 578, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-thin,
+.ql-snow .ql-stroke.ql-thin {
+  stroke-width: 1;
+}
+
+/* line 582, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-transparent {
+  opacity: 0.4;
+}
+
+/* line 585, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-direction svg:last-child {
+  display: none;
+}
+
+/* line 588, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-direction.ql-active svg:last-child {
+  display: inline;
+}
+
+/* line 591, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-direction.ql-active svg:first-child {
+  display: none;
+}
+
+/* line 594, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor h1 {
+  font-size: 2em;
+}
+
+/* line 597, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor h2 {
+  font-size: 1.5em;
+}
+
+/* line 600, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor h3 {
+  font-size: 1.17em;
+}
+
+/* line 603, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor h4 {
+  font-size: 1em;
+}
+
+/* line 606, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor h5 {
+  font-size: 0.83em;
+}
+
+/* line 609, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor h6 {
+  font-size: 0.67em;
+}
+
+/* line 612, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor a {
+  text-decoration: underline;
+}
+
+/* line 615, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor blockquote {
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+
+/* line 621, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor code,
+.ql-snow .ql-editor pre {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+
+/* line 626, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor pre {
+  white-space: pre-wrap;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+/* line 632, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor code {
+  font-size: 85%;
+  padding: 2px 4px;
+}
+
+/* line 636, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor pre.ql-syntax {
+  background-color: #23241f;
+  color: #f8f8f2;
+  overflow: visible;
+}
+
+/* line 641, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-editor img {
+  max-width: 100%;
+}
+
+/* line 644, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker {
+  color: #444;
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  height: 24px;
+  position: relative;
+  vertical-align: middle;
+}
+
+/* line 654, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker-label {
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 2px;
+  position: relative;
+  width: 100%;
+}
+
+/* line 663, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker-label::before {
+  display: inline-block;
+  line-height: 22px;
+}
+
+/* line 667, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker-options {
+  background-color: #fff;
+  display: none;
+  min-width: 100%;
+  padding: 4px 8px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/* line 675, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker-options .ql-picker-item {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* line 681, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  color: #ccc;
+  z-index: 2;
+}
+
+/* line 685, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-fill {
+  fill: #ccc;
+}
+
+/* line 688, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-expanded .ql-picker-label .ql-stroke {
+  stroke: #ccc;
+}
+
+/* line 691, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  display: block;
+  margin-top: -1px;
+  top: 100%;
+  z-index: 1;
+}
+
+/* line 697, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-color-picker,
+.ql-snow .ql-icon-picker {
+  width: 28px;
+}
+
+/* line 701, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-color-picker .ql-picker-label,
+.ql-snow .ql-icon-picker .ql-picker-label {
+  padding: 2px 4px;
+}
+
+/* line 705, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-color-picker .ql-picker-label svg,
+.ql-snow .ql-icon-picker .ql-picker-label svg {
+  right: 4px;
+}
+
+/* line 709, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-icon-picker .ql-picker-options {
+  padding: 4px 0px;
+}
+
+/* line 712, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-icon-picker .ql-picker-item {
+  height: 24px;
+  width: 24px;
+  padding: 2px 4px;
+}
+
+/* line 717, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-color-picker .ql-picker-options {
+  padding: 3px 5px;
+  width: 152px;
+}
+
+/* line 721, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-color-picker .ql-picker-item {
+  border: 1px solid transparent;
+  float: left;
+  height: 16px;
+  margin: 2px;
+  padding: 0px;
+  width: 16px;
+}
+
+/* line 729, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+  position: absolute;
+  margin-top: -9px;
+  right: 0;
+  top: 50%;
+  width: 18px;
+}
+
+/* line 736, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-label]:not([data-label=''])::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-label]:not([data-label=''])::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-label]:not([data-label=''])::before {
+  content: attr(data-label);
+}
+
+/* line 744, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header {
+  width: 98px;
+}
+
+/* line 747, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+  content: 'Normal';
+}
+
+/* line 751, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  content: 'Heading 1';
+}
+
+/* line 755, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  content: 'Heading 2';
+}
+
+/* line 759, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  content: 'Heading 3';
+}
+
+/* line 763, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="4"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  content: 'Heading 4';
+}
+
+/* line 767, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="5"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  content: 'Heading 5';
+}
+
+/* line 771, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="6"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  content: 'Heading 6';
+}
+
+/* line 775, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+  font-size: 2em;
+}
+
+/* line 778, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+  font-size: 1.5em;
+}
+
+/* line 781, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+  font-size: 1.17em;
+}
+
+/* line 784, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+  font-size: 1em;
+}
+
+/* line 787, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+  font-size: 0.83em;
+}
+
+/* line 790, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+  font-size: 0.67em;
+}
+
+/* line 793, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-font {
+  width: 108px;
+}
+
+/* line 796, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-font .ql-picker-label::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item::before {
+  content: 'Sans Serif';
+}
+
+/* line 800, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=serif]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  content: 'Serif';
+}
+
+/* line 804, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=monospace]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  content: 'Monospace';
+}
+
+/* line 808, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  font-family: Georgia, Times New Roman, serif;
+}
+
+/* line 811, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  font-family: Monaco, Courier New, monospace;
+}
+
+/* line 814, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-size {
+  width: 98px;
+}
+
+/* line 817, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-size .ql-picker-label::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  content: 'Normal';
+}
+
+/* line 821, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=small]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  content: 'Small';
+}
+
+/* line 825, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=large]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  content: 'Large';
+}
+
+/* line 829, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=huge]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  content: 'Huge';
+}
+
+/* line 833, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+  font-size: 10px;
+}
+
+/* line 836, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+  font-size: 18px;
+}
+
+/* line 839, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+  font-size: 32px;
+}
+
+/* line 842, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-color-picker.ql-background .ql-picker-item {
+  background-color: #fff;
+}
+
+/* line 845, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-color-picker.ql-color .ql-picker-item {
+  background-color: #000;
+}
+
+/* line 848, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-toolbar.ql-snow {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 8px;
+}
+
+/* line 854, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-toolbar.ql-snow .ql-formats {
+  margin-right: 15px;
+}
+
+/* line 857, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-toolbar.ql-snow .ql-picker-label {
+  border: 1px solid transparent;
+}
+
+/* line 860, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-toolbar.ql-snow .ql-picker-options {
+  border: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px;
+}
+
+/* line 864, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  border-color: #ccc;
+}
+
+/* line 867, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  border-color: #ccc;
+}
+
+/* line 870, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-item.ql-selected,
+.ql-toolbar.ql-snow .ql-color-picker .ql-picker-item:hover {
+  border-color: #000;
+}
+
+/* line 874, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border-top: 0px;
+}
+
+/* line 877, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px #ddd;
+  color: #444;
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+
+/* line 885, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip::before {
+  content: "Visit URL:";
+  line-height: 26px;
+  margin-right: 8px;
+}
+
+/* line 890, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip input[type=text] {
+  display: none;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  height: 26px;
+  margin: 0px;
+  padding: 3px 5px;
+  width: 170px;
+}
+
+/* line 899, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip a.ql-preview {
+  display: inline-block;
+  max-width: 200px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+/* line 906, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip a.ql-action::after {
+  border-right: 1px solid #ccc;
+  content: 'Edit';
+  margin-left: 16px;
+  padding-right: 8px;
+}
+
+/* line 912, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip a.ql-remove::before {
+  content: 'Remove';
+  margin-left: 8px;
+}
+
+/* line 916, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip a {
+  line-height: 26px;
+}
+
+/* line 919, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip.ql-editing a.ql-preview,
+.ql-snow .ql-tooltip.ql-editing a.ql-remove {
+  display: none;
+}
+
+/* line 923, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip.ql-editing input[type=text] {
+  display: inline-block;
+}
+
+/* line 926, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+  border-right: 0px;
+  content: 'Save';
+  padding-right: 0px;
+}
+
+/* line 931, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip[data-mode=link]::before {
+  content: "Enter link:";
+}
+
+/* line 934, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip[data-mode=formula]::before {
+  content: "Enter formula:";
+}
+
+/* line 937, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow .ql-tooltip[data-mode=video]::before {
+  content: "Enter video:";
+}
+
+/* line 940, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-snow a {
+  color: #06c;
+}
+
+/* line 943, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/quill_editor/quill.snow.css */
+.ql-container.ql-snow {
+  border: 1px solid #ccc;
+}
+
+/* line 3, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/_quill_editor_input.sass */
+body.active_admin form .quill-editor {
+  display: inline-block;
+  width: calc(80% - 22px);
+}
+/* line 6, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/_quill_editor_input.sass */
+body.active_admin form .quill-editor .ql-editor {
+  background-color: #fff;
+  max-height: 300px;
+  min-height: 150px;
+  padding: 10px;
+}
+/* line 12, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/_quill_editor_input.sass */
+body.active_admin form .quill-editor .ql-editor * {
+  margin: initial;
+  padding: initial;
+  text-align: initial;
+}
+/* line 16, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/_quill_editor_input.sass */
+body.active_admin form .quill-editor .ql-editor p {
+  margin-bottom: 1em;
+}
+/* line 18, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/_quill_editor_input.sass */
+body.active_admin form .quill-editor .ql-editor ol {
+  list-style-type: decimal;
+}
+/* line 20, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/_quill_editor_input.sass */
+body.active_admin form .quill-editor .ql-editor ul {
+  list-style-type: disc;
+}
+/* line 22, /Users/ryanmease/.rvm/gems/ruby-2.4.1/gems/activeadmin_quill_editor-0.1.2/app/assets/stylesheets/activeadmin/_quill_editor_input.sass */
+body.active_admin form .quill-editor .ql-editor ul, body.active_admin form .quill-editor .ql-editor ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 1.5em;
+}
+
+/* line 22, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/active_admin.scss */
+#image_carousel_serialized_urls {
+  min-height: 300px;
+}
+
+/* line 26, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/active_admin.scss */
+#image_carousel_serialized_urls_input {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 29, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/active_admin.scss */
+#image_carousel_serialized_urls_input .label {
+  display: none;
+}
+/* line 32, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/active_admin.scss */
+#image_carousel_serialized_urls_input:textarea {
+  min-height: 300px;
+}
+
+/* line 37, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/active_admin.scss */
+.inline-hints {
+  font-size: 1em;
+  color: #b07b31;
+}
