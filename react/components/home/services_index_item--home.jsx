@@ -17,7 +17,7 @@ class ServicesIndexItem extends React.Component {
                     to={this.parseAnchor()}
                 >
                     <div className="services-index-item__container--home">
-                        <Material.MdRemoveCircle className="services-index-item__icon--home" />
+                        <img className="services-index-item__icon--home" src={this.props.service.icon_url} />
                         <h3 className="services-index-item__header-2--home">{this.props.service.name}</h3>
                         <h3 className="services-index-item__header-3--home">{this.props.service.short_description}</h3>
                     </div>

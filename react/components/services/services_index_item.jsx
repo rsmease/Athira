@@ -10,7 +10,7 @@ export class ServicesIndexItemLeft extends React.Component {
                 <div className="services-index-item__container" id={
                     `service-${this.props.service.id}`}>
                     <div className="services-index-item__container--header">
-                        <Material.MdRemoveCircle className="services-index-item__icon" />
+                        <img className="services-index-item__icon" src={this.props.service.icon_url} />
                         <h3 className="services-index-item__header-3--name">{this.props.service.name}</h3>
                     </div>
                     <div className="services-index-item__header-3--description" dangerouslySetInnerHTML={
@@ -34,7 +34,7 @@ export class ServicesIndexItemRight extends React.Component {
                         { __html: this.props.service.long_description }
                     } />
                     <div className="services-index-item__container--header">
-                        <Material.MdRemoveCircle className="services-index-item__icon" />
+                        <img className="services-index-item__icon" src={this.props.service.icon_url} />
                         <h3 className="services-index-item__header-3--name">{this.props.service.name}</h3>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ export class ServicesIndexItemMobile extends React.Component {
                 <div id={`service-${this.props.service.id}`} style={{ height: '100px' }}></div>
                 <div className="services-index-item__container">
                     <div className="services-index-item__container--header">
-                        <Material.MdRemoveCircle className="services-index-item__icon" id={
+                        <img className="services-index-item__icon" src={this.props.service.icon_url} id={
                             `service-${this.props.service.id}`} />
                         <h3 className="services-index-item__header-3--name">{this.props.service.name}</h3>
                     </div>
