@@ -27,6 +27,7 @@ ActiveAdmin.register ImageCarousel do
             image_carousel.urls = params[:image_carousel][:serialized_urls].split("\r\n\r\n").map do |url|
                 if url.include?('https://drive.google.com')
                     url = "http://drive.google.com/uc?export=view&id" + url.split("id")[1] 
+                end
             end
         end
     end
