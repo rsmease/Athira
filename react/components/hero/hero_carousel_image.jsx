@@ -19,7 +19,7 @@ class HeroCarouselImage extends React.Component {
         return (
             <section className="hero__container-image"
                 style={this.renderHeroBackground()}>
-                <div className="hero__opacity-container">
+                <div className="hero__overlay-container">
                     <h1 className="hero__header-1">{
                         (this.props.headline) ? this.props.headline : ''
                     }</h1>
