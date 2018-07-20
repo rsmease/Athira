@@ -4,7 +4,6 @@ import * as Material from 'react-icons/lib/md';
 
 import Contact from '../contact/contact';
 import LeaderIndexItem from './leader_index_item';
-import HeroCarousel from '../hero/hero_carousel';
 
 import Fade from 'react-reveal/Fade';
 
@@ -20,7 +19,6 @@ class About extends React.Component {
     componentDidMount() {
         this.props.getAllLeaders();
         this.props.getAllCompanies();
-        this.props.getAllImageCarousels();
 
     }
 
@@ -42,15 +40,6 @@ class About extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <HeroCarousel
-                    imageURLs={
-                        this.props.imageCarousel && this.props.imageCarousel.length ? this.props.imageCarousel[0].urls : []
-                    }
-                    headline={
-                        this.props.imageCarousel && this.props.imageCarousel.length ?
-                            this.props.imageCarousel[0].headline : ''
-                    }
-                />
                 <section className="main__meta-container">
                     <Fade bottom cascade>
                         <div className="summary__container--with-title">

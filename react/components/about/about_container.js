@@ -12,13 +12,11 @@ import * as ImageCarouselActions from '../../actions/image_carousel_actions';
 const mapStateToProps = (state, ownProps) => ({
     leaders: _.values(state.leaders),
     company: _.values(state.companies)[0],
-    imageCarousel: _.values(state.imageCarousels).filter(imageCarousel => imageCarousel.location === 'about')
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
     getAllLeaders: () => dispatch(LeaderActions.getAllLeaders()),
-    getAllCompanies: () => dispatch(CompanyActions.getAllCompanies()),
-    getAllImageCarousels: () => dispatch(ImageCarouselActions.getAllImageCarousels())
+    getAllCompanies: () => dispatch(CompanyActions.getAllCompanies())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(About);
