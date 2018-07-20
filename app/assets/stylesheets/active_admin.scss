@@ -19,11 +19,11 @@ $am-theme-backdrop: $primary-light;
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
-#image_carousel_serialized_urls {
+#image_carousel_serialized_urls, #image_carousel_serialized_headlines {
     min-height: 300px;
 }
 
-#image_carousel_serialized_urls_input {
+#image_carousel_serialized_urls_input, #image_carousel_serialized_headlines_input {
     margin-top: 0;
     padding-top: 0;
     .label {
