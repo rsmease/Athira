@@ -38,6 +38,7 @@
 
 .services-index-item__icon {
     width: $gutter-65;
+    filter: invert(17%) sepia(14%) saturate(3922%) hue-rotate(139deg) brightness(91%) contrast(95%);
 }
 
 @keyframes expandBorder {
