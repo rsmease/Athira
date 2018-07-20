@@ -22,8 +22,8 @@ class HeroCarousel extends React.Component {
         if (this.props.imageURLs && this.props.imageURLs.length) {
             return (
                 <Slider {...settings}>
-                    {this.props.imageURLs.map(imageURL => (
-                        <HeroCarouselImage key={Math.random()} imageURL={imageURL} headline={this.props.headline ? this.props.headline : ''} />
+                    {this.props.imageURLs.map((imageURL, idx) => (
+                        <HeroCarouselImage key={Math.random()} imageURL={imageURL} headline={this.props.headlines ? this.props.headlines[idx] : ''} />
                     ))}
                 </Slider>
             )
