@@ -12,9 +12,9 @@ $hero-height: calc(100vh - 285px);
     margin-top: 91px;
 }
 
-//previously added an opaque filter for readability
 .hero__overlay-container {
     height: $hero-height;
+    background-color: rgba($color: #000000, $alpha: 0.3);
     display: grid;
 }
 
@@ -36,7 +36,7 @@ $hero-height: calc(100vh - 285px);
         background-position-y: 80%;
     }
     .hero__header-1 {
-        width: 500px;
+        width: 600px;
         margin-left: 141px;
     }
 }
