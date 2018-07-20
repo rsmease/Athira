@@ -7,6 +7,7 @@ class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      modal_name: '',
       first_name: '',
       last_name: '',
       email_address: '',
@@ -42,21 +43,25 @@ class ContactForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.requestToCreateVisitor(this.state)
-      .then(() => setTimeout(this.clearForm, 2000))
+      .then(() => setTimeout(this.clearForm, 2000)),
+      err => (console.log("there was an error"));
     this.props.clearVisitorErrors();
   }
 
   clearForm() {
-    this.setState(
-      {
-        first_name: '',
-        last_name: '',
-        email_address: '',
-        phone_number: '',
-        message: '',
-        confirmationModalOpen: true
-      }
-    );
+    if (this.props.visitors && this.props.visitors.length) {
+      this.setState(
+        {
+          modal_name: this.state.first_name,
+          first_name: '',
+          last_name: '',
+          email_address: '',
+          phone_number: '',
+          message: '',
+          confirmationModalOpen: true
+        }
+      );
+    }
   }
 
   filteredErrors(labelName) {
@@ -166,7 +171,7 @@ class ContactForm extends React.Component {
           >
             <Fade down>
               <div className="contact__form--modal-container">
-                <h4 className="contact__form--modal-h4">Thanks!</h4>
+                <h4 className="contact__form--modal-h4">{`Thanks, ${this.state.modal_name}!`}</h4>
                 <p className="contact__form--modal-p">We'll reach out to you shortly</p>
               </div>
             </Fade>
