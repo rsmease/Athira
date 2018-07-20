@@ -3,7 +3,7 @@ class Json::VisitorsController < ApplicationController
     @visitor = Visitor.new(visitor_params)
     if @visitor.save 
         # VisitorMailer.with(visitor: @visitor).new_visitor.deliver_now
-        # VisitorMailer.with(visitor: @visitor).visitor.deliver_now
+        VisitorMailer.with(visitor: @visitor).visitor.deliver_now
         render 'json/visitors/show'
     else
         render json: @visitor.errors.full_messages, status: 422
