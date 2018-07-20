@@ -94,8 +94,8 @@
 }
 
 .visitor-error {
-    color: red;
-    margin-top: 5px;
+    color: red !important;
+    min-height: 30px;
 }
 
 .contact__form--input {

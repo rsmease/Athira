@@ -60,18 +60,24 @@ class ContactForm extends React.Component {
   }
 
   filteredErrors(labelName) {
-    return _.uniq(this.props.errors).filter((error) => (
+    const filteredByLabel = _.uniq(this.props.errors).filter((error) => (
       error.toLowerCase().includes(labelName)
     ));
+    return filteredByLabel.length ? filteredByLabel.slice(0, 1) : []
+  }
+
+  buildErrorSpans(labelName, displayClass) {
+    return (
+      this.filteredErrors(labelName).map((error, i) => (
+        <span key={i} className={displayClass}>{error}</span>
+      ))
+    );
   }
 
   showErrors(labelName, displayClass) {
     if (this.props.errors && this.props.errors.length > 0) {
-      return (
-        this.filteredErrors(labelName).map((error, i) => (
-          <span key={i} className={displayClass}>{error}</span>
-        ))
-      );
+      const errors = this.buildErrorSpans(labelName, displayClass)
+      return errors.length ? errors : <span className={displayClass} />
     }
   }
 
