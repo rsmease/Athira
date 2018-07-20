@@ -14,7 +14,7 @@ ActiveAdmin.register ImageCarousel do
     form do |f|
         f.inputs do
             f.input :location
-            f.input :headline
+            f.input :headlines
             f.inputs "Carousel URLs" do
                 f.input :serialized_urls, :as => :text, hint: "HINT: Save each URL on a separate line, separated by a line."
             end
