@@ -5,6 +5,8 @@ $hero-height: calc(100vh - 285px);
     height: $hero-height;
     background-image: $primary-gradient-2;
     background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
     width: 100%;
 }
 
