@@ -30,6 +30,9 @@
     grid-row-gap: $gutter-30;
     justify-items: center;
     color: $primary-dark;
+    & span {
+        font-size: 16px !important;
+    }
 }
 
 .leader-index-item__header-2 {

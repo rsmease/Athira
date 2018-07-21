@@ -29,9 +29,11 @@
     justify-content: center;
 }
 
-.contact__container--methods-index-item>h4 {
+.contact__container--methods-index-item>h4,
+.contact__container--methods-index-item>a {
     letter-spacing: 1.1px;
     color: $mid-gray;
+    font-size: 18px;
 }
 
 .contact__icon {

@@ -22,7 +22,7 @@ class Contact extends React.Component {
                 <div className="contact__container--methods-index">
                     <div className="contact__container--methods-index-item">
                         <Material.MdEmail className="contact__icon contact__icon--email" />
-                        <h4>{this.props.email_address}</h4>
+                        <a href={`mailto:${this.props.email_address}`}>{this.props.email_address}</a>
                     </div>
                     <div className="contact__container--methods-index-item">
                         <Material.MdPhoneIphone className="contact__icon" />
