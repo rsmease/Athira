@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180720200052) do
+ActiveRecord::Schema.define(version: 20180722180525) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,6 +56,8 @@ ActiveRecord::Schema.define(version: 20180720200052) do
     t.string "splash_image_url", default: "", null: false
     t.string "phone_number", default: "", null: false
     t.string "email_address", default: "", null: false
+    t.string "facebook_url", default: "https://www.facebook.com", null: false
+    t.string "linkedin_url", default: "https://www.linkedin.com", null: false
   end
 
   create_table "image_carousels", force: :cascade do |t|

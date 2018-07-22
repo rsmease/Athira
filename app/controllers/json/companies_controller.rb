@@ -11,6 +11,6 @@ class Json::CompaniesController < ApplicationController
 
   private
   def company_params
-      params.require(:company).permit(:name, :short_description, :long_description, :headline, :email_address, :phone_number)
+      params.require(:company).permit(:name, :short_description, :long_description, :headline, :email_address, :phone_number, :facebook_url, :linkedin_url)
   end
 end
