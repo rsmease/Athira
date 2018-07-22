@@ -7,7 +7,7 @@ import createStore from './store/store';
 
 //components
 import Header from './components/header';
-import Footer from './components/footer';
+import Footer from './components/footer_container';
 import Home from './components/home/home_container';
 import About from './components/about/about_container';
 import ContactForm from './components/contact/contact_form_container';
