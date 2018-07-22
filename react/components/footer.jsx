@@ -11,6 +11,7 @@ class Footer extends React.Component {
     }
 
     componentDidMount() {
+        this.props.getAllCompanies();
         this.setState({ currentYear: new Date() });
     }
 
@@ -22,10 +23,10 @@ class Footer extends React.Component {
                     <Link to='/terms'>Terms of Service</Link>
                 </section>
                 <section className="footer__social">
-                    <a href="https://www.linkedin.com" target="_blank">
+                    <a href={this.props.company ? this.props.company.linkedin_url : ''} target="_blank">
                         <Typicons.TiSocialLinkedinCircular />
                     </a>
-                    <a href="https://www.facebook.com" target="_blank">
+                    <a href={this.props.company ? this.props.company.facebook_url : ''} target="_blank">
                         <Typicons.TiSocialFacebookCircular />
                     </a>
                 </section>
