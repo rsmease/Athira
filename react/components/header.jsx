@@ -60,7 +60,7 @@ class Header extends React.Component {
                             height={30}
                             strokeWidth={3}
                             rotate={0}
-                            color='#FFDAA6'
+                            color='#b07b31'
                             borderRadius={0}
                             animationDuration={0.5}
                         />
