@@ -45,6 +45,11 @@
     margin-right: 5px;
 }
 
+.contact__icon--phone {
+    margin-left: 5px;
+    font-size: 30px;
+}
+
 .contact__form--container {
     display: grid;
     grid-template-rows: repeat(3, fit-content(100%));
@@ -219,10 +224,10 @@
 }
 
 @media (min-width: 760px) {
-    .contact__container--methods-index {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: none;
-    }
+    // .contact__container--methods-index {
+    //     grid-template-columns: repeat(2, 1fr);
+    //     grid-template-rows: none;
+    // }
     .contact__icon {
         margin-right: $gutter-30/3;
     }
