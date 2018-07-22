@@ -1,0 +1,1683 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 97, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 111, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 115, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 120, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 125, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 133, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 138, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 4, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/reviews--home.scss */
+.reviews-index__container--home {
+  display: grid;
+  box-sizing: border-box;
+  padding: 98px 15vw;
+  grid-template-rows: repeat(3, fit-content(100%));
+  grid-row-gap: 65px;
+  background-color: #79CBCB;
+  width: 100%;
+}
+
+/* line 14, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/reviews--home.scss */
+.reviews-index-item__container--home {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  grid-row-gap: 15px;
+  grid-template-rows: repeat(2, fit-content(100%));
+}
+
+/* line 22, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/reviews--home.scss */
+.reviews-index-item__header-4--home {
+  text-align: center;
+  color: #063C3C;
+  letter-spacing: 1.3px;
+  line-height: 1.21;
+}
+
+/* line 29, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/reviews--home.scss */
+.reviews-index-item__header-3--home {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #063C3C;
+  letter-spacing: 1.3px;
+}
+
+/* line 37, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/reviews--home.scss */
+.reviews-index-item__image--home {
+  width: 60vw;
+  max-width: 350px;
+  height: auto;
+  justify-self: center;
+  padding-top: 15px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.24));
+}
+
+@media (min-width: 760px) {
+  /* line 47, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/reviews--home.scss */
+  .reviews-index__container--home {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, fit-content(100%));
+    grid-column-gap: 98px;
+    padding: 98px;
+  }
+
+  /* line 53, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/reviews--home.scss */
+  .reviews-index-item__image--home {
+    width: 20vw;
+    height: auto;
+  }
+}
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 2, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/services--home.scss */
+.services-index__container--home {
+  display: grid;
+  grid-template-rows: repeat(4, fit-content(100%));
+  grid-template-columns: auto;
+  justify-items: center;
+  grid-row-gap: 30px;
+  margin-bottom: 109px;
+  width: 100%;
+}
+
+/* line 12, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/services--home.scss */
+.services-index-item__container--home {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: fit-content(100%) auto 100px;
+  max-width: 220px;
+}
+
+/* line 20, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/services--home.scss */
+.services-index-item__icon-container--home {
+  width: 130px;
+  height: 130px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: #eab261;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 31, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/services--home.scss */
+.services-index-item__icon--home {
+  width: 65px;
+  filter: invert(17%) sepia(14%) saturate(3922%) hue-rotate(139deg) brightness(91%) contrast(95%);
+}
+
+/* line 36, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/services--home.scss */
+.services-index-item__header-2--home {
+  color: #767676;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  align-self: center;
+  font-weight: 600;
+  line-height: 1.21;
+  letter-spacing: 1.3px;
+}
+
+/* line 47, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/services--home.scss */
+.services-index-item__header-3--home {
+  color: #BFBFBF;
+  text-align: center;
+  font-size: 14px;
+  width: 80%;
+  align-self: start;
+  margin-top: 15px;
+  letter-spacing: 1.3px;
+  line-height: 1.21;
+}
+
+@media (min-width: 760px) {
+  /* line 59, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/services--home.scss */
+  .services-index__container--home {
+    display: grid;
+    grid-template-rows: fit-content(100%) fit-content(100%);
+    grid-template-columns: auto auto;
+    grid-row-gap: 30px;
+    width: 80%;
+  }
+
+  /* line 66, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/services--home.scss */
+  .services-index-item__icon--home {
+    font-size: 230px;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 72, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/services--home.scss */
+  .services-index__container--home {
+    grid-template-columns: repeat(4, fit-content(100%));
+    grid-column-gap: 65px;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    width: 100%;
+  }
+
+  /* line 79, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/home/services--home.scss */
+  .services-index-item__header-3--home {
+    margin-top: 15px;
+  }
+}
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 2, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__container {
+  display: grid;
+  width: 100%;
+  padding: 88px 0;
+  grid-template-rows: repeat(2, fit-content(100%));
+  grid-row-gap: 15px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* line 13, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__header-1 {
+  color: #063C3C;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__container--methods-index {
+  display: grid;
+  grid-template-rows: repeat(2, fit-content(100%));
+  grid-row-gap: 15px;
+}
+
+/* line 25, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__container--methods-index-item {
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(100%));
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 32, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__container--methods-index-item > h4,
+.contact__container--methods-index-item > a {
+  letter-spacing: 1.1px;
+  color: #5d5d5d;
+  font-size: 18px;
+}
+
+/* line 39, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__icon {
+  font-size: 24px;
+  color: #79CBCB;
+}
+
+/* line 44, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__icon--email {
+  margin-right: 5px;
+}
+
+/* line 48, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__icon--phone {
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+/* line 53, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--container {
+  display: grid;
+  grid-template-rows: repeat(3, fit-content(100%));
+  grid-row-gap: 10px;
+  width: 100%;
+  padding: 216px 0 125px 0;
+  justify-items: center;
+}
+
+/* line 62, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--h1 {
+  max-width: 80vw;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  color: #063C3C;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 72, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--h2 {
+  max-width: 80vw;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  line-height: 1.65;
+  color: #063C3C;
+  text-align: center;
+}
+
+/* line 81, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form {
+  margin-top: 35px;
+  display: grid;
+  grid-template-rows: repeat(4, fit-content(100%));
+  grid-row-gap: 31px;
+  justify-items: center;
+}
+
+/* line 89, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--input-pair {
+  display: grid;
+  grid-template-rows: repeat(2, fit-content(100%));
+  grid-row-gap: 31px;
+  justify-items: center;
+}
+
+/* line 96, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--input-container {
+  display: grid;
+  grid-template-rows: repeat(2, fit-content(100%));
+  grid-row-gap: 5px;
+  justify-items: center;
+}
+
+/* line 103, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.visitor-error {
+  color: red !important;
+  min-height: 30px;
+}
+
+/* line 108, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--input {
+  height: 61px;
+  width: 80vw;
+  max-width: 356px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  background-color: rgba(121, 203, 203, 0.25);
+  font-size: 20px;
+  line-height: 1.65;
+  letter-spacing: 1.3px;
+  color: #063C3C;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+}
+
+/* line 124, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--input::placeholder,
+.contact__form--text-input::placeholder {
+  text-transform: uppercase;
+  color: #063C3C;
+  opacity: 0.25;
+  font-family: "Proxima Nova", Georgia, sans-serif;
+}
+
+/* line 132, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--input:focus {
+  outline: none;
+  border: 1px solid #063C3C;
+}
+
+/* line 137, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--text-input {
+  min-height: 200px;
+  max-width: 736px;
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+/* line 143, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--submit-button {
+  background-color: #79CBCB;
+  height: 60px;
+  width: 60vw;
+  max-width: 315px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  border-radius: 30px;
+  margin-top: 35px;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 161, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--submit-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+/* line 175, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--submit-button:focus {
+  outline: none;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+/* line 194, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--submit-button:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+/* line 198, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--modal-container {
+  height: 20vh;
+  max-height: 300px;
+  width: 75vw;
+  max-width: 600px;
+  border-radius: 8px;
+  background-color: #79CBCB;
+  display: grid;
+  grid-template-rows: repeat(2, fit-content(100%));
+  grid-row-gap: 10px;
+  align-content: center;
+  justify-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 213, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--modal-h4 {
+  color: #063C3C;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 220, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+.contact__form--modal-p {
+  color: #063C3C;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 760px) {
+  /* line 231, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+  .contact__icon {
+    margin-right: 10px;
+  }
+
+  /* line 234, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+  .contact__icon--email {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 240, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+  .contact__form--input-pair {
+    grid-template-rows: none;
+    grid-row-gap: none;
+    grid-template-columns: repeat(2, fit-content(100%));
+    grid-column-gap: 27px;
+  }
+
+  /* line 246, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/contact.scss */
+  .contact__form {
+    grid-row-gap: 31px;
+  }
+}
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 2, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 65px;
+  background-color: #063C3C;
+  width: 100%;
+  border-top: solid 1px #dddddd;
+}
+
+/* line 12, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+.footer__legal {
+  display: grid;
+  grid-template-rows: repeat(2, fit-content(100%));
+  grid-template-columns: 1fr;
+  color: #BFBFBF;
+  margin-left: 30px;
+  align-content: center;
+}
+
+/* line 21, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+.footer__social {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, fit-content(100%));
+  color: #BFBFBF;
+  margin-right: 30px;
+  justify-content: end;
+  align-items: center;
+}
+
+/* line 31, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+.footer__legal > a,
+.footer__legal > p,
+.footer__social > a {
+  color: #BFBFBF;
+  letter-spacing: 1.3px;
+  transition: color 500ms ease;
+}
+
+/* line 39, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+.footer__legal > a:hover,
+.footer__legal > p:hover,
+.footer__social > a:hover {
+  color: #79CBCB;
+}
+
+/* line 45, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+.footer__social > a {
+  font-size: 42px;
+  margin-left: 15px;
+}
+
+@media (min-width: 760px) {
+  /* line 51, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+  footer {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* line 55, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+  .footer__legal {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, fit-content(100%));
+    align-items: center;
+  }
+
+  /* line 60, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+  .footer__legal > a,
+  .footer__legal > p {
+    margin-left: 15px;
+  }
+
+  /* line 64, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+  .footer__social {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, fit-content(100%));
+  }
+}
+@media (max-width: 414px) {
+  /* line 71, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+  .footer__legal {
+    margin-left: 20px;
+  }
+
+  /* line 74, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/footer.scss */
+  .footer__social {
+    margin-right: 20px;
+  }
+}
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 2, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 91px;
+  background-color: #063C3C;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 2;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+.header__logo--container {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  margin-left: 30px;
+}
+
+/* line 22, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+.header__navigation-link--container {
+  display: grid;
+  grid-template-columns: repeat(3, fit-content(100%));
+  grid-template-rows: 1fr;
+  align-items: end;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 32, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+.header__navigation-link--popup {
+  background: #063C3C;
+  display: grid;
+  grid-template-rows: repeat(3, fit-content(100%));
+  grid-row-gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* line 41, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+.header__navigation-link {
+  color: #FFDAA6;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  margin-left: 15px;
+  transition: color 500ms ease;
+  text-align: center;
+}
+
+/* line 50, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+.header__navigation-link:hover {
+  color: #b07b31;
+}
+
+/* line 54, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+.header__logo {
+  margin-top: 3px;
+  height: 50px;
+}
+
+@media (min-width: 760px) {
+  /* line 60, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+  .header__navigation-link--container {
+    margin-right: 30px;
+    justify-content: end;
+  }
+}
+@media (max-width: 414px) {
+  /* line 67, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+  .header__navigation-link--container {
+    justify-content: end;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 74, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+  .header__navigation-link--container {
+    padding-bottom: 0;
+  }
+
+  /* line 77, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/header.scss */
+  .header__navigation-link {
+    justify-self: start;
+    align-self: end;
+    margin-left: 15px;
+  }
+}
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 3, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+.hero__container,
+.hero__container-image {
+  height: calc(100vh - 285px);
+  background-image: linear-gradient(to left bottom, #7accca, #5ca5a4, #40807f, #245d5d, #073c3c);
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: center;
+  width: 100%;
+}
+
+/* line 13, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+.hero__container {
+  margin-top: 91px;
+}
+
+/* line 17, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+.hero__overlay-container {
+  height: calc(100vh - 285px);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+.hero__header-1 {
+  color: #FFFAFB;
+  letter-spacing: 1.3px;
+  align-self: start;
+  margin-top: 91px;
+  margin-left: 30px;
+  -webkit-animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -ms-animation: fadein 6s;
+  -o-animation: fadein 6s;
+  animation: fadein 6s;
+}
+
+@media (min-width: 760px) {
+  /* line 37, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+  .hero__container {
+    background-position-y: 80%;
+  }
+
+  /* line 40, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+  .hero__header-1 {
+    width: 500px;
+    margin-left: 141px;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 2, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/layout.scss */
+.main__meta-container {
+  display: grid;
+  background-image: #FFFAFB;
+  width: 100%;
+  justify-items: center;
+  grid-template-rows: repeat(3, fit-content(100%));
+}
+
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 2, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/summary.scss */
+.summary__container, .summary__container--with-title {
+  display: grid;
+  width: 80vw;
+  max-width: 1007px;
+  margin: 109px 0;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+}
+
+/* line 12, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/summary.scss */
+.summary__container--with-title {
+  margin-top: 195px;
+  grid-template-rows: repeat(2, fit-content(100%));
+  justify-items: center;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/summary.scss */
+.summary__header-3 {
+  text-align: center;
+  color: #063C3C;
+  letter-spacing: 1.3px;
+  line-height: 1.65;
+}
+
+/* line 26, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/summary.scss */
+.summary__header-3 span {
+  font-size: 20px;
+}
+
+/* line 30, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/summary.scss */
+.summary__header-2 {
+  text-align: center;
+  color: #063C3C;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 32px;
+  letter-spacing: 0.8px;
+}
+
+/* line 39, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/summary.scss */
+.summary__container::after, .summary__container--with-title::after {
+  height: 10px;
+  content: "";
+  border-bottom: 1px solid #063C3C;
+  width: 50vw;
+  display: block;
+  margin-top: 72px;
+}
+
+@media (min-width: 760px) {
+  /* line 49, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/summary.scss */
+  .summary__container::after, .summary__container--with-title::after {
+    display: block;
+  }
+}
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 2, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index__container {
+  display: grid;
+  width: 100vw;
+  margin-top: 91px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  grid-template-rows: repeat(8, fit-content(100%));
+  grid-template-columns: 1fr;
+  grid-row-gap: 30px;
+}
+
+/* line 13, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index-item__container {
+  display: grid;
+  grid-template-rows: repeat(2, fit-content(100%));
+  grid-row-gap: 15px;
+  align-content: center;
+}
+
+/* line 20, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index-item__container--header {
+  display: grid;
+  grid-template-rows: repeat(2, fit-content(100%));
+  grid-row-gap: 15px;
+  align-content: center;
+  justify-items: center;
+}
+
+/* line 28, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index-item__image-container {
+  width: 130px;
+  height: 130px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: #eab261;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 39, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index-item__icon {
+  width: 65px;
+  filter: invert(17%) sepia(14%) saturate(3922%) hue-rotate(139deg) brightness(91%) contrast(95%);
+}
+
+@keyframes expandBorder {
+  0% {
+    transform: scaleX(0.001);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+/* line 53, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index-item__header-3--name {
+  color: #063C3C;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+/* line 60, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index-item__header-3--name:after {
+  content: '';
+  height: 1px;
+  display: block;
+  border-bottom: 1px solid #79CBCB;
+  width: 50%;
+  margin: 12px auto;
+  animation: 1.5s ease-out 0s 1 expandBorder;
+}
+
+/* line 70, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index-item__header-3--description {
+  color: #063C3C;
+  text-align: center;
+  letter-spacing: 1.3px;
+  line-height: 1.65;
+}
+
+/* line 77, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index-item__header-3--description > p {
+  padding: 16px 0 32px 0;
+}
+
+/* line 81, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index-item__header-3--description li {
+  list-style-type: none;
+  padding: 4px 0;
+}
+
+/* line 86, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.services-index-item__header-3--description li:not(:last-of-type):after {
+  content: '';
+  height: 1px;
+  display: block;
+  border-bottom: 1px solid #79CBCB;
+  width: 20%;
+  margin: 12px auto;
+}
+
+/* line 95, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+.border-maker {
+  height: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 100, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .services-index-item__header-3--description > p {
+    margin: 0 60px;
+  }
+}
+@media (min-width: 800px) {
+  /* line 106, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .services-index__container {
+    padding: 30px 0 0 0;
+    justify-items: center;
+  }
+
+  /* line 110, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .services-index-item__container {
+    grid-template-columns: repeat(2, fit-content(100%));
+    grid-column-gap: 55px;
+    grid-row-gap: none;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0;
+    width: 80vw;
+  }
+
+  /* line 119, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .border-maker {
+    height: 1px;
+    border-bottom: 1px solid #063C3C;
+    width: 60vw;
+    margin: auto;
+  }
+
+  /* line 125, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .services-index-item__container--header {
+    width: 200px;
+  }
+
+  /* line 128, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .services-index-item__icon {
+    font-size: 185px;
+  }
+
+  /* line 131, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .services-index-item__header-3--name:after {
+    display: none;
+  }
+
+  /* line 134, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .services-index-item__header-3--description > p {
+    padding: 0 0 16px 0;
+    text-align: left;
+  }
+
+  /* line 138, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .services-index-item__header-3--description > ul {
+    margin-left: 65px;
+  }
+
+  /* line 141, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .services-index-item__header-3--description li {
+    list-style-type: disc;
+    text-align: left;
+    padding: 0 0 0 16px;
+    margin-left: 45px;
+  }
+
+  /* line 147, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/services/services.scss */
+  .services-index-item__header-3--description li:not(:last-of-type):after {
+    display: none;
+  }
+}
+/* line 7, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 11, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 15, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 23, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/utils/fonts.scss */
+a {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Regular-36b59421bdc34fd9869a7541c47d5f157ff19eb183032efff759c4d5be5d9cae.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(/assets/ProximaNova-Semibold-388be1fb84d1608325ba870797519fe52ad081852a47c66aef5e90eeaf2c425d.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 2, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+.leaders-index__container {
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+}
+
+/* line 8, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+.leader-index-item__container {
+  display: grid;
+  grid-template-rows: repeat(2, fit-content(100%));
+  grid-row-gap: 65px;
+  padding: 65px 30px;
+  width: 100wv;
+  z-index: 1;
+  justify-items: center;
+  background-color: #79CBCB;
+  position: relative;
+}
+
+/* line 20, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+.leader-index-item__headshot {
+  width: calc(100vw - 130px);
+  height: calc(100vw - 130px);
+  background-size: contain;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 27, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+.leader-index-item__container--text {
+  display: grid;
+  grid-template-rows: repeat(2, fit-content(100%));
+  grid-row-gap: 30px;
+  justify-items: center;
+  color: #063C3C;
+}
+/* line 33, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+.leader-index-item__container--text span {
+  font-size: 16px !important;
+}
+
+/* line 38, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+.leader-index-item__header-2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+/* line 45, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+.leader-index-item__header-3 {
+  text-align: center;
+  line-height: 1.65;
+  letter-spacing: 1.3px;
+}
+
+@media (min-width: 760px) {
+  /* line 52, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+  .leader-index-item__container {
+    padding: 65px;
+  }
+
+  /* line 55, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+  .leader-index-item__headshot {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 63, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+  .leader-index-item__container {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 65px 195px;
+    padding-left: 227.5px;
+    grid-template-columns: repeat(2, fit-content(100%));
+    grid-column-gap: 65px;
+    grid-template-rows: none;
+    justify-items: center;
+    align-items: center;
+  }
+
+  /* line 74, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+  .leader-index-item__container--text {
+    justify-items: start;
+  }
+
+  /* line 77, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/about/leaders.scss */
+  .leader-index-item__header-2,
+  .leader-index-item__header-3 {
+    text-align: left;
+  }
+}
+/* line 24, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/application.scss */
+body {
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+/* line 29, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/application.scss */
+span {
+  color: #063C3C !important;
+  font-size: 16px !important;
+}
+
+/* line 34, /Users/ryanmease/Documents/GitHub/athira-solutions/app/assets/stylesheets/application.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
