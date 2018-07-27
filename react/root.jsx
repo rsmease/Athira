@@ -12,6 +12,7 @@ import Home from './components/home/home_container';
 import About from './components/about/about_container';
 import ContactForm from './components/contact/contact_form_container';
 import ServicesIndex from './components/services/services_container';
+import Terms from './components/terms/terms_container';
 
 const Root = ({ store }) => (
     <Provider store={store}>
@@ -23,6 +24,7 @@ const Root = ({ store }) => (
                     <Route exact path="/about" component={About} />
                     <Route exact path="/services" component={ServicesIndex} />
                     <Route exact path="/contact" component={ContactForm} />
+                    <Route exact path="/terms" component={Terms} />
                 </Switch>
                 <Route component={Footer} />
             </React.Fragment>

@@ -12,7 +12,17 @@ class Footer extends React.Component {
 
     componentDidMount() {
         this.props.getAllCompanies();
+        this.props.getAllTerms();
         this.setState({ currentYear: new Date() });
+    }
+
+    renderTermsLink() {
+        if (this.props.terms && this.props.terms.length) {
+            const termTitle = this.props.terms[0].title;
+            return (
+                <Link to='/terms'>{termTitle}</Link>
+            );
+        }
     }
 
     render() {
@@ -20,7 +30,7 @@ class Footer extends React.Component {
             <footer>
                 <section className="footer__legal">
                     <p>{`© ${this.state.currentYear ? this.state.currentYear.getFullYear() : ""} Athira, LLC`}</p>
-                    <Link to='/terms'>Terms of Service</Link>
+                    {this.renderTermsLink()}
                 </section>
                 <section className="footer__social">
                     <a href={this.props.company ? this.props.company.linkedin_url : ''} target="_blank">

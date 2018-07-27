@@ -1,3 +1,3 @@
 json.set! term.id do
-    json.extract! term, :id, :title, :tedt, :updated_at
+    json.extract! term, :id, :title, :text, :updated_at
 end
