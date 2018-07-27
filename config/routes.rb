@@ -12,5 +12,6 @@ Rails.application.routes.draw do
     resources :image_carousels
     resources :companies
     resources :reviews
+    resources :terms
   end
 end
