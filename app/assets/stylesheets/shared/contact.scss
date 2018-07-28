@@ -55,7 +55,8 @@
     grid-template-rows: repeat(3, fit-content(100%));
     grid-row-gap: 10px;
     width: 100%;
-    padding: 216px 0 125px 0;
+    padding: 135px 0 49px 0;
+    min-height: calc(100vh - 249px);
     justify-items: center;
 }
 
@@ -106,13 +107,13 @@
 }
 
 .contact__form--input {
-    height: 61px;
+    height: 40px;
     width: 80vw;
     max-width: 356px;
     box-sizing: border-box;
     padding: 10px 15px;
     background-color: rgba(121, 203, 203, 0.25);
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.65;
     letter-spacing: 1.3px;
     color: $primary-dark;
@@ -135,7 +136,7 @@
 }
 
 .contact__form--text-input {
-    min-height: 200px;
+    min-height: 155px;
     max-width: 736px;
     font-family: 'Proxima Nova', Georgia, sans-serif;
 }
@@ -153,7 +154,7 @@
     font-size: 24px;
     letter-spacing: 0.6px;
     border-radius: 30px;
-    margin-top: 35px;
+    margin-top: 15px;
     border: none;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
