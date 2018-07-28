@@ -5,8 +5,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     height: $gutter-65;
     background-color: $primary-dark;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     width: 100%;
-    border-top: solid 1px #dddddd;
 }
 
 .footer__legal {
