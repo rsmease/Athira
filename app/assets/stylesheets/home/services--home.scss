@@ -5,7 +5,7 @@
     grid-template-columns: auto;
     justify-items: center;
     grid-row-gap: $gutter-30;
-    margin-bottom: 109px;
+    margin-bottom: $gutter-65;
     width: 100%;
 }
 
@@ -71,7 +71,6 @@
 @media (min-width: 1025px) {
     .services-index__container--home {
         grid-template-columns: repeat(4, fit-content(100%));
-        grid-column-gap: $gutter-65;
         justify-content: center;
         grid-template-rows: 1fr;
         width: 100%;
