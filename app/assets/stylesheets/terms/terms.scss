@@ -1,0 +1,25 @@
+@import '../utils/*';
+.terms-index__container {
+    display: grid;
+    width: 100vw;
+    margin-top: 91px;
+    padding: 0 $gutter-30;
+    box-sizing: border-box;
+    grid-template-rows: repeat(1, fit-content(100%));
+    grid-template-columns: 1fr;
+    grid-row-gap: $gutter-30;
+    min-height: calc(100vh - 156px);
+    background: $secondary-gradient-1;
+}
+
+.terms-index-item__container {
+    display: grid;
+    padding: $gutter-30 0;
+    grid-template-rows: repeat(2, fit-content(100%));
+    grid-row-gap: $gutter-30;
+    align-content: center;
+}
+
+.terms-index-item__header-4 {}
+
+.terms-index-item__description {}
