@@ -8,7 +8,7 @@ class TermsIndexItem extends React.Component {
             <Fade bottom cascade>
                 <div className="terms-index-item__container">
                     <h4 className="terms-index-item__header-4">
-                        "{this.props.title}"
+                        {this.props.title}
                     </h4>
                     <div className="terms-index-item__description" dangerouslySetInnerHTML={
                         { __html: this.props.text }
