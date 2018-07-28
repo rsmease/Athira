@@ -2,24 +2,74 @@
 .terms-index__container {
     display: grid;
     width: 100vw;
+    justify-items: center;
     margin-top: 91px;
-    padding: 0 $gutter-30;
+    padding: $gutter-65 0;
     box-sizing: border-box;
     grid-template-rows: repeat(1, fit-content(100%));
     grid-template-columns: 1fr;
     grid-row-gap: $gutter-30;
-    min-height: calc(100vh - 156px);
-    background: $secondary-gradient-1;
+    background: $primary-gradient-1;
 }
 
 .terms-index-item__container {
     display: grid;
-    padding: $gutter-30 0;
+    height: 100%;
+    width: 75vw;
+    box-sizing: border-box;
+    align-content: center;
     grid-template-rows: repeat(2, fit-content(100%));
     grid-row-gap: $gutter-30;
-    align-content: center;
 }
 
-.terms-index-item__header-4 {}
+.terms-index-item__header-4 {
+    font-size: 20px;
+    color: $primary-dark;
+    text-transform: uppercase;
+    text-align: center;
+}
 
-.terms-index-item__description {}
+.terms-index-item__description p,
+.terms-index-item__description span,
+.terms-index-item__description ul,
+.terms-index-item__description a,
+.terms-intex-item__description h2,
+.terms-index-item__description h3 {
+    font-size: 16px;
+    color: $primary-dark !important;
+    margin: $gutter-30 0;
+}
+
+.terms-index-item__description h2>span {
+    font-size: 20px !important;
+    text-transform: uppercase;
+}
+
+.terms-index-item__description h3>span {
+    font-size: 20px !important;
+    font-style: italic;
+}
+
+.terms-index-item__description h4>span {
+    text-decoration: underline;
+}
+
+.terms-index-item__description h2 {
+    margin-top: $gutter-65*1.5;
+    margin-bottom: $gutter-65;
+}
+
+.terms-index-item__description h3 {
+    margin-top: $gutter-30;
+}
+
+.terms-index-item__description li {
+    list-style-type: disc;
+    margin: 5px 0 5px 30px;
+}
+
+@media (min-width: 760px) {
+    .terms-index-item__header-4 {
+        text-align: center;
+    }
+}
