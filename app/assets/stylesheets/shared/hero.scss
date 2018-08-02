@@ -16,7 +16,6 @@ $hero-height: calc(100vh - 335px);
 
 .hero__overlay-container {
     height: $hero-height;
-    background-color: rgba($color: #000000, $alpha: 0.3);
     display: grid;
 }
 
@@ -49,6 +48,12 @@ $hero-height: calc(100vh - 335px);
         width: 500px;
         font-size: 48px;
         margin-left: 141px;
+    }
+}
+
+@media (min-width: 900px) {
+    .hero__overlay-container {
+        background-color: rgba($color: #000000, $alpha: 0.3);
     }
 }
 
