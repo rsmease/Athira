@@ -8,7 +8,7 @@ header {
     background-color: $primary-dark;
     position: fixed;
     top: 0;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     z-index: 2;
 }
 
@@ -35,15 +35,17 @@ header {
     grid-template-rows: repeat(3, fit-content(100%));
     grid-row-gap: 10px;
     justify-content: center;
-    padding: 10px;
+    padding: 20px 10px;
 }
 
 .header__navigation-link {
     color: $secondary-light;
+    font-size: 1em;
     letter-spacing: 1.3px;
     text-transform: uppercase;
     margin-left: $gutter-30 / 2;
     transition: color 500ms ease;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -77,6 +79,7 @@ header {
     .header__navigation-link {
         justify-self: start;
         align-self: end;
+        padding: 0;
         margin-left: $gutter-30 / 2;
     }
 }
