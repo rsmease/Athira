@@ -172,7 +172,7 @@ class ContactForm extends React.Component {
             <Fade down>
               <div className="contact__form--modal-container">
                 <h4 className="contact__form--modal-h4">{`Thanks, ${this.state.modal_name}!`}</h4>
-                <p className="contact__form--modal-p">We'll reach out to you shortly</p>
+                <p className="contact__form--modal-p">We'll reach out to you shortly.</p>
               </div>
             </Fade>
           </Popup>
