@@ -14,4 +14,6 @@ Rails.application.routes.draw do
     resources :reviews
     resources :terms
   end
+
+  get '/.well-known/acme-challenge/0I6ywkUSWiaXyLRPlLJ49Ph9ltPK72mN8h76vRkdF5k' => 'encryptions#https_encryption'
 end
