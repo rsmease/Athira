@@ -15,5 +15,5 @@ Rails.application.routes.draw do
     resources :terms
   end
 
-  get '/.well-known/acme-challenge/:id' => 'encryptions#https_encryption'
+  get '/.well-known/acme-challenge/:id' => 'encryptions#show'
 end
