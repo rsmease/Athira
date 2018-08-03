@@ -1,5 +1,5 @@
 class EncryptionsController < ApplicationController
   def certificate
-    render plain: '2OU3zHcGZMG0i1rHfxAB6Er_35BTpLeG3_tZpZC5MnQ.DJ3-1k1tK8oN8KPWZe7foOZIaAuL4NB76VrhLZvjxPg'
+    render plain: 'rj0qI5ozA9RkNd003d7zlJkIArjPIXwNysxSNU-TCnI.jzheFP9slaK40qmeydWYmPRgwAQ4wXRt9qcOl97BjEA'
   end
 end
