@@ -1,0 +1,19 @@
+@import '../utils/*';
+//optimized for current about image; may need to be changed
+$about-image-height: 37.9vw;
+.about-image__container {
+    margin-top: 91px;
+    width: 100%;
+}
+
+.about-image__placeholder {
+    margin-top: 91px;
+    height: $about-image-height;
+    background-image: $primary-gradient-2;
+    width: 100%;
+}
+
+.about-image__container img {
+    width: 100%;
+    height: auto;
+}

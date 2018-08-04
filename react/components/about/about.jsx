@@ -22,6 +22,16 @@ class About extends React.Component {
 
     }
 
+    renderAboutImage() {
+        return (
+            <div className='about-image__placeholder'>
+                {
+                    this.props.company && this.props.company.about_image_url.length ? <img src={this.props.company.about_image_url} /> : <div></div>
+                }
+            </div>
+        )
+    }
+
     renderLeaders() {
         if (this.props.leaders && this.props.leaders.length) {
             return (
@@ -41,6 +51,7 @@ class About extends React.Component {
         return (
             <React.Fragment>
                 <section className="main__meta-container">
+                    {this.renderAboutImage()}
                     <Fade bottom cascade>
                         <div className="summary__container--with-title">
                             <h2 className="summary__header-2">About Athira</h2>

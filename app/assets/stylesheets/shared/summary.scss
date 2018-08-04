@@ -11,7 +11,7 @@
 
 .summary__container--with-title {
     @extend .summary__container;
-    margin-top: 195px;
+    margin-top: 95px;
     grid-template-rows: repeat(2, fit-content(100%));
     justify-items: center;
 }
