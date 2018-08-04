@@ -11,9 +11,9 @@ class HeroCarouselImage extends React.Component {
                 'backgroundImage': `url(${this.props.imageURL})`
             };
         } else if (idx % 2 == 0) {
-            return { 'backgroundImage': `linear-gradient(to left bottom, #b3ac8a, #b0a173, #af955c, #af8946, #b07b31)` };
+            return { 'backgroundImage': `linear-gradient(to right top, #7accca, #5ca5a4, #40807f)` };
         } else {
-            return { 'backgroundImage': `linear-gradient(to right top, #b3ac8a, #b0a173, #af955c, #af8946, #b07b31)` };
+            return { 'backgroundImage': `linear-gradient(to right top, #7accca, #5ca5a4, #40807f)` };
         }
     }
 
