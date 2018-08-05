@@ -14,7 +14,7 @@ permit_params :reviewer_name, :reviewer_description, :reviewer_location, :title,
 
     before_save do |review|
         unless params[:review].nil? || params[:review][:logo_url].nil? || !params[:review][:logo_url].include?('https://drive.google.com')
-            review.logo_url = "http://drive.google.com/uc?export=view&id" + params[:review][:logo_url].split("id")[1]
+            review.logo_url = "https://drive.google.com/uc?export=view&id" + params[:review][:logo_url].split("id")[1]
         end
     end
 

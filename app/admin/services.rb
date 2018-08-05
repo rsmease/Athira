@@ -24,7 +24,7 @@ permit_params :name, :short_description, :icon_url, :other_image_url, :created_a
 
     before_save do |service|
         unless params[:service].nil? || params[:service][:icon_url].nil? || !params[:service][:icon_url].include?('https://drive.google.com')
-            service.icon_url = "http://drive.google.com/uc?export=view&id" + params[:service][:icon_url].split("id")[1]
+            service.icon_url = "https://drive.google.com/uc?export=view&id" + params[:service][:icon_url].split("id")[1]
         end
     end
 

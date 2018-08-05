@@ -29,7 +29,7 @@ permit_params :name, :headline, :long_description, :short_description, :email_ad
 
     before_save do |company|
         unless params[:company].nil? || params[:company][:about_image_url].nil? || !params[:company][:about_image_url].include?('https://drive.google.com')
-            company.about_image_url = "http://drive.google.com/uc?export=view&id" + params[:company][:about_image_url].split("id")[1]
+            company.about_image_url = "https://drive.google.com/uc?export=view&id" + params[:company][:about_image_url].split("id")[1]
         end
     end
 
