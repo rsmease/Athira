@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Material from 'react-icons/lib/md';
 
-import Contact from '../contact/contact';
+import StaticHeroImage from '../hero/static_hero_image';
 import LeaderIndexItem from './leader_index_item';
+import Contact from '../contact/contact';
 
 import Fade from 'react-reveal/Fade';
 
@@ -22,14 +23,12 @@ class About extends React.Component {
 
     }
 
-    renderAboutImage() {
-        return (
-            <div className='about-image__placeholder'>
-                {
-                    this.props.company && this.props.company.about_image_url.length ? <img src={this.props.company.about_image_url} /> : <div></div>
-                }
-            </div>
-        )
+    setImageURL() {
+        if (this.props.company && this.props.company.about_image_url.length) {
+            return this.props.company.about_image_url;
+        } else {
+            return "";
+        }
     }
 
     renderLeaders() {
@@ -47,11 +46,14 @@ class About extends React.Component {
             )
         }
     }
+
     render() {
         return (
             <React.Fragment>
+                <section className="hero__container">
+                    <StaticHeroImage imageURL={this.setImageURL()} />
+                </section>
                 <section className="main__meta-container">
-                    {this.renderAboutImage()}
                     <Fade bottom cascade>
                         <div className="summary__container--with-title">
                             <h2 className="summary__header-2">About Athira</h2>
