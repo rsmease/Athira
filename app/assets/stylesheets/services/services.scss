@@ -101,12 +101,17 @@
     .services-index-item__header-3--description>p {
         margin: 0 $gutter-30*2;
     }
+    .services-index__container {
+        justify-items: center;
+    }
+    .services-index-item__container {
+        width: 80%;
+    }
 }
 
 @media (min-width: 800px) {
     .services-index__container {
         padding: $gutter-30 0 0 0;
-        justify-items: center;
     }
     .services-index-item__container {
         grid-template-columns: repeat(2, fit-content(100%));
