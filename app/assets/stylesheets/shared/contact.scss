@@ -243,6 +243,10 @@
         grid-template-columns: repeat(2, fit-content(100%));
         grid-column-gap: 27px;
     }
+    .contact__form--text-input {
+        min-height: 0;
+        height: 20vh;
+    }
     .contact__form {
         grid-row-gap: 31px;
     }
