@@ -68,7 +68,7 @@
 @media (min-width: 1025px) {
     .services-index__container--home {
         grid-template-columns: repeat(4, fit-content(100%));
-        grid-column-gap: $gutter-30*1.5;
+        grid-column-gap: $gutter-30;
         justify-content: center;
         grid-template-rows: 1fr;
         width: 100%;
