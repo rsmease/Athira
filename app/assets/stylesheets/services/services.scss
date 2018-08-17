@@ -55,6 +55,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1.3px;
+    width: 80%;
 }
 
 .services-index-item__header-3--name:after {
@@ -125,8 +126,9 @@
     .services-index-item__container--header {
         width: 200px;
     }
-    .services-index-item__icon {
-        font-size: 185px;
+    .services-index-item__image-container {
+        height: $gutter-65*2.25;
+        width: $gutter-65*2.25;
     }
     .services-index-item__header-3--name:after {
         display: none;
