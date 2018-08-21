@@ -6,7 +6,7 @@ class HeroCarouselImage extends React.Component {
     }
 
     renderHeroBackground(idx) {
-        if (this.props.imageURL && window.innerWidth > 900) {
+        if (this.props.imageURL) {
             return {
                 'backgroundImage': `url(${this.props.imageURL})`
             };

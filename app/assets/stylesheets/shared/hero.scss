@@ -5,8 +5,7 @@ $hero-height: 60vh;
     height: $hero-height;
     background-image: $primary-gradient-2;
     background-size: cover;
-    background-position-x: right;
-    background-position-y: center;
+    background-position-x: 80%;
     width: 100%;
 }
 
@@ -17,6 +16,7 @@ $hero-height: 60vh;
 .hero__overlay-container {
     height: $hero-height;
     display: grid;
+    background-color: rgba($color: #000000, $alpha: 0.6);
 }
 
 .hero__header-1 {
@@ -24,7 +24,8 @@ $hero-height: 60vh;
     letter-spacing: 1.3px;
     align-self: start;
     font-size: 24px;
-    max-width: 70vw;
+    width: 50vw;
+    max-width: 500px;
     margin-top: 91px;
     margin-left: $gutter-30;
     -webkit-animation: fadein 6s;
@@ -41,17 +42,22 @@ $hero-height: 60vh;
 }
 
 @media (min-width: 760px) {
-    .hero__container {
-        background-position-y: 80%;
+    .hero__container-image {
+        background-position-x: 80%;
     }
     .hero__header-1 {
-        width: 500px;
         font-size: 48px;
-        margin-left: 141px;
+        margin-left: $gutter-30*2;
     }
 }
 
 @media (min-width: 900px) {
+    .hero__container-image {
+        background-position-x: 60%;
+    }
+    .hero__header-1 {
+        margin-left: $gutter-30*4;
+    }
     .hero__overlay-container {
         background-color: rgba($color: #000000, $alpha: 0.3);
     }
