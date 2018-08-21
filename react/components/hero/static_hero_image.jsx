@@ -13,9 +13,10 @@ class StaticHeroImage extends React.Component {
     }
   }
 
+  //special styling for Vision Obstacles Execution graphic
   render() {
     return (
-      <section className="hero__container-image"
+      <section className="hero__container-image vision-obstacles-execution"
         style={this.setBackground(this.props.imageURL)}>
       </section >
     )
