@@ -50,7 +50,7 @@ class About extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <section className="hero__container">
+                <section className="hero__container vision-obstacles-execution-container">
                     <StaticHeroImage imageURL={this.setImageURL()} />
                 </section>
                 <section className="main__meta-container">
