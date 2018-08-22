@@ -3,7 +3,7 @@ $hero-height: 60vh;
 .hero__container,
 .hero__container-image {
     height: $hero-height;
-    background-image: $primary-gradient-2;
+    background-color: #C5E4E3;
     background-size: cover;
     background-position-x: 80%;
     width: 100%;
@@ -37,7 +37,6 @@ $hero-height: 60vh;
 
 .vision-obstacles-execution {
     background-position-x: 40% !important;
-    background-attachment: local;
 }
 
 @media (min-width: 370px) {
@@ -53,6 +52,11 @@ $hero-height: 60vh;
     .hero__header-1 {
         font-size: 48px;
         margin-left: $gutter-30*2;
+    }
+    .vision-obstacles-execution {
+        background-position-x: 50% !important;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 
