@@ -34,6 +34,7 @@ const Root = ({ store }) => (
 
 document.addEventListener('DOMContentLoaded', () => {
     const store = createStore();
+    window.onorientationchange = () => window.location.reload();
     const root = document.getElementById('root');
     ReactDOM.render(<Root store={store} />, root);
 });
