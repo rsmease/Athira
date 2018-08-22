@@ -29,7 +29,7 @@ class Header extends React.Component {
     }
 
     toggleNavLinkView() {
-        if (window.innerWidth >= 1024) {
+        if (window.innerWidth >= 1025) {
             return this.renderNavLinks();
         } else {
             return this.renderHamburgerMenu();
