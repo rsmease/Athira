@@ -1073,7 +1073,7 @@ a {
 .hero__container,
 .hero__container-image {
   height: 60vh;
-  background-color: #C5E4E3;
+  background-color: #BDE5E4;
   background-size: cover;
   background-position-x: 80%;
   width: 100%;
@@ -1134,24 +1134,49 @@ a {
   /* line 56, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
   .vision-obstacles-execution {
     background-position-x: 50% !important;
+    background-position-y: bottom !important;
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  /* line 62, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+  .vision-obstacles-execution-container, .vision-obstacles-execution {
+    height: 30vh;
+  }
 }
 @media (min-width: 900px) {
-  /* line 64, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+  /* line 68, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
   .hero__container-image {
     background-position-x: 60%;
   }
 
-  /* line 67, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+  /* line 71, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
   .hero__header-1 {
     margin-left: 120px;
   }
 
-  /* line 70, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+  /* line 74, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
   .hero__overlay-container {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  /* line 77, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+  .vision-obstacles-execution-container, .vision-obstacles-execution {
+    height: 40vh;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 83, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+  .vision-obstacles-execution {
+    background-position-x: 50% !important;
+    background-position-y: bottom !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /* line 89, /Users/ryan/Documents/GitHub/athira-solutions/app/assets/stylesheets/shared/hero.scss */
+  .vision-obstacles-execution-container, .vision-obstacles-execution {
+    height: 60vh;
   }
 }
 @keyframes fadein {
