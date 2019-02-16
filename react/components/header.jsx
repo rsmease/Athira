@@ -10,6 +10,7 @@ class Header extends React.Component {
     this.state = {
       open: false
     };
+    this.closeHamburger = this.closeHamburger.bind(this);
   }
 
   handleHamburgerClick() {
@@ -43,6 +44,7 @@ class Header extends React.Component {
           to="/about"
           className="header__navigation-link"
           style={this.styleActiveTab("about")}
+          onClick={this.closeHamburger}
         >
           About
         </Link>
@@ -50,6 +52,7 @@ class Header extends React.Component {
           to="/services"
           className="header__navigation-link"
           style={this.styleActiveTab("services")}
+          onClick={this.closeHamburger}
         >
           Services
         </Link>
@@ -57,6 +60,7 @@ class Header extends React.Component {
           to="/contact"
           className="header__navigation-link"
           style={this.styleActiveTab("contact")}
+          onClick={this.closeHamburger}
         >
           Contact
         </Link>
@@ -69,6 +73,9 @@ class Header extends React.Component {
       <Popup
         position="bottom right"
         closeOnDocumentClick
+        open={this.state.open}
+        offsetX={30}
+        offsetY={22}
         trigger={
           <div>
             <HamburgerMenu
