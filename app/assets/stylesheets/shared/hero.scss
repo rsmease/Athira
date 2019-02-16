@@ -19,6 +19,10 @@ $hero-height: 60vh;
     background-color: rgba($color: #000000, $alpha: 0.6);
 }
 
+.vision-obstacles-execution-container {
+    height: $hero-height / 2.5;
+}
+
 .hero__header-1 {
     color: $white;
     letter-spacing: 1.3px;
@@ -36,7 +40,11 @@ $hero-height: 60vh;
 }
 
 .vision-obstacles-execution {
-    background-position-x: 40% !important;
+    background-position-x: 50% !important;
+    background-position-y: 100% !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: $hero-height / 2.5;
 }
 
 @media (min-width: 370px) {
@@ -53,15 +61,6 @@ $hero-height: 60vh;
         font-size: 48px;
         margin-left: $gutter-30*2;
     }
-    .vision-obstacles-execution {
-        background-position-x: 50% !important;
-        background-position-y: bottom !important;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .vision-obstacles-execution-container, .vision-obstacles-execution {
-        height: $hero-height/2;
-    }
 }
 
 @media (min-width: 900px) {
@@ -74,18 +73,9 @@ $hero-height: 60vh;
     .hero__overlay-container {
         background-color: rgba($color: #000000, $alpha: 0.3);
     }
-    .vision-obstacles-execution-container, .vision-obstacles-execution {
-        height: $hero-height/1.5;
-    }
 }
 
-@media (min-width: 1250px) {
-    .vision-obstacles-execution {
-        background-position-x: 50% !important;
-        background-position-y: bottom !important;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+@media (min-width: 1025px) {
     .vision-obstacles-execution-container, .vision-obstacles-execution {
         height: $hero-height;
     }
