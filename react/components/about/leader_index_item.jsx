@@ -7,16 +7,18 @@ class LeaderIndexItem extends React.Component {
   render() {
     return (
       <div className="leader-index-item__container">
-        <div
-          className="leader-index-item__headshot"
-          style={{
-            background: `url(${
-              this.props.leader.headshot_url
-            }) 50% 50% no-repeat`,
-            backgroundSize: "cover"
-          }}
-          alt={`${this.props.leader.name} headshot`}
-        />
+        <Fade left>
+          <div
+            className="leader-index-item__headshot"
+            style={{
+              background: `url(${
+                this.props.leader.headshot_url
+                }) 50% 50% no-repeat`,
+              backgroundSize: "cover"
+            }}
+            alt={`${this.props.leader.name} headshot`}
+          />
+        </Fade>
         <div className="leader-index-item__container--text">
           <h2 className="leader-index-item__header-2">
             Meet {this.props.leader.name}
